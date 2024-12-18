@@ -1,0 +1,44 @@
+{
+	id: "3341FAD5FFA98F6C"
+	order_index: 0
+	title: "Blades"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "tconstruct:broad_blade"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:pig_iron"
+				}
+			}
+		}
+		{
+			item: {
+				id: "tconstruct:broad_blade"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:rose_gold"
+				}
+			}
+		}
+		{
+			item: {
+				id: "tconstruct:broad_blade"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:cobalt"
+				}
+			}
+		}
+		{
+			item: {
+				id: "tconstruct:broad_blade"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:queens_slime"
+				}
+			}
+		}
+	]
+}

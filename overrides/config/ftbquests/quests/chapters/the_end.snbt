@@ -1,0 +1,1166 @@
+{
+	id: "589E5F6EEC474A35"
+	group: "433FE63D190F5547"
+	order_index: 3
+	filename: "the_end"
+	title: "Draconic Evolution"
+	icon: "draconicevolution:awakened_core"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -7.0d
+			y: -1.0d
+			description: ["The beginning of the end."]
+			id: "7170A0943856064A"
+			tasks: [{
+				id: "0A8CDC0E63918663"
+				type: "dimension"
+				icon: "minecraft:end_stone"
+				dimension: "minecraft:the_end"
+			}]
+			rewards: [{
+				id: "375011D141D7C293"
+				type: "item"
+				item: "contenttweaker:commander_flag"
+				count: 16
+			}]
+		}
+		{
+			title: "Dragon Drops"
+			icon: "draconicevolution:dragon_heart"
+			x: -6.5d
+			y: 0.0d
+			description: [
+				"The Ender Dragon's haelth has been buffed to 10 times, and its damage has been buffed to 8 times its original value. Good luck!"
+				""
+				"There are some unique loot the Ender Dragon drops. Make sure to collect it all!"
+			]
+			dependencies: ["7170A0943856064A"]
+			id: "2FCC556AD8E52752"
+			tasks: [
+				{
+					id: "124649C34A677C30"
+					type: "item"
+					item: "bountifulbaubles:ender_dragon_scale"
+					count: 4L
+				}
+				{
+					id: "57D039D98293F160"
+					type: "item"
+					item: "draconicevolution:dragon_heart"
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "0F48CCDA31DBA46B"
+				type: "item"
+				item: "bountifulbaubles:ender_dragon_scale"
+				count: 4
+			}]
+		}
+		{
+			title: "End City Loot"
+			icon: "enigmaticlegacy:etherium_ore"
+			x: -5.5d
+			y: 0.0d
+			description: ["Visit End Cities and other End structures and loot them all!"]
+			dependencies: ["2FCC556AD8E52752"]
+			id: "3BF69EDC98DE9175"
+			tasks: [
+				{
+					id: "5EC911445B5AC4B7"
+					type: "item"
+					item: "enigmaticlegacy:etherium_ore"
+					count: 2L
+				}
+				{
+					id: "7AA2EFBD13E48B89"
+					type: "item"
+					item: "enigmaticlegacy:etherium_ingot"
+					count: 2L
+				}
+				{
+					id: "7670A2FF5EE9B228"
+					type: "item"
+					item: "enigmaticlegacy:astral_dust"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "64E0CABE1EC81B06"
+					type: "item"
+					item: "enigmaticlegacy:etherium_ore"
+					count: 2
+				}
+				{
+					id: "43F83E28C0400318"
+					type: "item"
+					item: "enigmaticlegacy:astral_dust"
+					count: 2
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -1.0d
+			description: ["Welcome to perhaps one of the most overpowered Minecraft mod out there: Draconic Evolution."]
+			dependencies: ["2FCC556AD8E52752"]
+			id: "5912AB7AEDD9D0E4"
+			tasks: [{
+				id: "5A7A20FF7621EFBD"
+				type: "item"
+				item: "draconicevolution:draconium_core"
+				count: 8L
+			}]
+			rewards: [{
+				id: "139F51378AB97E3D"
+				type: "item"
+				item: { id: "theabyss:glacerythe_ore", Count: 64b }
+				count: 16
+			}]
+		}
+		{
+			title: "Fusion Crating"
+			icon: "draconicevolution:crafting_core"
+			x: -4.5d
+			y: 0.0d
+			description: [
+				"Once you have beaten Astral Sorcery, you can craft a Fusion Crafting Core!"
+				""
+				"The Crafting Injectors are where the surrounding materials will go."
+				""
+				"You will also need to power the Crafting Core and the Injectors. Use an Energy I/O Port on the side of each Injector and the Core, and link a Creative Energy Source to each. From the side, it may look like this:"
+				""
+				"{image:m1ap:textures/de_fusion1.png width:200 height:100 align:1}"
+				""
+				"And from the top:"
+				""
+				"{image:m1ap:textures/de_fusion2.png width:100 height:150 align:1}"
+				""
+				"You can Right Click each Injector with an empty hand to set them to 'Single Item Mode'. That way, they only accept 1 item at a time instead of a whole stack."
+				""
+				"To add items to each injector, simply Right Click on them with the item in hand."
+			]
+			dependencies: [
+				"5912AB7AEDD9D0E4"
+				"3BF69EDC98DE9175"
+			]
+			id: "3DF70237AE18CAEA"
+			tasks: [
+				{
+					id: "3B7DDFA4BC6653C3"
+					type: "item"
+					item: "draconicevolution:crafting_core"
+					match_nbt: false
+				}
+				{
+					id: "1E28E20C587C694C"
+					type: "item"
+					item: "draconicevolution:basic_crafting_injector"
+					count: 8L
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "702DD8231AB6499C"
+				type: "item"
+				item: "draconicevolution:draconium_core"
+				count: 4
+			}]
+		}
+		{
+			x: -5.0d
+			y: -1.0d
+			description: ["More power!!"]
+			dependencies: [
+				"5912AB7AEDD9D0E4"
+				"3BF69EDC98DE9175"
+			]
+			id: "67633C524B9984B4"
+			tasks: [{
+				id: "4577EB93391D5B8A"
+				type: "item"
+				item: "draconicevolution:wyvern_core"
+			}]
+			rewards: [{
+				id: "06D6DBD8DED2AC6F"
+				type: "item"
+				item: "draconicevolution:overworld_draconium_ore"
+				count: 32
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.0d
+			description: ["Upgrade your Fusion Injectors!"]
+			dependencies: [
+				"3DF70237AE18CAEA"
+				"0C238E685EABB694"
+				"013AFD20D90C40B4"
+			]
+			id: "0533A48B5CCB0253"
+			tasks: [{
+				id: "4F0E23CAA68945B1"
+				type: "item"
+				item: "draconicevolution:wyvern_crafting_injector"
+				count: 8L
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "6AC124AF787BC559"
+				type: "item"
+				item: "draconicevolution:module_core"
+				count: 8
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			dependencies: ["0533A48B5CCB0253"]
+			id: "152ED323F7DC70A4"
+			tasks: [{
+				id: "7BCA10064497694F"
+				type: "item"
+				item: "draconicevolution:awakened_draconium_block"
+				count: 4L
+			}]
+			rewards: [{
+				id: "23C9F170CBFB61B6"
+				type: "item"
+				item: "draconicevolution:awakened_draconium_block"
+				count: 4
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			description: ["Upgrade your Fusion Injectors even further!"]
+			dependencies: ["152ED323F7DC70A4"]
+			id: "1CF96CCB27822E95"
+			tasks: [{
+				id: "45C10801B85965DC"
+				type: "item"
+				item: "draconicevolution:awakened_crafting_injector"
+				count: 8L
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "2F1CE6A7ECF0B827"
+				type: "item"
+				item: "draconicevolution:draconium_core"
+				count: 4
+			}]
+		}
+		{
+			x: -4.5d
+			y: -2.0d
+			description: ["Normally Draconic Evolution would be included in a pack that has 'legit' power generation methods. In this modpack, however, you may just ignore this part and use a Creative Power Source to power your Fusion Crafting and tools/armor."]
+			dependencies: ["67633C524B9984B4"]
+			id: "013AFD20D90C40B4"
+			tasks: [{
+				id: "572452D7E549ABB7"
+				type: "item"
+				item: "draconicevolution:creative_op_capacitor"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "07D67AD5087451E8"
+				type: "item"
+				item: "draconicevolution:draconium_core"
+			}]
+		}
+		{
+			title: "Draconic Energy Transfer"
+			icon: "draconicevolution:wyvern_relay_crystal"
+			x: -4.0d
+			y: -1.0d
+			description: [
+				"Craft some Wyvern Energy I/O Crystals! These can input/output energy. Place them on a Creative Power Source and anything that needs power. Connect them with a Crystal Binder."
+				""
+				"IMPORTANT: You will need to Shift Right Click on each I/O Crystal to swap between Input or Output mode. The one on the Creative Power Source should be in Output mode, the rest should be in Input mode."
+			]
+			dependencies: [
+				"67633C524B9984B4"
+				"0E2AE14DB740AC35"
+			]
+			id: "0C238E685EABB694"
+			tasks: [
+				{
+					id: "567EFFAC9E2FEBED"
+					type: "item"
+					item: "draconicevolution:basic_relay_crystal"
+					count: 4L
+					match_nbt: false
+				}
+				{
+					id: "1816A8938E1610C4"
+					type: "item"
+					item: "draconicevolution:wyvern_relay_crystal"
+					count: 4L
+					match_nbt: false
+				}
+				{
+					id: "7893D69539C275CC"
+					type: "item"
+					item: "draconicevolution:wyvern_io_crystal"
+					count: 8L
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "3E06F6C134265157"
+				type: "item"
+				item: "draconicevolution:wyvern_relay_crystal"
+				count: 4
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.0d
+			description: ["Make a Crystal Binder. Shift Right Click to select an Energy Relay or I/O Crystal as an input, and Right Click to select it as an output."]
+			dependencies: ["5912AB7AEDD9D0E4"]
+			id: "0E2AE14DB740AC35"
+			tasks: [{
+				id: "19B49A7D21C08906"
+				type: "item"
+				item: "draconicevolution:crystal_binder"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "13413752AEC9B8D7"
+				type: "item"
+				item: "minecraft:redstone_ore"
+				count: 64
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			description: [
+				"The Wyvern Chest Piece is an extremely OP piece of armor. You can equip it on your Chest, or (even better), place it in your 'Body' Curio slot."
+				""
+				"But first, to activate it, press Shift+C while holding it. You will need to place at least 1 Energy Module into it to function."
+				""
+				"Finally, have an activated Creative Capacitor in your inventory."
+			]
+			dependencies: ["0533A48B5CCB0253"]
+			id: "1E339EAB30C1FF4C"
+			tasks: [{
+				id: "6CA22C64189FF008"
+				type: "item"
+				item: {
+					id: "draconicevolution:wyvern_chestpiece"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1606053549
+									-54506229
+									-1404558210
+									1850780479
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "3DC495EF183EE401"
+				type: "item"
+				item: "draconicevolution:draconium_core"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			description: ["The Draconic Chest Piece is an upgrade over the Wyvern Chest Piece."]
+			dependencies: [
+				"1CF96CCB27822E95"
+				"1E339EAB30C1FF4C"
+			]
+			id: "617F192157096DFF"
+			tasks: [{
+				id: "5CD605C42E2EB3CB"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconic_chestpiece"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									-659651533
+									109268229
+									-1778644906
+									1346653857
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [
+				{
+					id: "1B764779F683FC8F"
+					type: "item"
+					item: "draconicevolution:draconium_core"
+				}
+				{
+					id: "2B97EC1BC57DF832"
+					type: "item"
+					item: "enigmaticlegacy:etherium_ingot"
+				}
+			]
+		}
+		{
+			title: "Wyvern Tools"
+			icon: {
+				id: "draconicevolution:wyvern_pickaxe"
+				Count: 1b
+				tag: { }
+				ForgeCaps: {
+					Parent: {
+						module_host: {
+							provider_id: [I;
+								859345132
+								-1768863117
+								-1431381661
+								1435000964
+							]
+							modules: [ ]
+							properties: {
+								mining_speed: {
+									hud: 1b
+									value: 1.0d
+								}
+							}
+						}
+						energy: {
+							energy: 0L
+						}
+					}
+				}
+			}
+			x: -2.5d
+			y: -2.0d
+			description: [
+				"Wyvern tools are the 3rd best tools in the pack (after their upgrades, the Draconic and Chaotic tools). Once crafted, you will need to press Shift+C while holding each, and add at least 1 Energy Module to them for them to function."
+				""
+				"Then you can add even more Modules, listed in the next quest."
+				""
+				"To power them, have an active Creative Capacitor in your inventory."
+			]
+			dependencies: ["0533A48B5CCB0253"]
+			id: "6A0054028FCD53DF"
+			tasks: [
+				{
+					id: "6A4FED9A220C44D6"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_sword"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										570797930
+										-1157411528
+										-1832733176
+										-158177249
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "49D0D77A94DEF466"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_pickaxe"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										859345132
+										-1768863117
+										-1431381661
+										1435000964
+									]
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "4F407A5333F7F3F5"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_shovel"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										261112439
+										-1119206718
+										-1742932698
+										-1077130207
+									]
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "2C97ED579187F6AA"
+				type: "item"
+				item: "draconicevolution:draconium_core"
+				count: 3
+			}]
+		}
+		{
+			title: "Draconic Tools"
+			icon: {
+				id: "draconicevolution:draconic_pickaxe"
+				Count: 1b
+				tag: { }
+				ForgeCaps: {
+					Parent: {
+						module_host: {
+							provider_id: [I;
+								-1327960862
+								474237245
+								-1471565591
+								238824901
+							]
+							modules: [ ]
+							properties: {
+								mining_speed: {
+									hud: 1b
+									value: 1.0d
+								}
+							}
+						}
+						energy: {
+							energy: 0L
+						}
+					}
+				}
+			}
+			x: -1.5d
+			y: -2.0d
+			description: ["Draconic tools are an upgrade over Wyvern tools; for even moar powah!"]
+			dependencies: [
+				"6A0054028FCD53DF"
+				"1CF96CCB27822E95"
+			]
+			id: "51420BBC4D7BDDAE"
+			tasks: [
+				{
+					id: "70C003CDDA421B8B"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_sword"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										863299013
+										1423986472
+										-1584064358
+										1766239672
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "59CE5878B5D146EF"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_pickaxe"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										-1327960862
+										474237245
+										-1471565591
+										238824901
+									]
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "386DC7460B1FEFAB"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_shovel"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										-275240052
+										-730183770
+										-1491822055
+										-1390425722
+									]
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+					match_nbt: false
+				}
+			]
+			rewards: [
+				{
+					id: "609DB6CE6D24969D"
+					type: "item"
+					item: "draconicevolution:draconium_core"
+					count: 3
+				}
+				{
+					id: "0225306DA163FE65"
+					type: "item"
+					item: "enigmaticlegacy:etherium_ingot"
+					count: 3
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			description: [
+				"The Draconic Staff of Power is an extremely powerful omnitool, that lets you mine anything ridicolously fast, and deal an insane amount of damage. Just perfect for an adventurer like you!"
+				""
+				"Also, don't forget about adding Modules to it."
+			]
+			dependencies: [
+				"1CF96CCB27822E95"
+				"51420BBC4D7BDDAE"
+			]
+			id: "2DEFA6BEAF6C44AE"
+			tasks: [{
+				id: "252D8CB6087D1486"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconic_staff"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									198842520
+									1591558556
+									-1597925034
+									-1926262464
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "2A774777C14CFCF9"
+				type: "item"
+				item: "enigmaticlegacy:etherium_ingot"
+				count: 6
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.0d
+			description: ["The Chaotic Staff of power is the best tool and best weapon in the game. You've made it."]
+			dependencies: [
+				"2DEFA6BEAF6C44AE"
+				"0FD2E8CEDBED5B27"
+			]
+			id: "62A4C357F98AC0CC"
+			tasks: [{
+				id: "4ACD99CA9EC0EED5"
+				type: "item"
+				item: {
+					id: "draconicevolution:chaotic_staff"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									-428871549
+									-597408879
+									-1231823914
+									1087540039
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [
+				{
+					id: "1D4C9F9D3BA6B765"
+					type: "item"
+					item: "tconstruct:blood_cake"
+					count: 10
+				}
+				{
+					id: "063942F954DF5E27"
+					type: "item"
+					item: "tconstruct:magma_cake"
+					count: 10
+				}
+			]
+		}
+		{
+			title: "The Chaos Guardian"
+			x: 1.0d
+			y: -1.0d
+			shape: "circle"
+			description: [
+				"The Chaos Guardian is the final boss of the modpack. You will need the best possible gear in the pack in order to have a chance at defeating it. I suggest a fully upgraded set of Draconic Armor and tools, and an Advanced Dislocator in blink mode."
+				""
+				"To find the Chaos Guardian, fly to any multiple of X=10,000, Y=10,000 in the End. For example, X=-20,000, and Y=30,000. There, a Chaos Guardian Island will generate:"
+				""
+				"{image:m1ap:textures/chaos_guardian_island.png width:200 height:120 align:1}"
+				""
+				"Fight the Chaos Guardian and obtain its Chaos Shards after the fight from the center of the island!"
+				""
+				"The quickly bail out as the whole island will explode violently!"
+				""
+				"The Chaos Guardian has several mechanics, like a true end-game bossfight. Buuuut I don't wanna spoil them for you."
+				""
+				"However, in case you WANT to be spoiled, you can follow this link:"
+				"https://www.curseforge.com/minecraft/mc-mods/draconic-evolution"
+			]
+			dependencies: ["1CF96CCB27822E95"]
+			size: 2.0d
+			id: "016655D9E06D282D"
+			tasks: [{
+				id: "7582D85C459D26B4"
+				type: "item"
+				item: "draconicevolution:chaos_shard"
+				count: 10L
+			}]
+			rewards: [{
+				id: "316B27D1E47164AB"
+				type: "item"
+				item: "minecraft:cake"
+				count: 10
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.0d
+			description: [
+				"The Wyvern Bow is the 3rd best bow in the pack (after its upgrades, the Draconic and Chaotic Bows). Once crafted, you will need to press Shift+C while holding it, and add at least 1 Energy Module to it for it to function."
+				""
+				"Then you can add even more Modules, listed in the next quest."
+				""
+				"To power it, have an active Creative Capacitor in your inventory."
+			]
+			dependencies: ["0533A48B5CCB0253"]
+			id: "185DBE007D49390E"
+			tasks: [{
+				id: "377653A4D6A111CE"
+				type: "item"
+				item: {
+					id: "draconicevolution:wyvern_bow"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									-1876082194
+									676152763
+									-1161637831
+									1030209710
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "77DBB1535600DF2C"
+				type: "item"
+				item: "draconicevolution:draconium_core"
+			}]
+		}
+		{
+			title: "Wyvern Bow Modules"
+			icon: "draconicevolution:wyvern_proj_velocity_module"
+			x: -3.0d
+			y: -3.0d
+			description: ["These modules will make your Wyvern Bow stronger."]
+			dependencies: ["185DBE007D49390E"]
+			id: "19FB9AA70DD59D01"
+			tasks: [
+				{
+					id: "0B83B82660D096A7"
+					type: "item"
+					item: "draconicevolution:wyvern_energy_module"
+				}
+				{
+					id: "3D7C01EC8D95DD6A"
+					type: "item"
+					item: "draconicevolution:wyvern_proj_damage_module"
+				}
+				{
+					id: "709126908DE0F1EC"
+					type: "item"
+					item: "draconicevolution:wyvern_proj_velocity_module"
+				}
+			]
+			rewards: [{
+				id: "58712E59B5A6CC1A"
+				type: "choice"
+				icon: "draconicevolution:wyvern_proj_accuracy_module"
+				table_id: 2892145996632125115L
+			}]
+		}
+		{
+			title: "Wyvern Sword Modules"
+			icon: "draconicevolution:wyvern_damage_module"
+			x: -2.0d
+			y: -3.0d
+			description: ["These Modules will make your Wyvern Sword stronger. Look up other Modules in JEI to find out how to empower your other Wyvern tools as well!"]
+			dependencies: ["6A0054028FCD53DF"]
+			id: "2903B98546BA6D20"
+			tasks: [
+				{
+					id: "38E570C955A31E6D"
+					type: "item"
+					item: "draconicevolution:wyvern_energy_module"
+				}
+				{
+					id: "2D37BD31FB7B6DED"
+					type: "item"
+					item: "draconicevolution:wyvern_damage_module"
+				}
+				{
+					id: "42F52EEF3EE88888"
+					type: "item"
+					item: "draconicevolution:wyvern_aoe_module"
+				}
+			]
+			rewards: [{
+				id: "325073E00EFB176D"
+				type: "item"
+				item: "draconicevolution:wyvern_damage_module"
+			}]
+		}
+		{
+			icon: "draconicevolution:wyvern_undying_module"
+			x: -2.0d
+			y: 1.0d
+			description: ["The Wyvern Chest Piece can accept numerous Modules. The more Modules, the stronger it will be!"]
+			dependencies: ["1E339EAB30C1FF4C"]
+			id: "67F27D95396B7E3A"
+			tasks: [
+				{
+					id: "1F489F14D61E6031"
+					type: "item"
+					item: "draconicevolution:wyvern_energy_module"
+				}
+				{
+					id: "22F945CA4F7FC855"
+					type: "item"
+					item: "draconicevolution:wyvern_undying_module"
+				}
+				{
+					id: "49E122CC17BDF532"
+					type: "item"
+					item: "draconicevolution:wyvern_speed_module"
+				}
+			]
+			rewards: [{
+				id: "774FAB712A113915"
+				type: "choice"
+				table_id: 8631907763179469376L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: ["The Chaotic Chest Piece is the best armor in the game. Congratulations for completing the pack!"]
+			dependencies: [
+				"617F192157096DFF"
+				"0FD2E8CEDBED5B27"
+			]
+			id: "1191835A8D891774"
+			tasks: [{
+				id: "1AC123D7E3BBF2F9"
+				type: "item"
+				item: {
+					id: "draconicevolution:chaotic_chestpiece"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									575869017
+									1417757133
+									-1519393376
+									53436688
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [
+				{
+					id: "60543294C5EE6577"
+					type: "item"
+					item: "tconstruct:earth_cake"
+					count: 10
+				}
+				{
+					id: "2ADFBE5686DCD169"
+					type: "item"
+					item: "tconstruct:sky_cake"
+					count: 10
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			description: ["GG! You have defeated the final boss of the pack. If you wish, you can create the best weapon and best armor in the game as well..."]
+			dependencies: ["016655D9E06D282D"]
+			id: "0FD2E8CEDBED5B27"
+			tasks: [{
+				id: "73F30B7F4BFCDF15"
+				type: "item"
+				item: "draconicevolution:chaotic_crafting_injector"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "201DD606976D9E46"
+					type: "item"
+					item: "minecraft:cake"
+					count: 10
+				}
+				{
+					id: "780EA9F8E7F51FE2"
+					type: "item"
+					item: "tconstruct:ender_cake"
+					count: 10
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			description: [
+				"The Advanced Dislocator uses Ender Pearls as fuel to let you set Waypoints and teleport between them freely."
+				""
+				"Alternatively, if 'Use Mode' is set to 'Blink', it will perform a blink in the direction you're facing. This is particularly useful to dodge some of the Chaos Guardian's attacks."
+			]
+			dependencies: ["0533A48B5CCB0253"]
+			id: "261AAF57F35DE40D"
+			tasks: [{
+				id: "6A131E4BBE3341EF"
+				type: "item"
+				item: {
+					id: "draconicevolution:advanced_dislocator"
+					Count: 1b
+					tag: { }
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "09B477F11D3C6A4B"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconium_chest"
+					Count: 1b
+					tag: {
+						ChestColour: 6553750
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			description: [
+				"Craft a Creative Capacitor! To activate it, press Shift+C. It will bring up this menu. Here, press the top left button:"
+				""
+				"{image:m1ap:textures/de_creativecap_hud1.png width:200 height:130 align:1}"
+				""
+				"Then activate all items in this list:"
+				""
+				"{image:m1ap:textures/de_creativecap_hud2.png width:200 height:200 align:1}"
+				""
+				"It should look like this at the end:"
+				""
+				"{image:m1ap:textures/de_creativecap_hud3.png width:200 height:200 align:1}"
+				""
+				"Then feel free to exit out of this menu; you'll never have to open it again."
+			]
+			dependencies: ["152ED323F7DC70A4"]
+			id: "75D8C76916486D53"
+			tasks: [{
+				id: "00C14BAD0E2D79B4"
+				type: "item"
+				item: {
+					id: "draconicevolution:creative_capacitor"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1724720053
+									-97959089
+									-1747539129
+									-2115711029
+								]
+								modules: [ ]
+								properties: {
+									charge_main: {
+										hud: 1b
+									}
+									charge_curios: {
+										hud: 1b
+									}
+									charge_hot_bar: {
+										hud: 1b
+									}
+									charge_armor: {
+										hud: 1b
+									}
+									charge_held_item: {
+										hud: 1b
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "33AA09146228E6BB"
+				type: "item"
+				item: "draconicevolution:draconium_core"
+			}]
+		}
+	]
+}

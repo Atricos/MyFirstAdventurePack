@@ -1,0 +1,11 @@
+{
+	id: "2B80342374AA1CE4"
+	order_index: 16
+	title: "Vegetables"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:potato" }
+		{ item: "minecraft:carrot" }
+		{ item: "minecraft:beetroot" }
+	]
+}

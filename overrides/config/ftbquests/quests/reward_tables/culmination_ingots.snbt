@@ -1,0 +1,16 @@
+{
+	id: "042E48D7BD1E80C4"
+	order_index: 15
+	title: "Culmination Ingots"
+	loot_size: 1
+	rewards: [
+		{ item: "tconstruct:hepatizon_ingot", count: 12 }
+		{ item: "draconicevolution:draconium_ingot", count: 12 }
+		{ item: "atum:nebu_ingot", count: 12 }
+		{ item: "twilightforest:knightmetal_ingot", count: 12 }
+		{ item: "theabyss:unorithe_ingot", count: 12 }
+		{ item: "tconstruct:slimesteel_ingot", count: 12 }
+		{ item: "astralsorcery:starmetal_ingot", count: 12 }
+		{ item: "theabyss:bricked_knight_ingot", count: 12 }
+	]
+}

@@ -1,0 +1,11 @@
+{
+	id: "3E09D63365E0A6C2"
+	order_index: 5
+	title: "Basic Mob Resources"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:feather", count: 3 }
+		{ item: "minecraft:string", count: 3 }
+		{ item: "minecraft:gunpowder", count: 3 }
+	]
+}

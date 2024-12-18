@@ -1,0 +1,826 @@
+{
+	id: "6C8357AD366DF42A"
+	group: "42AE90412816738B"
+	order_index: 0
+	filename: "tinkers_construct"
+	title: "Tinkers' Construct"
+	icon: {
+		id: "tconstruct:sword"
+		Count: 1b
+		tag: {
+			tic_multipliers: {
+				"tconstruct:mining_speed": 0.5f
+				"tconstruct:durability": 1.1f
+			}
+			tic_stats: {
+				"tconstruct:attack_speed": 1.52f
+				"tconstruct:mining_speed": 2.6999998f
+				"tconstruct:attack_damage": 4.75f
+				"tconstruct:harvest_level": 4.0f
+				"tconstruct:durability": 1347.5f
+			}
+			tic_broken: 0b
+			HideFlags: 3
+			tic_modifiers: [
+				{
+					name: "tconstruct:overslime"
+					level: 3s
+				}
+				{
+					name: "tconstruct:overlord"
+					level: 3s
+				}
+				{
+					name: "tconstruct:silky_shears"
+					level: 1s
+				}
+			]
+			tic_materials: [
+				"tconstruct:queens_slime"
+				"tconstruct:queens_slime"
+				"tconstruct:queens_slime"
+			]
+			Damage: 0
+			tic_volatile_data: {
+				"tconstruct:overslime_cap": 789
+				"tconstruct:overslime_friend": 1b
+			}
+			tic_persistent_data: {
+				abilities: 1
+				upgrades: 3
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 7.0d
+			y: 0.0d
+			width: 5.0d
+			height: 5.0d
+			rotation: 0.0d
+			image: "m1ap:textures/smeltery.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			width: 2.5d
+			height: 2.5d
+			rotation: 0.0d
+			image: "m1ap:textures/melter.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			width: 7.0d
+			height: 3.5d
+			rotation: 0.0d
+			image: "m1ap:textures/show_all_chapters.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			x: 9.0d
+			y: -3.0d
+			description: ["Blank Patterns can be formed into Patterns for various tool parts, like Pickaxe Heads, Tool Rods, Sword Blades, etc."]
+			id: "7CE871BC5F17C09A"
+			tasks: [{
+				id: "0A82B79EC1B8E77C"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 3L
+			}]
+			rewards: [{
+				id: "1F151CCDADC998E2"
+				type: "item"
+				item: "tconstruct:materials_and_you"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -3.0d
+			description: ["The Crafting Station is an upgrade over the Crafting Table! It can store the items placed into it; and it can interact with other Tinkers' Tables by letting you easily tab between nearby ones!"]
+			dependencies: ["7CE871BC5F17C09A"]
+			id: "0659552836079916"
+			tasks: [{
+				id: "65CBB48292A01717"
+				type: "item"
+				item: "tconstruct:crafting_station"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "781234D1DC6C37BD"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 3
+			}]
+		}
+		{
+			x: 11.0d
+			y: -3.0d
+			description: ["The Part Builder uses Blank Patterns to create basic tool parts. It can accept any easily moldable material like wood or bones, but it cannot accept metals - for that, you'll have to use a Casting Basin with the appropriate Cast!"]
+			dependencies: ["7CE871BC5F17C09A"]
+			id: "2F56C1CBC2E8D5CA"
+			tasks: [{
+				id: "49CB7DA75FB4AA48"
+				type: "item"
+				item: "tconstruct:part_builder"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "4812B52968B35E42"
+				type: "item"
+				item: "minecraft:bone"
+				count: 3
+			}]
+		}
+		{
+			x: 12.0d
+			y: -3.0d
+			description: ["The Tinker Station can combine various tool parts into several different tools and weapons."]
+			hide_dependency_lines: false
+			dependencies: ["7CE871BC5F17C09A"]
+			id: "2C0E85A57E017A07"
+			tasks: [{
+				id: "3E9A0D9C56BC358B"
+				type: "item"
+				item: {
+					id: "tconstruct:tinker_station"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "7599B75FAE731BB7"
+				type: "item"
+				item: "minecraft:flint"
+				count: 3
+			}]
+		}
+		{
+			x: 13.0d
+			y: -3.0d
+			description: ["Too many parts?! I have the solution for you..."]
+			dependencies: ["2F56C1CBC2E8D5CA"]
+			id: "2B2497F73368D092"
+			tasks: [{
+				id: "2A87F703426A0477"
+				type: "item"
+				item: "tconstruct:part_chest"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "488752B96FE0672F"
+				type: "item"
+				item: "tconstruct:tinkers_chest"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -2.0d
+			description: ["The Tinker's Anvil is an upgrade over the Tinker Station, allowing you to create even more types of tools and weapons!"]
+			hide_dependency_lines: true
+			dependencies: [
+				"2C0E85A57E017A07"
+				"5DEA02D5E22F7874"
+			]
+			id: "719B6E879F7ED2ED"
+			tasks: [{
+				id: "394A6313F54986F8"
+				type: "item"
+				item: {
+					id: "tconstruct:tinkers_anvil"
+					Count: 1b
+					tag: {
+						texture: "tconstruct:tinkers_bronze_block"
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "237A73DCA16B7FB9"
+				type: "choice"
+				table_id: 3693508966444797804L
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.0d
+			description: ["Collect some Sand!"]
+			id: "1DA754921F384E0A"
+			tasks: [{
+				id: "015C8B63FF8EA296"
+				type: "item"
+				item: "minecraft:sand"
+				count: 64L
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "7EFD0D0E70CC9975"
+				type: "item"
+				item: "minecraft:sand"
+				count: 16
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.5d
+			description: ["Collect some Gravel!"]
+			id: "6CD393988BBDE2FE"
+			tasks: [{
+				id: "1A27B5665AF64E69"
+				type: "item"
+				item: "minecraft:gravel"
+				count: 64L
+			}]
+			rewards: [{
+				id: "7899833F368B86DF"
+				type: "item"
+				item: "minecraft:gravel"
+				count: 16
+			}]
+		}
+		{
+			x: 5.5d
+			y: -4.0d
+			description: ["Collect some Clay!"]
+			id: "629F24EE89352D90"
+			tasks: [{
+				id: "20E1E2F11AA475CF"
+				type: "item"
+				item: "minecraft:clay_ball"
+				count: 64L
+			}]
+			rewards: [{
+				id: "28E318AA0B79CF38"
+				type: "item"
+				item: "minecraft:clay_ball"
+				count: 16
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.5d
+			description: ["Combine Sand, Gravel \\& Clay into Grout!"]
+			dependencies: [
+				"1DA754921F384E0A"
+				"6CD393988BBDE2FE"
+				"629F24EE89352D90"
+			]
+			id: "2D66FAC0C59B1570"
+			tasks: [{
+				id: "4E54EFCCA7363EEC"
+				type: "item"
+				item: "tconstruct:grout"
+				count: 64L
+			}]
+			rewards: [{
+				id: "5F9F0B7295CEE7C1"
+				type: "item"
+				item: "tconstruct:grout"
+				count: 32
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.0d
+			description: ["Smelt some Grout into Seared Bricks!"]
+			dependencies: ["2D66FAC0C59B1570"]
+			size: 2.0d
+			id: "0CAA28D36882E834"
+			tasks: [{
+				id: "202C9AECEE80CE6D"
+				type: "item"
+				item: "tconstruct:seared_brick"
+				count: 64L
+			}]
+			rewards: [{
+				id: "784160C019315D77"
+				type: "item"
+				item: "tconstruct:puny_smelting"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			description: ["A Seared Melter multiblock is able to convert metals into their liquid forms. Build the multiblock shown on this page!"]
+			dependencies: ["0CAA28D36882E834"]
+			id: "48874993F8F2B9DC"
+			tasks: [{
+				id: "18710094E55FEEF5"
+				type: "item"
+				item: "tconstruct:seared_melter"
+			}]
+			rewards: [{
+				id: "091D3923697CA9B1"
+				type: "item"
+				item: "minecraft:iron_ore"
+				count: 6
+			}]
+		}
+		{
+			x: 7.0d
+			y: -0.5d
+			description: ["A Seared Fuel Tank holds 4 buckets of Lava and powers the Smeltery!"]
+			hide_dependency_lines: true
+			dependencies: ["0CAA28D36882E834"]
+			id: "527C0F35B4267EF6"
+			tasks: [{
+				id: "5BC20F68C26686C2"
+				type: "item"
+				item: "tconstruct:seared_fuel_tank"
+			}]
+			rewards: [{
+				id: "3D52403813442C9A"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			description: [
+				"A Casting Table can shape the molten materials into any form you desire! Just place a Cast on the Casting Table and pour your liquids into that! To make a Cast, pour Molten Gold over the original shape!"
+				""
+				"Additionally, you can use a Hopper below the Casting Table to pull out the ingots automatically; and a Redstone block can also interact with the Drains to pour out the molten metals automatically."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0CAA28D36882E834"]
+			id: "369CFEC5BD76F548"
+			tasks: [{
+				id: "183765BE84FBE6B7"
+				type: "item"
+				item: "tconstruct:seared_table"
+			}]
+			rewards: [{
+				id: "20D6719B02F8F430"
+				type: "item"
+				item: "tconstruct:seared_faucet"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 1.0d
+			description: ["The Casting Basin can take out whole blocks of material from the Smeltery. You can use a Hopper below for automation."]
+			hide_dependency_lines: true
+			dependencies: ["0CAA28D36882E834"]
+			id: "299FEF64B84DAB74"
+			tasks: [{
+				id: "5F5E0132B6006AB5"
+				type: "item"
+				item: "tconstruct:seared_basin"
+			}]
+			rewards: [{
+				id: "15326602E8F1D6B9"
+				type: "item"
+				item: "tconstruct:seared_faucet"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			description: ["The Ingot Cast may be the most useful Cast. You will no longer need to be precise to melt exactly whole multiples of blocks for Casting Basins!"]
+			dependencies: ["369CFEC5BD76F548"]
+			id: "3CCBFDBADCFE61F4"
+			tasks: [{
+				id: "7BBE8E1CEBDDF815"
+				type: "item"
+				item: "tconstruct:ingot_cast"
+			}]
+			rewards: [{
+				id: "7B0BEEFCB51369E3"
+				type: "item"
+				item: "tconstruct:tool_handle_cast"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 1.0d
+			description: ["The Smeltery Controller is the \"brain\" of the Smetlery. You will interact with this block if you want to put in any items to melt down. Hoppers can also feed items into this block."]
+			hide_dependency_lines: true
+			dependencies: ["48874993F8F2B9DC"]
+			id: "5DEA02D5E22F7874"
+			tasks: [{
+				id: "4858E3CC79B19F1D"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+			rewards: [{
+				id: "22425B363018599C"
+				type: "item"
+				item: "tconstruct:mighty_smelting"
+			}]
+		}
+		{
+			icon: "tconstruct:seared_bricks"
+			x: 6.5d
+			y: -2.0d
+			description: [
+				"Combine some Seared Bricks into its block form and build a Tinkers' Construct Smeltery, shown on this page of the quest book. "
+				""
+				"It can be any size, and its walls have to be made out of Seared Brick blocks. Additionally, a Smeltery always requires a Smeltery Controller and a Seared Fuel Tank to power it."
+				""
+				"To get the molten materials out of it, use a Drain with a Faucet on its side. Place either a Casting Basin or a Casting Table below!"
+				""
+				"A smeltery is capable of doubling the outputs of your ores, so it's always worth using over a Furnace!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["5DEA02D5E22F7874"]
+			hide: false
+			id: "0F80600B3FF0A283"
+			tasks: [{
+				id: "1F9CC1722787121C"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+				count: 16L
+			}]
+			rewards: [{
+				id: "2A06E3FCEC840512"
+				type: "item"
+				item: "tconstruct:encyclopedia"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			description: ["Make some of the most important Casts and I'll give you some in return!"]
+			dependencies: ["369CFEC5BD76F548"]
+			id: "7C46416349820CB8"
+			tasks: [
+				{
+					id: "6BA99C87EA5A32D0"
+					type: "item"
+					item: "tconstruct:large_plate_cast"
+				}
+				{
+					id: "64599B4ED79964C5"
+					type: "item"
+					item: "tconstruct:hammer_head_cast"
+				}
+				{
+					id: "15A2B4043C1EED3B"
+					type: "item"
+					item: "tconstruct:pickaxe_head_cast"
+				}
+			]
+			rewards: [
+				{
+					id: "26BA8F5E0A069322"
+					type: "item"
+					item: "tconstruct:tool_handle_cast"
+				}
+				{
+					id: "058FE8D13F8F26C6"
+					type: "item"
+					item: "tconstruct:rod_cast"
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 3.0d
+			description: ["Too many Casts? This is the solution!"]
+			dependencies: [
+				"3CCBFDBADCFE61F4"
+				"7C46416349820CB8"
+			]
+			dependency_requirement: "one_started"
+			id: "3529EF40D8B5AEBF"
+			tasks: [{
+				id: "55B88EF50A8B34A7"
+				type: "item"
+				item: "tconstruct:cast_chest"
+			}]
+			rewards: [{
+				id: "2309B6966A8AC9FB"
+				type: "item"
+				item: "tconstruct:tinkers_gadgetry"
+			}]
+		}
+		{
+			title: "Tool Parts"
+			x: 10.0d
+			y: 0.0d
+			description: ["This quest requires you to make specific Tinkers' tools parts. Along with the quest reward, you'll be able to forge a Veiin Hammer in the Tinkers' Anvil. But of course, feel free to use the materials for anything else of your liking!"]
+			hide_dependency_lines: true
+			dependencies: [
+				"719B6E879F7ED2ED"
+				"7C46416349820CB8"
+			]
+			dependency_requirement: "all_started"
+			size: 2.0d
+			id: "6DF254EA59BD44CB"
+			tasks: [
+				{
+					id: "18AB3D57C83F7300"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:cobalt"
+						}
+					}
+				}
+				{
+					id: "235EEEDA0907C25F"
+					type: "item"
+					item: {
+						id: "tconstruct:hammer_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:manyullyn"
+						}
+					}
+				}
+				{
+					id: "691B71F7CB849B06"
+					type: "item"
+					item: {
+						id: "tconstruct:tough_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:pig_iron"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "44B6B5617D339EE6"
+				type: "choice"
+				table_id: 7487647778420339524L
+			}]
+		}
+		{
+			title: "Tinkers' Armor Set"
+			x: 12.0d
+			y: -2.0d
+			description: ["Tinkers' Construct allows you to create a high-customizable armor set. Look up its uses by hover over the item and pressing 'U' (or right click in JEI). Then click on the Modifiers tab!"]
+			dependencies: ["719B6E879F7ED2ED"]
+			id: "55482CD2EE7AFC3B"
+			tasks: [
+				{
+					id: "7E05001226725B36"
+					type: "item"
+					item: {
+						id: "tconstruct:plate_helmet"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 2.0f
+								"tconstruct:knockback_resistance": 0.1f
+								"tconstruct:durability": 330.0f
+								"tconstruct:armor": 2.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [ ]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 4
+								upgrades: 1
+							}
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "739B3003124E2F40"
+					type: "item"
+					item: {
+						id: "tconstruct:plate_chestplate"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 2.0f
+								"tconstruct:knockback_resistance": 0.1f
+								"tconstruct:durability": 480.0f
+								"tconstruct:armor": 7.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [ ]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 4
+								upgrades: 1
+							}
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "45723C0E37509B8E"
+					type: "item"
+					item: {
+						id: "tconstruct:plate_leggings"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 2.0f
+								"tconstruct:knockback_resistance": 0.1f
+								"tconstruct:durability": 450.0f
+								"tconstruct:armor": 5.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [ ]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 4
+								upgrades: 1
+							}
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "02B279EB228CA9D6"
+					type: "item"
+					item: {
+						id: "tconstruct:plate_boots"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 2.0f
+								"tconstruct:knockback_resistance": 0.1f
+								"tconstruct:durability": 390.0f
+								"tconstruct:armor": 2.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [ ]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 4
+								upgrades: 1
+							}
+						}
+					}
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "3DC9E7961B0CC96C"
+				type: "choice"
+				table_id: 1367853146583063965L
+			}]
+		}
+		{
+			title: "Slime Sling \\& Slime Boots"
+			x: 12.0d
+			y: 0.0d
+			description: ["The Slime Sling and the Slime Boots are the perfect combination for exploring! The Slime Boots prevent any sort of fall damage, and the Slime Sling launches you far into the distance. Weeeeee!!"]
+			hide_dependency_lines: true
+			dependencies: ["0F80600B3FF0A283"]
+			size: 2.0d
+			id: "0CCE0FC32D003795"
+			tasks: [
+				{
+					id: "5F7F798B2DF2888E"
+					type: "item"
+					item: {
+						id: "tconstruct:earth_slime_sling"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "60751E3F10A2315D"
+					type: "item"
+					item: {
+						id: "tconstruct:slime_boots"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 546.0f
+								"tconstruct:armor": 0.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:bouncy"
+									level: 1s
+								}
+								{
+									name: "tconstruct:leaping"
+									level: 1s
+								}
+							]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 5
+							}
+						}
+					}
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "1E942D5617D306D4"
+				type: "item"
+				item: "tconstruct:ender_slime_ball"
+				count: 4
+			}]
+		}
+		{
+			x: 10.0d
+			y: -2.0d
+			description: ["Using the Piggybackpack, you can carry a single mob around on your back. To mount it, right click on it with a Piggybackpack. This will give you a Piggybackpack Chestplate. To dismount, remove your Chestplate."]
+			hide_dependency_lines: true
+			dependencies: ["0F80600B3FF0A283"]
+			hide: true
+			id: "2B902157818A0F0D"
+			tasks: [{
+				id: "410CB764AF37DD9E"
+				type: "item"
+				item: "tconstruct:piggy_backpack"
+				match_nbt: false
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.5d
+			description: ["A Seared Drain can take the molten materials out of the Smeltery, using a Faucet on its side, and either a Casting Table or a Casting Basin below!"]
+			hide_dependency_lines: true
+			dependencies: ["0CAA28D36882E834"]
+			id: "30069350A667BF94"
+			tasks: [{
+				id: "11CA4A4D385DF0D5"
+				type: "item"
+				item: "tconstruct:seared_drain"
+			}]
+			rewards: [{
+				id: "7F44BE524529C7E4"
+				type: "item"
+				item: "tconstruct:seared_faucet"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			description: ["Use a Seared Furnace to fuel your Seared Metler! You will need to fill it up with lava."]
+			hide_dependency_lines: true
+			dependencies: ["0CAA28D36882E834"]
+			id: "322D2E6E74B1CA40"
+			tasks: [{
+				id: "538D835E46FC8F1C"
+				type: "item"
+				item: "tconstruct:seared_fuel_tank"
+			}]
+			rewards: [{
+				id: "0012FD54B4F7C96F"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			description: ["You can pour out the molten material into a Casting Basin! Place a Seared Faucet on the face of the Seared Melter and right click it! Make sure to have enough material for a full block!"]
+			hide_dependency_lines: true
+			dependencies: ["0CAA28D36882E834"]
+			id: "637B352DF2B6FB7D"
+			tasks: [{
+				id: "0CF4CCDE428A8B63"
+				type: "item"
+				item: "tconstruct:seared_basin"
+			}]
+			rewards: [{
+				id: "78BC8BD06745FAF8"
+				type: "item"
+				item: "tconstruct:seared_faucet"
+			}]
+		}
+	]
+}

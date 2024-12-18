@@ -1,0 +1,388 @@
+{
+	id: "2B45AD68AABDFC68"
+	group: "42AE90412816738B"
+	order_index: 1
+	filename: "spartan_weaponry"
+	title: "Spartan Weaponry"
+	icon: {
+		id: "spartanweaponry:battleaxe_diamond"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -1.5d
+			id: "15CD36BFDA5AC403"
+			tasks: [{
+				id: "652AE0D3B21DBB2E"
+				type: "item"
+				item: {
+					id: "spartanshields:shield_basic_diamond"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "3E4259C3F34EF1F3"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 2s
+							id: "spartanshields:spikes"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			id: "4F6B9E9FF870FA8A"
+			tasks: [{
+				id: "256DFE806DC4B99B"
+				type: "item"
+				item: {
+					id: "spartanweaponry:cestus_studded"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "76127609EDA39FA6"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.5d
+			id: "59470C0C0841D4C0"
+			tasks: [{
+				id: "5ED68F1475F85DD7"
+				type: "item"
+				item: {
+					id: "spartanweaponry:club_studded"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "52DE2FECF78224F2"
+				type: "item"
+				item: "dummmmmmy:target_dummy_placer"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			id: "1414975E38A70198"
+			tasks: [{
+				id: "26C29872F95AD2CD"
+				type: "item"
+				item: {
+					id: "spartanweaponry:boomerang_diamond"
+					Count: 1b
+					tag: {
+						Damage: 0
+						AmmoUsed: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "70D92638D55A2B00"
+				type: "choice"
+				table_id: 6766569822855933958L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			id: "5F90F82B1292AC7B"
+			tasks: [{
+				id: "6ECC95BB4BF88F76"
+				type: "item"
+				item: {
+					id: "spartanweaponry:flanged_mace_diamond"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "47DAC5A4FD7600BF"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:smite"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			id: "4D2E2DA13FEA4F93"
+			tasks: [{
+				id: "5A1405C95981B0A3"
+				type: "item"
+				item: {
+					id: "spartanweaponry:scythe_diamond"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "31C653A0866192DF"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:sharpness"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			id: "5C7ED0AD6E030621"
+			tasks: [{
+				id: "5F02F7A71A2E9860"
+				type: "item"
+				item: {
+					id: "spartanweaponry:warhammer_diamond"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "0FB63F802EA3C0DE"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			id: "538E4BBCAB24BF0D"
+			tasks: [{
+				id: "118E1F404B5702DF"
+				type: "item"
+				item: {
+					id: "spartanweaponry:halberd_diamond"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "431AA1E0859AD473"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			id: "58FE3B109FE5B9C2"
+			tasks: [{
+				id: "17BB5E73F5745065"
+				type: "item"
+				item: {
+					id: "spartanweaponry:battleaxe_diamond"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "0138F3D26C77EF03"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:sweeping"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			id: "6AA4F9950357F0D4"
+			tasks: [{
+				id: "021D876CBCCA2667"
+				type: "item"
+				item: {
+					id: "spartanweaponry:hammer_diamond"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "5D030B8EF9840981"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:looting"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			id: "37D7090C1E0C94B2"
+			tasks: [{
+				id: "5C80F761295EEC1E"
+				type: "item"
+				item: {
+					id: "spartanweaponry:longbow_diamond"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "486CD477B61D7702"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:power"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			id: "46D80544C5866228"
+			tasks: [{
+				id: "2CF20B058ABA03D7"
+				type: "item"
+				item: {
+					id: "spartanweaponry:heavy_crossbow_diamond"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "013A14D99C35B13E"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:piercing"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			id: "64652E41900919B1"
+			tasks: [{
+				id: "15BE0720169230A9"
+				type: "item"
+				item: {
+					id: "spartanweaponry:quiver_arrow_small"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							Size: 4
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "2CF814E526AD7235"
+				type: "item"
+				item: "minecraft:arrow"
+				count: 16
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.5d
+			id: "5B487B4CB90C0BD0"
+			tasks: [{
+				id: "2F25965A3C5702C7"
+				type: "item"
+				item: "spartanweaponry:dynamite"
+				count: 4L
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "754535F7BD1F15A9"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 6
+			}]
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+	id: "67E977FBB3FCB344"
+	order_index: 1
+	title: "Large Plates"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "tconstruct:large_plate"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:cobalt"
+				}
+			}
+		}
+		{
+			item: {
+				id: "tconstruct:large_plate"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:manyullyn"
+				}
+			}
+		}
+		{
+			item: {
+				id: "tconstruct:large_plate"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:pig_iron"
+				}
+			}
+		}
+		{
+			item: {
+				id: "tconstruct:large_plate"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:rose_gold"
+				}
+			}
+		}
+		{
+			item: {
+				id: "tconstruct:large_plate"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:queens_slime"
+				}
+			}
+		}
+	]
+}

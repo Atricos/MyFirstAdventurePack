@@ -1,0 +1,860 @@
+{
+	id: "2964FBBF4C750CA3"
+	group: "433FE63D190F5547"
+	order_index: 2
+	filename: "the_abyss"
+	title: "The Abyss"
+	icon: "theabyss:abyss_crystal_ore"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.0d
+			y: -5.0d
+			description: ["Go to sleep..."]
+			id: "068FB5FD0BE07054"
+			tasks: [{
+				id: "40A2D2F63DC2501A"
+				type: "advancement"
+				advancement: "theabyss:strange_rem_phases"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "077C97BD87538887"
+				type: "choice"
+				icon: "minecraft:feather"
+				table_id: 5433855988962194401L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			description: ["What...!? A nightmare!?"]
+			dependencies: ["068FB5FD0BE07054"]
+			id: "27B0DA3B4112310C"
+			tasks: [{
+				id: "05B93BEDF4C317DF"
+				type: "advancement"
+				advancement: "theabyss:story_adv"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "231F8A82D0FE3E22"
+				type: "choice"
+				icon: "minecraft:feather"
+				table_id: 5433855988962194401L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			description: [
+				"After your second nightmare, seek out a Forest Hut:"
+				""
+				"{image:m1ap:textures/theabyss_forest_hut.png width:200 height:120 align:1}"
+				""
+				"Inside, you will find a radio... Click on it."
+				""
+				"{image:m1ap:textures/theabyss_radio.png width:200 height:130 align:1}"
+				""
+				"You will be transported to your third nightmare. Make sure to collect as much Loran from Loran Flower as you can!"
+			]
+			dependencies: ["27B0DA3B4112310C"]
+			id: "259D4ED80CFF5183"
+			tasks: [{
+				id: "6058176623E5FC2C"
+				type: "advancement"
+				advancement: "theabyss:loran_adv"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "427274DEC7F8ECF0"
+				type: "choice"
+				icon: "minecraft:feather"
+				table_id: 5433855988962194401L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			description: ["Collect Loran from Loran Flowers during your third nightmare in the radio realm."]
+			dependencies: ["259D4ED80CFF5183"]
+			id: "216C9984EA6C6A72"
+			tasks: [{
+				id: "6DE653337051A57A"
+				type: "item"
+				item: "theabyss:loran"
+				count: 10L
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "32234ED5ABE45EA9"
+				type: "choice"
+				icon: "minecraft:feather"
+				table_id: 5433855988962194401L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			description: ["Craft 10 pieces of Unstable Obsidian! This is used for the portal frame of the Abyss portal!"]
+			dependencies: ["216C9984EA6C6A72"]
+			id: "00B9EA0A1FB0B80F"
+			tasks: [{
+				id: "4C932FA95452165E"
+				type: "item"
+				item: "theabyss:unstable_obsidian"
+				count: 10L
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "68A9B99D35C73B85"
+				type: "item"
+				item: "minecraft:blaze_powder"
+				count: 8
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			description: [
+				"Craft an Abyss Portal Activator! You need to have progressed in the Twilight Forest, Atum \\& Astral Sorcery in order to unlock this item."
+				""
+				"This is used to light the Abyss portal."
+				""
+				"{image:m1ap:textures/theabyss_portal.png width:200 height:250 align:1}"
+			]
+			dependencies: ["00B9EA0A1FB0B80F"]
+			id: "414F2D769FC80FDA"
+			tasks: [{
+				id: "0A43FF61358D69FB"
+				type: "item"
+				item: {
+					id: "theabyss:the_abyss"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "03D236A5996A0E3F"
+				type: "choice"
+				icon: {
+					id: "theabyss:the_abyss"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				table_id: 2979380096758276150L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			description: [
+				"Enter the Abyss!"
+				""
+				"This is the second to last dimension before being able to enter the End; therefore expect mobs to be a LOT tougher. Every mob has been buffed in this dimension, increasing their health by 5 times, and their damage by 4 times of their original value."
+				""
+				"Beware! Spening time in the Abyss will corrupt your mind! Eventually, you will start taking damage. To prevent this, leave the Abyss, or make an Anti Infection Essence (bottom right of this chapter)."
+			]
+			dependencies: ["414F2D769FC80FDA"]
+			id: "194C54AD8AF1E938"
+			tasks: [{
+				id: "31C860C4E6DE7A49"
+				type: "dimension"
+				icon: "theabyss:tenuem_fire"
+				dimension: "theabyss:the_abyss"
+			}]
+			rewards: [{
+				id: "649672107B4C8E99"
+				type: "item"
+				item: "contenttweaker:instant_bandage"
+				count: 16
+			}]
+		}
+		{
+			title: "Ores of the Abyss"
+			icon: "theabyss:loran_ore"
+			x: 1.0d
+			y: -1.0d
+			description: ["Dig for some of the Ores of the Abyss."]
+			dependencies: ["194C54AD8AF1E938"]
+			id: "741A145DA4EC797A"
+			tasks: [
+				{
+					id: "7519D0F70031DF9B"
+					type: "item"
+					item: "theabyss:loran"
+					count: 10L
+				}
+				{
+					id: "4B2B82117D45CE50"
+					type: "item"
+					item: "theabyss:glacerythe_gem"
+					count: 10L
+				}
+				{
+					id: "4EA73F7B21B33315"
+					type: "item"
+					item: "theabyss:incorythe_gem"
+					count: 3L
+				}
+			]
+			rewards: [{
+				id: "1D1662DC7115CBB3"
+				type: "item"
+				item: "theabyss:loran"
+				count: 24
+			}]
+		}
+		{
+			title: "Phantom Soul and Titan Bones"
+			x: -1.0d
+			y: -2.0d
+			description: ["Slay some Abyss Phantoms for their drops, and collect some Titan Bones from the Abyss!"]
+			dependencies: ["194C54AD8AF1E938"]
+			id: "67895A8CA9C1F2CE"
+			tasks: [
+				{
+					id: "43B9D0455DEAA7D4"
+					type: "item"
+					item: "theabyss:phantom_soul_item"
+					count: 4L
+				}
+				{
+					id: "4A3874E3A93DEBF0"
+					type: "item"
+					item: "theabyss:broken_bone"
+					count: 10L
+				}
+			]
+			rewards: [{
+				id: "136D8F673873EB34"
+				type: "item"
+				item: "theabyss:cooked_deer_beef"
+				count: 16
+			}]
+		}
+		{
+			title: "Phantom Essence"
+			icon: "theabyss:phantom_essence"
+			x: -1.0d
+			y: -3.0d
+			description: ["Combine some Broken Titan Bones into Titan Bones, then combine it further withsome Phantom Souls for a a Phantom Essence."]
+			dependencies: ["67895A8CA9C1F2CE"]
+			id: "69CC9F7503850443"
+			tasks: [
+				{
+					id: "44242A6A60B16909"
+					type: "item"
+					item: "theabyss:fixed_bone"
+				}
+				{
+					id: "0DBC3904D6940B2D"
+					type: "item"
+					item: "theabyss:phantom_essence"
+				}
+			]
+			rewards: [{
+				id: "7A72C9FD541A9EC6"
+				type: "item"
+				item: "theabyss:ignisithe_gem"
+				count: 8
+			}]
+		}
+		{
+			title: "Unorithe Ingot"
+			icon: "theabyss:unorithe_ingot"
+			x: 0.0d
+			y: -2.0d
+			description: ["Make some Phantom Ingots, then combine them with Titan Bones and Netherite for an Unorithe Ingot!"]
+			dependencies: ["69CC9F7503850443"]
+			id: "0CACF6F380BE80F7"
+			tasks: [
+				{
+					id: "3E78686095C834CF"
+					type: "item"
+					item: "theabyss:phantom_ingot"
+				}
+				{
+					id: "22B81E982C0F2274"
+					type: "item"
+					item: "theabyss:unorithe_ingot"
+				}
+			]
+			rewards: [{
+				id: "2F4EAD0719142779"
+				type: "item"
+				item: "theabyss:aboranys_gem"
+				count: 8
+			}]
+		}
+		{
+			icon: "theabyss:scorpion_eye"
+			x: -1.0d
+			y: 0.0d
+			description: ["Slay some Scorpions and End Spiders in the Abyss for their drops!"]
+			dependencies: ["194C54AD8AF1E938"]
+			id: "26CD78CED7CDADB0"
+			tasks: [
+				{
+					id: "5BB0D730BC38C0C2"
+					type: "item"
+					item: "theabyss:scorpion_eye"
+				}
+				{
+					id: "6795E545E95763A8"
+					type: "item"
+					item: "theabyss:nether_nugget"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "211FF7284D7C1259"
+				type: "item"
+				item: "theabyss:anima_nugget"
+				count: 5
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			description: ["A Loran Energy can power certain spells and mechanics of the mod."]
+			dependencies: ["741A145DA4EC797A"]
+			id: "457A83EB49097D80"
+			tasks: [{
+				id: "16ED1605FE9A364A"
+				type: "item"
+				item: {
+					id: "theabyss:loran_energy"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "29E09475C8961920"
+				type: "item"
+				item: "theabyss:loran"
+				count: 16
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: ["Craft an Arcane Workbench! This machine can create Rings that can cast spells at the cost of Somnium."]
+			dependencies: ["457A83EB49097D80"]
+			id: "7C93D037ACE363CE"
+			tasks: [{
+				id: "2DA3A87D1C2CBC85"
+				type: "item"
+				item: "theabyss:arcane_workbench"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "3B567DE05EC67A81"
+				type: "item"
+				item: "theabyss:incorythe_gem"
+				count: 2
+			}]
+		}
+		{
+			title: "Vitae into Life Stone"
+			icon: "theabyss:flos_vitae"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Find some Vitae Flowers inside the Abyss! Standing in the Flower will give you constant regeneration; however, you can't directly collect the Flower (not even with Shears)."
+				""
+				"Instead, breaking the Flower will give you Vitae Dust, which you can convert into Life Nuggets and a Life Stone..."
+			]
+			dependencies: ["194C54AD8AF1E938"]
+			id: "6AA08C1F95426959"
+			tasks: [
+				{
+					id: "50C78D661DC7D913"
+					type: "item"
+					item: "theabyss:vitae_dust"
+					count: 8L
+				}
+				{
+					id: "644E88C08281B9EE"
+					type: "item"
+					item: "theabyss:vitae_nugget"
+					count: 8L
+				}
+				{
+					id: "74B57FA3689B2CF5"
+					type: "item"
+					item: "theabyss:vitae_stone"
+				}
+			]
+			rewards: [{
+				id: "2DE7698FD74D9283"
+				type: "item"
+				item: "theabyss:thunder_nugget"
+				count: 8
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			description: ["Craft a Ring! Rings can be upgraded into several spellcasting Rings that use Somnium for each charge."]
+			dependencies: ["457A83EB49097D80"]
+			id: "612EFFB828B49FC3"
+			tasks: [{
+				id: "4C5BBE74E093AF31"
+				type: "item"
+				item: {
+					id: "theabyss:ring_of_ring"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "749949C2D0BE32C6"
+				type: "item"
+				item: "theabyss:incorythe_gem"
+				count: 2
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.0d
+			description: ["Craft a Somnium Extractor! This machine allows for the creation of Somnium a material for spellcasting. Simply place some Loran in the left slot and a Loran Energy in the top slot, and let the machine combine them!"]
+			dependencies: ["457A83EB49097D80"]
+			id: "63C98B54C992F694"
+			tasks: [{
+				id: "2779397AE5EB4BAC"
+				type: "item"
+				item: "theabyss:somnium_extractor"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "2B8D67970C567209"
+				type: "item"
+				item: "theabyss:incorythe_gem"
+				count: 2
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: ["Obtain some Somnium from the Somnium Extractor."]
+			dependencies: ["63C98B54C992F694"]
+			id: "6C9151EC7D4AFDE3"
+			tasks: [{
+				id: "3051DA68A556886F"
+				type: "item"
+				item: "theabyss:somnium"
+				count: 12L
+			}]
+			rewards: [{
+				id: "4226E0839DF30F6C"
+				type: "item"
+				item: "theabyss:glacerythe_gem"
+				count: 10
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			description: ["Make some bottles of Somnium. Drinking this will fill up your Somnium bar, above your hunger bar; allowing you to cast spells from the Abyss!"]
+			dependencies: ["6C9151EC7D4AFDE3"]
+			id: "26ADED72A6AAED60"
+			tasks: [{
+				id: "2F789D6A09895FCA"
+				type: "item"
+				item: "theabyss:bottle_of_somnium"
+				count: 4L
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "444A1B60395B01A4"
+				type: "item"
+				item: "theabyss:caverna_crystal"
+				count: 2
+			}]
+		}
+		{
+			title: "Aurel Powder"
+			icon: "theabyss:aurel_powder"
+			x: 2.0d
+			y: 1.0d
+			description: ["Make some Aurel Powder! The Abyss Crystals can be converted into each other, at the cost of some material. But it's best to find the Crystal you need, as each craft takes 2 Crystals to make 1!"]
+			dependencies: ["26ADED72A6AAED60"]
+			id: "208FF3ED0292DDF9"
+			tasks: [
+				{
+					id: "286F14D34F7BF48F"
+					type: "item"
+					item: "theabyss:mortar_and_pestle"
+					match_nbt: false
+				}
+				{
+					id: "46AEF8C334673A94"
+					type: "item"
+					item: "theabyss:aurel_powder"
+					count: 4L
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "6C5C467A6B988B52"
+				type: "item"
+				item: "theabyss:abyss_crystal_shard"
+				count: 4
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			description: [
+				"Some Life Stones can be convereted into a Ring of Regen, which, when used, will give Regeneration to the player at the cost of Somnium."
+				""
+				"However it's best not to use it for its short effect, and instead, it's better to convert it into a Healing Campfire..."
+			]
+			dependencies: [
+				"6AA08C1F95426959"
+				"612EFFB828B49FC3"
+				"208FF3ED0292DDF9"
+				"7C93D037ACE363CE"
+			]
+			id: "63863FE58ED436A0"
+			tasks: [{
+				id: "79075FFF7A46649E"
+				type: "item"
+				item: {
+					id: "theabyss:ring_of_reg"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "7DC5E14D54E0BECC"
+				type: "item"
+				item: "theabyss:somnium_damage_upragde"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"A Healing Campfire gives constant Regeneration II in a 10 block radius around it. Very handy!"
+				""
+				"Crafting 2 Healing Campfires will allow you to juggle it and move forward in a situation where you would normally take constant damage..."
+				""
+				"I wonder if such a situation would ever come up... Hmmmm......"
+			]
+			dependencies: ["63863FE58ED436A0"]
+			size: 2.0d
+			id: "6D2E01F62A279CF8"
+			tasks: [{
+				id: "4EE3D6B4AB0FD93E"
+				type: "item"
+				item: "theabyss:heal_camp_fire"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "770C2182DD8573FD"
+				type: "item"
+				item: "theabyss:somnium_regen_upgrade"
+			}]
+		}
+		{
+			title: "Somnium Infuser"
+			icon: "theabyss:somnium_infuser"
+			x: 4.0d
+			y: 1.0d
+			description: ["Craft some Test Tubes and put them together into a Somnium Infuser! This machine lets you create various Abyss potions. Some of them are quite powerful, so check the Infuser's JEI page!"]
+			dependencies: ["26ADED72A6AAED60"]
+			id: "0EC6F75ED8E32882"
+			tasks: [
+				{
+					id: "67479073E202127A"
+					type: "item"
+					icon: "theabyss:somnium_infuser"
+					item: "theabyss:test_tube"
+					count: 2L
+					match_nbt: false
+				}
+				{
+					id: "086FB6DCF870D61D"
+					type: "item"
+					item: "theabyss:test_tube_head"
+					match_nbt: false
+				}
+				{
+					id: "6E0B7C84625D661B"
+					type: "item"
+					item: "theabyss:somnium_infuser"
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "78D2DAC7B73EBB47"
+				type: "item"
+				item: "theabyss:ender_crystal_shard"
+				count: 4
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			description: ["Finally! The Anti Infection Essence. Drinking this will remove your current infection level and give you temporary immunity to it."]
+			dependencies: ["0EC6F75ED8E32882"]
+			size: 2.0d
+			id: "7D334C8F18D4CE2D"
+			tasks: [{
+				id: "2FF4A527C1DEF720"
+				type: "item"
+				item: "theabyss:anti_infect_essence"
+				count: 3L
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "4451AE0DA75409C0"
+				type: "item"
+				item: "theabyss:somnium_upgrade"
+			}]
+		}
+		{
+			title: "Slime Fusion"
+			x: 1.0d
+			y: -2.0d
+			description: ["Slay some Slime Spiders. And more Slime Spiders. And even more. Until you get a Slime Fusion."]
+			dependencies: ["194C54AD8AF1E938"]
+			id: "38D66BECDA3FAAA0"
+			tasks: [
+				{
+					id: "416FE28F25E4DD01"
+					type: "item"
+					item: "theabyss:slime_stage_1"
+					count: 5L
+				}
+				{
+					id: "0FCB18941E86D2F1"
+					type: "item"
+					item: "theabyss:slime_stage_2"
+					count: 5L
+				}
+				{
+					id: "483FF1AE56B3620F"
+					type: "item"
+					item: "theabyss:slime_stage_3"
+					count: 3L
+				}
+				{
+					id: "3F2C0C682FE4F4CC"
+					type: "item"
+					item: "theabyss:slime_stage_4"
+				}
+			]
+			rewards: [{
+				id: "30FA88CF077CE81F"
+				type: "item"
+				item: "theabyss:aberythe_gem"
+				count: 8
+			}]
+		}
+		{
+			icon: {
+				id: "theabyss:frost_world"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.0d
+			y: -3.0d
+			description: [
+				"The Key of Ice opens the second Abyss dimension, the Frost dimension. This is a dimension that constantly damages the player. (For 1 heart every 1.7 seconds.)"
+				""
+				"You can build the portal frame out of Dark stone, which is a material that spawns underground in the Abyss."
+				""
+				"{image:m1ap:textures/theabyss_portal2.png width:200 height:250 align:1}"
+				""
+				"To prepare for the dimension, I suggest having some kind of constant regeneration effect, along with enough food and emergency bandages:"
+				""
+				"{image:m1ap:textures/frost_dim_items_names.png width:200 height:100 align:1}"
+				""
+				"The Unbreakable Charm of Regeneration II is quite difficult to make, so alternatively you can use 2 Healing Campfires, and juggle between them while moving."
+			]
+			dependencies: [
+				"38D66BECDA3FAAA0"
+				"0CACF6F380BE80F7"
+			]
+			id: "5D1FE3280A021D7E"
+			tasks: [
+				{
+					id: "6CD701D13BABC383"
+					type: "item"
+					item: {
+						id: "theabyss:frost_world"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "1B507CFACDF80E7B"
+					type: "item"
+					item: "theabyss:dark_stone"
+					count: 10L
+				}
+			]
+			rewards: [{
+				id: "5CEEDECD336AB9B4"
+				type: "item"
+				item: "theabyss:fixed_bone"
+				count: 6
+			}]
+		}
+		{
+			title: "Frost World"
+			icon: "theabyss:anima_fire"
+			x: 0.0d
+			y: -3.0d
+			description: ["Are you prepared...? Then enter the Frost dimension...!"]
+			dependencies: ["5D1FE3280A021D7E"]
+			id: "187078274DBE8DD7"
+			tasks: [{
+				id: "237E7502DF361E90"
+				type: "dimension"
+				icon: "theabyss:anima_fire"
+				dimension: "theabyss:frost_world"
+			}]
+			rewards: [
+				{
+					id: "16622F9356D27744"
+					type: "item"
+					item: "contenttweaker:beef_burger"
+					count: 20
+				}
+				{
+					id: "44CA654E6C803384"
+					type: "item"
+					item: "contenttweaker:instant_bandage"
+					count: 20
+				}
+			]
+		}
+		{
+			title: "Icora Stone"
+			icon: "theabyss:icora_flower"
+			x: -1.0d
+			y: -4.0d
+			description: ["Inside the Frost dimension, you will need to break all (non-dead) plants to obtain some Icora Nuggets!"]
+			dependencies: ["187078274DBE8DD7"]
+			id: "79EFF1ABB9C10278"
+			tasks: [
+				{
+					id: "1407580B88733551"
+					type: "item"
+					item: "theabyss:icora_nugget"
+					count: 8L
+				}
+				{
+					id: "45280BB1169AF594"
+					type: "item"
+					item: "theabyss:icora_stone"
+				}
+			]
+			rewards: [{
+				id: "0230D65CF49E311B"
+				type: "item"
+				item: "theabyss:fusion_ingot"
+				count: 16
+			}]
+		}
+		{
+			title: "Bricked Knight Ingot"
+			icon: "theabyss:bricked_knight_ingot"
+			x: 1.0d
+			y: -4.0d
+			description: ["Inside the Frost dimension, you will need to slay some enemies to obtain Knight Shards!"]
+			dependencies: ["187078274DBE8DD7"]
+			id: "53363034F7DFA9D5"
+			tasks: [
+				{
+					id: "0B89907B0E0F7EFD"
+					type: "item"
+					item: "theabyss:knight_shard"
+					count: 8L
+				}
+				{
+					id: "4364DCAD5A9E6126"
+					type: "item"
+					item: "theabyss:bricked_knight_ingot"
+				}
+			]
+			rewards: [{
+				id: "1CDD384A52227F36"
+				type: "item"
+				item: "theabyss:knight_shard"
+				count: 8
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.0d
+			description: ["It is finally time. You have beaten the Twilight Forest, Atum, The Abyss, and progressed in Apotheosis \\& Astral Sorcery. It is time, to enter the End."]
+			dependencies: [
+				"79EFF1ABB9C10278"
+				"53363034F7DFA9D5"
+			]
+			size: 2.0d
+			id: "1E429FFCC825C1ED"
+			tasks: [{
+				id: "7A0A483AF999217F"
+				type: "item"
+				item: "contenttweaker:ingot_of_culmination"
+				count: 32L
+			}]
+			rewards: [{
+				id: "644770AF46310359"
+				type: "item"
+				item: {
+					id: "theabyss:nosaj_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -5.0d
+			description: ["It's time to \"end\" it all!"]
+			dependencies: ["1E429FFCC825C1ED"]
+			size: 3.0d
+			id: "62F8A4A36F455F94"
+			tasks: [{
+				id: "656C9FCEA3A29773"
+				type: "item"
+				item: "minecraft:ender_eye"
+			}]
+			rewards: [{
+				id: "4326B9EA66BFA5B0"
+				type: "choice"
+				icon: "contenttweaker:ingot_of_culmination"
+				table_id: 301258316508463300L
+			}]
+		}
+	]
+}

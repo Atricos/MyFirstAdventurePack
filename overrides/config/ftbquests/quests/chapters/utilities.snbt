@@ -1,0 +1,296 @@
+{
+	id: "4B321FB0DE502086"
+	group: "42AE90412816738B"
+	order_index: 4
+	filename: "utilities"
+	title: "Utilities"
+	icon: "simplybackpacks:epicbackpack"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 1.0d
+			y: 3.0d
+			description: ["Backpacks! More inventory space! You can equip them in a 'Back' slot and access one with a keybind (default: B)!"]
+			id: "369DB3376F487B5C"
+			tasks: [{
+				id: "1C833B7100A16253"
+				type: "item"
+				item: "simplybackpacks:commonbackpack"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "5E3A066B8D1AAC2B"
+				type: "item"
+				item: "minecraft:leather"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["369DB3376F487B5C"]
+			id: "0E2C2A8EF3034BCB"
+			tasks: [{
+				id: "0AB40C30632E29D5"
+				type: "item"
+				item: "simplybackpacks:uncommonbackpack"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "33DEED58225C006E"
+				type: "choice"
+				table_id: 4470339621382825666L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			dependencies: ["0E2C2A8EF3034BCB"]
+			id: "72FF1FDAB8CAA7DF"
+			tasks: [{
+				id: "2B921A6E62B9417F"
+				type: "item"
+				item: "simplybackpacks:rarebackpack"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "1E56B1F78BB7DF46"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 3
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			dependencies: ["72FF1FDAB8CAA7DF"]
+			id: "6B63006B06902D7D"
+			tasks: [{
+				id: "41D6D0C254997EE2"
+				type: "item"
+				item: "simplybackpacks:epicbackpack"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "487E637FD831CEE0"
+				type: "item"
+				item: "theabyss:aboranys_gem"
+				count: 3
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			dependencies: ["6B63006B06902D7D"]
+			id: "7DF493DB45A43E11"
+			tasks: [{
+				id: "7B2F2E1621B3105E"
+				type: "item"
+				item: "simplybackpacks:ultimatebackpack"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "27946F48091695EB"
+				type: "item"
+				item: "theabyss:aboranys_gem"
+				count: 5
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			description: ["The XP Tome can store all experience the player has currently (with a Shift Right Click) and refund it (with a Right Click)"]
+			id: "080FCD04B88F1848"
+			tasks: [{
+				id: "53FE412923E71F8C"
+				type: "item"
+				item: {
+					id: "xpbook:xp_tome"
+					Count: 1b
+					tag: { }
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "3624F0E12E61E094"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			description: ["Waystones let you teleport to other Waystones! Each can have a unique name."]
+			id: "4B5B2E2FF3B02517"
+			tasks: [{
+				id: "7F93C3D07D3DD105"
+				type: "item"
+				item: "waystones:waystone"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "0B4B44CFE0282B93"
+				type: "item"
+				item: "waystones:portstone"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			description: ["The Return Scroll is a one-time use item that can return you to the last Waystone you visited."]
+			id: "723F0EB63BD338A3"
+			tasks: [{
+				id: "30DD159D5B9A6204"
+				type: "item"
+				item: "waystones:return_scroll"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "42E7904BDCB21618"
+				type: "item"
+				item: "waystones:return_scroll"
+				count: 3
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			description: ["The Return Scroll is a one-time use item that can be bound to a Waystone with a Right Click, and can be used to teleport to the bound Waystone if Right Click is helf for a couple seconds."]
+			id: "10220ED4ABA80EEF"
+			tasks: [{
+				id: "58DCDE16E74BA963"
+				type: "item"
+				item: "waystones:bound_scroll"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "34B3FA1A89CD72A5"
+				type: "item"
+				item: "waystones:warp_plate"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			description: ["The Warp Scroll is a one-time use item that lets you teleport to any Waystone from a selection menu."]
+			id: "22526CDE7C27901A"
+			tasks: [{
+				id: "2B301CD21638B1DA"
+				type: "item"
+				item: "waystones:warp_scroll"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "032D3A2DE840C5AF"
+				type: "item"
+				item: "minecraft:ender_pearl"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			description: [
+				"Colossal Chests can be build out of a hollow cube of Colossal Chest Walls, with the Colossal Chest Core placed anywhere in the walls."
+				""
+				"{image:m1ap:textures/colossal_chest.png width:210 height:100 align:1 fit:true}"
+				""
+				"You can also add Colossal Chest Interfaces into any of the walls to have Hoppers interact with the Chest through those Interfaces."
+				""
+				"WARNING! If the Colossal Chest Core gets destroyed, all your items will fly out of the Chest!"
+			]
+			id: "685FE52A36ED549A"
+			tasks: [
+				{
+					id: "46334010CB56D3E5"
+					type: "item"
+					item: "colossalchests:colossal_chest_wood"
+					match_nbt: false
+				}
+				{
+					id: "0A292D3A487509E9"
+					type: "item"
+					item: "colossalchests:chest_wall_wood"
+					count: 25L
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "4966FB3C0461A435"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 40
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			description: ["The Essence of Raging life is a difficult-to-craft item that acts as an infinite Boal Meal."]
+			id: "487A4AA3C534D86D"
+			tasks: [{
+				id: "17139F4974264A71"
+				type: "item"
+				item: "enigmaticlegacy:infinimeal"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "62C5E228C16FA1FD"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 1s
+							id: "minecraft:mending"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			description: ["If you have this book in your inventory, Hoglins will be passive around you. However in return, you won't be able to damage friendly creatures."]
+			id: "7F1EEC7E8875DEAD"
+			tasks: [{
+				id: "41B63D2C12867E3F"
+				type: "item"
+				item: "enigmaticlegacy:animal_guide"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "606F8E7F1686C28D"
+				type: "choice"
+				icon: "minecraft:carrot"
+				table_id: 3134562667535670500L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			description: ["The Exquisite Ring acts as any piece of Gold Armor in that Piglins will be neutral to you when worn."]
+			id: "284C1442963354EF"
+			tasks: [{
+				id: "4FF2EE34BAE14257"
+				type: "item"
+				item: "enigmaticlegacy:gem_ring"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "794D2F0ED9F48D08"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 4s
+							id: "minecraft:unbreaking"
+						}]
+					}
+				}
+			}]
+		}
+	]
+}

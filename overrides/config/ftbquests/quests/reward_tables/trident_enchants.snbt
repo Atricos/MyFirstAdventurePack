@@ -1,0 +1,32 @@
+{
+	id: "0D1BD4569ABCA448"
+	order_index: 4
+	title: "Trident Enchants"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "minecraft:enchanted_book"
+				Count: 1b
+				tag: {
+					StoredEnchantments: [{
+						lvl: 2s
+						id: "minecraft:riptide"
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				id: "minecraft:enchanted_book"
+				Count: 1b
+				tag: {
+					StoredEnchantments: [{
+						lvl: 1s
+						id: "minecraft:channeling"
+					}]
+				}
+			}
+		}
+	]
+}

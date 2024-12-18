@@ -1,0 +1,11 @@
+{
+	id: "73E4D4811CBB2E80"
+	order_index: 6
+	title: "Burgers"
+	loot_size: 1
+	rewards: [
+		{ item: "contenttweaker:beef_burger", count: 3 }
+		{ item: "contenttweaker:pork_burger", count: 3 }
+		{ item: "contenttweaker:chicken_burger", count: 3 }
+	]
+}

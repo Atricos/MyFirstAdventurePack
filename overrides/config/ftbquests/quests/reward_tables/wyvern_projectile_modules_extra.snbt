@@ -1,0 +1,11 @@
+{
+	id: "2822F775EFD36EBB"
+	order_index: 9
+	title: "Wyvern Projectile Modules Extra"
+	loot_size: 1
+	rewards: [
+		{ item: "draconicevolution:wyvern_proj_accuracy_module" }
+		{ item: "draconicevolution:wyvern_proj_grav_comp_module" }
+		{ item: "draconicevolution:wyvern_proj_penetration_module" }
+	]
+}

@@ -1,0 +1,32 @@
+{
+	id: "5DE7AF672F34B006"
+	order_index: 3
+	title: "Throwing Weapon Enchants"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "minecraft:enchanted_book"
+				Count: 1b
+				tag: {
+					StoredEnchantments: [{
+						lvl: 1s
+						id: "spartanweaponry:propel"
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				id: "minecraft:enchanted_book"
+				Count: 1b
+				tag: {
+					StoredEnchantments: [{
+						lvl: 1s
+						id: "spartanweaponry:razors_edge"
+					}]
+				}
+			}
+		}
+	]
+}

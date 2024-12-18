@@ -1,0 +1,11 @@
+{
+	id: "6CF903718C56CFCB"
+	order_index: 7
+	title: "Apotheosis Arrows"
+	icon: "apotheosis:obsidian_arrow"
+	loot_size: 1
+	rewards: [
+		{ item: "apotheosis:obsidian_arrow", count: 10 }
+		{ item: "apotheosis:broadhead_arrow", count: 10 }
+	]
+}

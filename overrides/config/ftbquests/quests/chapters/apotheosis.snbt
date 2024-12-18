@@ -1,0 +1,769 @@
+{
+	id: "06C6F567FF67EF61"
+	group: "42AE90412816738B"
+	order_index: 2
+	filename: "apotheosis"
+	title: "Apotheosis"
+	icon: "minecraft:enchanting_table"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -3.0d
+		y: -1.0d
+		width: 5.0d
+		height: 5.0d
+		rotation: 0.0d
+		image: "m1ap:textures/apotheosis.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: true
+	}]
+	quests: [
+		{
+			x: -2.0d
+			y: -4.0d
+			description: [
+				"The Apotheosis mod overhauls enchanting, and adds several tiers of tools, weapons \\& armor that drop from rare boss creatures (or can alternatively be looted from chests)."
+				""
+				"Enchantment levels now go up the 100, and to get the best enchantments, you will need to max out three stats: Eterna (green - controls the enchantment levels), Quanta (red - controls the power of the enchantments), and Arcana (purple - controls the rarity and number of enchantments)."
+				""
+				"Additionally, Quanta adds a fourth stat called \"Rectification\". If your Quanta is too high, you will start receiving negative enchantments. Rectification rectifies this - if Quanta and Rectification are both high, you will no longer see negative enchantments."
+				""
+				"To boost these stats, the mod offers various tiers of Bookshelves, as well as several experience boosting items."
+			]
+			size: 2.0d
+			id: "1AF3E474CF6B7F77"
+			tasks: [{
+				id: "5868D6774EB11908"
+				type: "item"
+				item: "minecraft:enchanting_table"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "25EF6FCADAEA36C1"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "apotheosis:apoth_chronicle"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.5d
+			description: ["Apotheosis has reworked the Fletching Table, allowing you to create a couple of different types of arrows."]
+			id: "56E10F4CCF9D1EFD"
+			tasks: [{
+				id: "0293CEA1BF609E5C"
+				type: "item"
+				item: "minecraft:fletching_table"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "4709AFE0CEB7198F"
+				type: "choice"
+				icon: "apotheosis:obsidian_arrow"
+				table_id: 7852311211517857739L
+			}]
+		}
+		{
+			x: -3.0d
+			y: -6.0d
+			description: ["Apotheosis allows you to craft a Trident. But you may have to jump through some hoops first..."]
+			id: "2C948CEC4201AFBD"
+			tasks: [{
+				id: "1CC813781C880E36"
+				type: "item"
+				item: "apotheosis:inert_trident"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "1B2205B45909326E"
+				type: "item"
+				item: {
+					id: "minecraft:tipped_arrow"
+					Count: 1b
+					tag: {
+						Potion: "apotheosis:long_sundering"
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			x: -3.0d
+			y: -5.0d
+			description: ["Finally, in its true form."]
+			dependencies: [
+				"2C948CEC4201AFBD"
+				"1AF3E474CF6B7F77"
+			]
+			id: "44044813F0BDA570"
+			tasks: [{
+				id: "23FA1B83854E28EE"
+				type: "item"
+				item: {
+					id: "minecraft:trident"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "6598875517CC15E5"
+				type: "item"
+				item: {
+					id: "minecraft:tipped_arrow"
+					Count: 1b
+					tag: {
+						Potion: "apotheosis:long_sundering"
+					}
+				}
+				count: 32
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			description: ["The Altar of the Sea can combine 4 enchanted junk items to create one random enchanted book. However, while it is combining, them, it will drain some experience from the nearest player."]
+			dependencies: ["1AF3E474CF6B7F77"]
+			id: "7A7CABA3637E2ECF"
+			tasks: [{
+				id: "0C2B8D84EEB597F4"
+				type: "item"
+				item: "apotheosis:prismatic_altar"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "0065A23898910FDC"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "apotheosis:obliteration"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -6.0d
+			description: ["Craft an Anvil! This block works just like in vanilla, but an additional feature has been added to it. When dropped onto a book with multiple enchantments on it, it has a chance to split the book into several books, splitting the enchantments too of course."]
+			id: "1D0AEF8EAE92871C"
+			tasks: [{
+				id: "7B7D27827A219D74"
+				type: "item"
+				item: "minecraft:anvil"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "4715C7C2CA5298E2"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "apotheosis:splitting"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			title: "Armor Tomes"
+			x: -2.0d
+			y: -5.5d
+			description: ["These Tomes act like regular books when enchanting, except they can only receive a single type of enchantment. For example, the Tome of Helmets can only accept enchantments that can go on Helmets."]
+			dependencies: ["1AF3E474CF6B7F77"]
+			id: "690DB46375E2ECC9"
+			tasks: [
+				{
+					id: "277D24AF0E2630AD"
+					type: "item"
+					item: "apotheosis:armor_head_book"
+					match_nbt: false
+				}
+				{
+					id: "0E76036211E244AF"
+					type: "item"
+					item: "apotheosis:armor_chest_book"
+					match_nbt: false
+				}
+				{
+					id: "5A2BBF500E16210C"
+					type: "item"
+					item: "apotheosis:armor_legs_book"
+					match_nbt: false
+				}
+				{
+					id: "07F5A1E36EFC1880"
+					type: "item"
+					item: "apotheosis:armor_feet_book"
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "55FA45C0387DBA3A"
+				type: "choice"
+				icon: "apotheosis:null_book"
+				table_id: 8435585192199338847L
+			}]
+		}
+		{
+			title: "Tool Tomes"
+			x: -1.0d
+			y: -5.0d
+			description: ["These Tomes act like regular books when enchanting, except they can only receive a single type of enchantment. For example, the Tome of Weaponry can only accept enchantments that can go on Weapons."]
+			dependencies: ["1AF3E474CF6B7F77"]
+			id: "473C4FF1C5361F9C"
+			tasks: [
+				{
+					id: "6F99E7BC609732E0"
+					type: "item"
+					item: "apotheosis:weapon_book"
+					match_nbt: false
+				}
+				{
+					id: "2FFDD9BEE837FACC"
+					type: "item"
+					item: "apotheosis:digger_book"
+					match_nbt: false
+				}
+				{
+					id: "39E4B865763DB6CE"
+					type: "item"
+					item: "apotheosis:fishing_rod_book"
+					match_nbt: false
+				}
+				{
+					id: "17AC457AA0690757"
+					type: "item"
+					item: "apotheosis:bow_book"
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "0EEA713F0D80CC05"
+				type: "choice"
+				icon: "apotheosis:null_book"
+				table_id: 8435585192199338847L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.5d
+			description: ["The Hellshelf series boosts your Eterna and Quanta, and allows for more specified bookshelves along its upgrade path."]
+			hide_dependency_lines: true
+			dependencies: ["1AF3E474CF6B7F77"]
+			id: "7410BFFA3E8A3BAD"
+			tasks: [{
+				id: "10395511C5670B2D"
+				type: "item"
+				item: "apotheosis:hellshelf"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "53B3041A3E2ACDF2"
+				type: "item"
+				item: "apotheosis:uncommon_shard"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			dependencies: ["7410BFFA3E8A3BAD"]
+			id: "2B5429A1BAB23265"
+			tasks: [{
+				id: "3BF0011BE61CBDAA"
+				type: "item"
+				item: {
+					id: "apotheosis:hellshelf"
+					Count: 1b
+					tag: {
+						Enchantments: [{
+							lvl: 3s
+							id: "apotheosis:hell_infusion"
+						}]
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [{
+				id: "6D01467B0E622DE6"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 5s
+							id: "apotheosis:hell_infusion"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.5d
+			description: ["The Enchantment Library can store your Enchanted Books extremely efficiently. It adds up the stored levels, and you can ask for any Enchantment level to pull out."]
+			dependencies: ["2B5429A1BAB23265"]
+			id: "5BEE2B743C250E69"
+			tasks: [{
+				id: "2E3E59187DCD0CE1"
+				type: "item"
+				item: "apotheosis:enchantment_library"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "608F5ADB7DA4CF33"
+				type: "item"
+				item: {
+					id: "apotheosis:farmers_leash"
+					Count: 1b
+					tag: {
+						Damage: 0
+						entity_data: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.5d
+			description: ["The Library of Alexendria is an upgraded form of the Enchantment Library, allowing for an even higher maximum level on each enchantment stored."]
+			dependencies: ["5BEE2B743C250E69"]
+			id: "2F358EAB5B949E87"
+			tasks: [{
+				id: "7803C785152AA509"
+				type: "item"
+				item: "apotheosis:ender_library"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "218EC7CC516A0ED9"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 4s
+							id: "apotheosis:natures_blessing"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			dependencies: ["2B5429A1BAB23265"]
+			id: "5892DBB37B35B2CD"
+			tasks: [{
+				id: "794B508CF73A13F8"
+				type: "item"
+				item: "apotheosis:glowing_hellshelf"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "4077776B0EBB760F"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 4s
+							id: "apotheosis:rebounding"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			description: ["The Shelf of Sight gives you +1 Enchantment Clue, meaning that whenever you are about to enchant an item with some number of effects, this bookshelf will reveal one of them to you. This effect stacks, so having about 5 of these bookshelves will guarantee that you know what you'll enchant your item with."]
+			dependencies: ["2B5429A1BAB23265"]
+			id: "45A76C0CAD504305"
+			tasks: [{
+				id: "68275EF6CB888311"
+				type: "item"
+				item: "apotheosis:sightshelf"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "11FFFC8A8001577E"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 4s
+							id: "apotheosis:berserk"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			description: ["The Shelf of Masterful Sight is an upgraded version of the Shelf of Sight, giving you 2 Clues per bookshelf."]
+			dependencies: ["45A76C0CAD504305"]
+			id: "2A33DC0C7EE14BF3"
+			tasks: [{
+				id: "2F6983219F24FC98"
+				type: "item"
+				item: "apotheosis:sightshelf_t2"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "6E1A0FDD654F1DD4"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 5s
+							id: "apotheosis:bane_of_illagers"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.5d
+			description: ["The Seashelf series is a great option for boosting your Eterna and Arcana, as its base materials are easily accessible from the overworld alone."]
+			hide_dependency_lines: true
+			dependencies: ["1AF3E474CF6B7F77"]
+			id: "55F74A2FDDB8DA6E"
+			tasks: [{
+				id: "4D001F35C04844A6"
+				type: "item"
+				item: "apotheosis:seashelf"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "0D3793D1807BAC5E"
+				type: "item"
+				item: "apotheosis:uncommon_shard"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.5d
+			dependencies: ["55F74A2FDDB8DA6E"]
+			id: "31C78CAB76E3F166"
+			tasks: [{
+				id: "338BE3CF0545318D"
+				type: "item"
+				item: {
+					id: "apotheosis:seashelf"
+					Count: 1b
+					tag: {
+						Enchantments: [{
+							lvl: 3s
+							id: "apotheosis:sea_infusion"
+						}]
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [{
+				id: "6FE7F1F03D7FAD96"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 5s
+							id: "apotheosis:sea_infusion"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			dependencies: ["31C78CAB76E3F166"]
+			id: "4A3C4E8C12E64A39"
+			tasks: [{
+				id: "56B894752A7D9D8C"
+				type: "item"
+				item: "apotheosis:crystal_seashelf"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "5C0479571FEF5E3D"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 4s
+							id: "apotheosis:magic_protection"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.5d
+			dependencies: ["31C78CAB76E3F166"]
+			id: "430C5B203E5F4644"
+			tasks: [{
+				id: "0659AD163AC298F0"
+				type: "item"
+				item: "apotheosis:heart_seashelf"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "67658AE9CDC955CE"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 4s
+							id: "apotheosis:icy_thorns"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: -4.0d
+			dependencies: ["31C78CAB76E3F166"]
+			id: "1069BB940413E5BB"
+			tasks: [{
+				id: "42A608A4B435F290"
+				type: "item"
+				item: "apotheosis:rectifier"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "33715F44129402D8"
+				type: "item"
+				item: "apotheosis:prismatic_web"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.0d
+			description: ["The Beeshelf maxes out your Quanta at the cost of 15 Eterna. However, without any Rectifiation, a maxed Quanta bar will start giving your items lots of negative enchantments!"]
+			hide_dependency_lines: true
+			dependencies: ["1AF3E474CF6B7F77"]
+			id: "494F8ADEF2A0D7BD"
+			tasks: [{
+				id: "567969B342AB35A9"
+				type: "item"
+				item: "apotheosis:beeshelf"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "53EE4B24EC9BEF17"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "apotheosis:long_resistance"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: [
+				"The Melonshelf is a purely negative effect bookshelf, reducing your Eterna by 1 point, and your Quanta by 10%."
+				""
+				"Why would you want this...? Well, there are several items in Apotheosis which require your Eterna, Quanta and Arcana to be in a very specific interval. This shelf can help you get to that internal."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1AF3E474CF6B7F77"]
+			id: "18815C225F4B085E"
+			tasks: [{
+				id: "435C010C069F10F0"
+				type: "item"
+				item: "apotheosis:melonshelf"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "2E8C00062234E313"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "apotheosis:long_absorption"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			description: ["The Shelf of Hellbound Rectification combines some elements of the Seashelf and Hellshelf series to boost your Rectification."]
+			hide_dependency_lines: true
+			dependencies: ["1069BB940413E5BB"]
+			id: "6823D239352639EA"
+			tasks: [{
+				id: "3A9574F01075B4F5"
+				type: "item"
+				item: "apotheosis:rectifier_t2"
+			}]
+			rewards: [{
+				id: "5A6A1C22C21815F2"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "apotheosis:scavenger"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			description: [
+				"The Charm of Regeneration II is an item crafted by combining Regeneration II Potions. It can be activated and deactived by right clicking. However, while it is active, it constantly drains its durability."
+				""
+				"This quest asks for the Unbreakable version of this item, which is crafted with a very specific Eterna/Quanta/Arcana enchantment, and gives you Regeneration II forever, while its in your inventory."
+			]
+			dependencies: ["18815C225F4B085E"]
+			id: "14EC92EE46B53DE1"
+			tasks: [{
+				id: "3B64A6A122C37E71"
+				type: "item"
+				item: {
+					id: "apotheosis:potion_charm"
+					Count: 1b
+					tag: {
+						Unbreakable: 1
+						Damage: 0
+						Potion: "minecraft:strong_regeneration"
+					}
+				}
+			}]
+			rewards: [{
+				id: "057FA33E2F0F390B"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 4s
+							id: "apotheosis:magic_protection"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			description: [
+				"The Charm of Strength II is an item crafted by combining Strength II Potions. It can be activated and deactived by right clicking. However, while it is active, it constantly drains its durability."
+				""
+				"This quest asks for the Unbreakable version of this item, which is crafted with a very specific Eterna/Quanta/Arcana enchantment, and gives you Strength II forever, while its in your inventory."
+			]
+			dependencies: ["18815C225F4B085E"]
+			id: "5E58B01FA2B79E51"
+			tasks: [{
+				id: "79654DEA7FD89AC0"
+				type: "item"
+				item: {
+					id: "apotheosis:potion_charm"
+					Count: 1b
+					tag: {
+						Unbreakable: 1
+						Damage: 0
+						Potion: "minecraft:strong_strength"
+					}
+				}
+			}]
+			rewards: [{
+				id: "30A01D3197A0D724"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 5s
+							id: "apotheosis:shield_bash"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			description: [
+				"The Charm of Fire Resistance is an item crafted by combining Fire Resistance Potions. It can be activated and deactived by right clicking. However, while it is active, it constantly drains its durability."
+				""
+				"This quest asks for the Unbreakable version of this item, which is crafted with a very specific Eterna/Quanta/Arcana enchantment, and gives you Fire Resistance forever, while its in your inventory."
+			]
+			dependencies: ["18815C225F4B085E"]
+			id: "697D7ABD0FA6F3B1"
+			tasks: [{
+				id: "67B689C9E69F942C"
+				type: "item"
+				item: {
+					id: "apotheosis:potion_charm"
+					Count: 1b
+					tag: {
+						Unbreakable: 1
+						Damage: 0
+						Potion: "minecraft:long_fire_resistance"
+					}
+				}
+			}]
+			rewards: [{
+				id: "135A95674A170662"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 4s
+							id: "apotheosis:earths_boon"
+						}]
+					}
+				}
+			}]
+		}
+	]
+}

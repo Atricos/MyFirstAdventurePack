@@ -1,0 +1,830 @@
+[
+	{
+		"mob": "twilightforest:adherent",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:armored_giant",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:bighorn_sheep",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:blockchain_goblin",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:bunny",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:death_tome",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:deer",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:fire_beetle",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:giant_miner",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:goblin_knight_lower",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:goblin_knight_upper",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:harbinger_cube",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:hedge_spider",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:helmet_crab",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:hostile_wolf",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:hydra",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:hydra_mortar",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:ice_crystal",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:king_spider",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:knight_phantom",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:kobold",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:lich",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:lich_minion",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:loyal_zombie",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:maze_slime",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:mini_ghast",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:minoshroom",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:minotaur",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:mist_wolf",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:mosquito_swarm",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:naga",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:penguin",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:pinch_beetle",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:plateau_boss",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:quest_ram",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:raven",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:redcap",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:redcap_sapper",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:rising_zombie",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:roving_cube",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:skeleton_druid",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:slider",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:slime_beetle",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:snow_guardian",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:snow_queen",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:squirrel",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:stable_ice_core",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:swarm_spider",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:tiny_bird",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:tower_broodling",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:tower_ghast",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:tower_golem",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:tower_termite",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:troll",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:unstable_ice_core",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:ur_ghast",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:wild_boar",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:winter_wolf",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:wraith",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:yeti",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "twilightforest:yeti_alpha",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:assassin",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:bandit_warlord",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:barbarian",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:bonestorm",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:brigand",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:camel",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:desert_rabbit",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:desert_wolf",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:forsaken",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:mummy",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:nomad",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:pharaoh",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:quail",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:scarab",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:sergeant",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:serval",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:stoneguard",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:stoneguard_friendly",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:stonewarden",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:stonewarden_friendly",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:tarantula",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:villager_female",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:villager_male",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "atum:wraith",
+		"onjoin": true,
+		"healthmultiply": 2.5,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "theabyss:abylager",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:abyssal_lion",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:abyssal_moth",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:abyssaur",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:brain_walker",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:crystal_golem",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:cyanide_boss",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:deer",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:elder",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:end_spider",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:fire_fly",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:frost_spider",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:glow_pug",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:guard",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:haunted_skeleton",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:hylia_fox",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:ice_knight",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:ice_skeleton",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:infceted_cow",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:infected_creeper",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:infected_phantom",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:infected_spider",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:infected_wolf",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:infected_zombie",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:jungle_lurker",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:laro_fish",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:laro_fish_fly",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:lizard",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:lokus",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:luro_fish",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:magical_deer",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:magician",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:mud_zombie",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:night_hunter",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:nightblade_boss",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:powered_wolf",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:ralu_fish",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:raptor",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:scorpion",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:seeker",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:shattered_zombie",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:slime_spider",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:soul_guard",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:the_roka",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "theabyss:versa_whale",
+		"onjoin": true,
+		"healthmultiply": 2.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "cataclysm:ender_golem",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "cataclysm:ender_guardian",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "cataclysm:endermaptera",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "cataclysm:ignis",
+		"onjoin": true,
+		"healthmultiply": 3.0,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "cataclysm:ignited_revenant",
+		"onjoin": true,
+		"healthmultiply": 3.0,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "cataclysm:nameless_sorcerer",
+		"onjoin": true,
+		"healthmultiply": 5.0,
+		"damagemultiply": 4.0
+	},
+	{
+		"mob": "cataclysm:netherite_monstrosity",
+		"onjoin": true,
+		"healthmultiply": 3.0,
+		"damagemultiply": 2.0
+	},
+	{
+		"mob": "minecraft:ender_dragon",
+		"onjoin": true,
+		"healthmultiply": 10.0,
+		"damagemultiply": 8.0
+	}
+]

@@ -1,0 +1,1082 @@
+{
+	id: "3056E06D609A2451"
+	group: "42AE90412816738B"
+	order_index: 3
+	filename: "astral_sorcery"
+	title: "Astral Sorcery"
+	icon: "astralsorcery:altar_discovery"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.0d
+			y: -1.5d
+			description: [
+				"Make a Luminous Crafting Table! This is the central crafting mechanic of Astral Sorcery. You will be able to upgrade this Table as you move further into the mod."
+				""
+				"The Luminous Crafting Table (later: Altar) uses Starlight as its energy source. Its power will be greater during the night, or in high-starlight-consentration areas (found by a Fosic Resonator)."
+				""
+				"Shift Right Clicking the Astral Tome will allow you to place Constellation Papers inside."
+			]
+			id: "249A01C21CD754D1"
+			tasks: [{
+				id: "6D40959A9A1450A5"
+				type: "item"
+				item: "astralsorcery:altar_discovery"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "09F019A7AE898262"
+				type: "item"
+				item: "astralsorcery:tome"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			description: [
+				"Find some Constellation Papers in Astral Sorcery structures in the Overworld!"
+				""
+				"There are 5 basic Constellations you can discover initially."
+			]
+			id: "38FA9FD8BF7FE626"
+			tasks: [{
+				id: "4B2363A34C48F2AF"
+				type: "item"
+				item: {
+					id: "astralsorcery:constellation_paper"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+				count: 5L
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "77CB5C4B1EE9B941"
+				type: "item"
+				item: "minecraft:iron_ore"
+				count: 6
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			description: ["Make a Resonating Wand! Right Clicking with this tool on the Luminous Crafting Table attempts to start a crafting process."]
+			dependencies: ["249A01C21CD754D1"]
+			id: "173404DEEF6BAC71"
+			tasks: [{
+				id: "6D8BB3810CCB7658"
+				type: "item"
+				item: "astralsorcery:wand"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "5CC07CB88C9EE9DE"
+				type: "item"
+				item: "astralsorcery:marble_raw"
+				count: 40
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.5d
+			description: ["Mine some Rock Crystal from underground!"]
+			id: "2F59CB04D87E2647"
+			tasks: [{
+				id: "72EE727741431E1B"
+				type: "item"
+				item: {
+					id: "astralsorcery:rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "2AF1C0F066905279"
+				type: "item"
+				item: "astralsorcery:rock_crystal_ore"
+				count: 3
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			description: [
+				"Make some Lightwells! Placing a Rock Crystal or an Aquamarine on top will generate some Starlight! The better the material, the more likely it is for more Starlight to be generated. To empty the Lightwell, use a Bucket."
+				""
+				"{image:m1ap:textures/lightwell.png width:150 height:100 align:1}"
+			]
+			dependencies: ["2F59CB04D87E2647"]
+			id: "178C462AC964EC9C"
+			tasks: [{
+				id: "529B32F986DD2D35"
+				type: "item"
+				item: "astralsorcery:well"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "79AC1B14D7511969"
+				type: "item"
+				item: "astralsorcery:aquamarine_sand_ore"
+				count: 6
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			description: ["Get some Starlight out of your Lightwell!"]
+			dependencies: ["178C462AC964EC9C"]
+			id: "78CD43B713DD090D"
+			tasks: [{
+				id: "32FDD8857A730E58"
+				type: "item"
+				item: "astralsorcery:liquid_starlight_bucket"
+			}]
+			rewards: [{
+				id: "79439C546BF1D02F"
+				type: "item"
+				item: "astralsorcery:well"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			description: ["Craft some Illumination Powder! It can be placed down as a simple light source."]
+			dependencies: ["173404DEEF6BAC71"]
+			id: "79A742344DB4B443"
+			tasks: [{
+				id: "5968A6C0FAAC13B5"
+				type: "item"
+				item: "astralsorcery:illumination_powder"
+				count: 16L
+			}]
+			rewards: [{
+				id: "47074C50DBFAA11E"
+				type: "item"
+				item: "minecraft:glowstone"
+				count: 6
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			description: ["Placing a Cave Illuminator will slowly illuminate nearby caves over the next couple of days..."]
+			dependencies: ["79A742344DB4B443"]
+			id: "74DF9A80861C43D0"
+			tasks: [{
+				id: "6C0D2BE768EC9232"
+				type: "item"
+				item: "astralsorcery:illuminator"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "3030034775E11C2B"
+				type: "item"
+				item: "minecraft:redstone_ore"
+				count: 6
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			description: [
+				"Craft some Nocturnal Powder!"
+				""
+				"...only the very brave will dare to place this down."
+			]
+			dependencies: ["79A742344DB4B443"]
+			id: "221E3A0D26D0817E"
+			tasks: [{
+				id: "785304885291CEFB"
+				type: "item"
+				item: "astralsorcery:nocturnal_powder"
+				count: 4L
+			}]
+			rewards: [{
+				id: "18564BF3A2352E1E"
+				type: "item"
+				item: "minecraft:nether_quartz_ore"
+				count: 6
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			description: ["Throw some Planks into Starlight to obtain Infused Wood!"]
+			dependencies: ["78CD43B713DD090D"]
+			id: "53D323C4733FF949"
+			tasks: [{
+				id: "4934A66D174369F2"
+				type: "item"
+				item: "astralsorcery:infused_wood"
+				count: 4L
+			}]
+			rewards: [{
+				id: "0A08A2A79437465F"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 32
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			description: ["Craft some Glass Lenses! These will be used as crafting ingredients, and later can also give you various beneficial effects!"]
+			dependencies: ["173404DEEF6BAC71"]
+			id: "025685656E4ECAAB"
+			tasks: [{
+				id: "18B19616C97E272C"
+				type: "item"
+				item: "astralsorcery:glass_lens"
+			}]
+			rewards: [{
+				id: "0E0743DD70278644"
+				type: "item"
+				item: "minecraft:glass"
+				count: 32
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.5d
+			description: ["Make a Looking Glass! This allows you to look at the night sky and ponder at the stars... Try holding Shift and drawing the shapes of the constellations too...!"]
+			dependencies: ["025685656E4ECAAB"]
+			id: "18598F8A4258AD82"
+			tasks: [{
+				id: "0F67605BFDDBA908"
+				type: "item"
+				item: "astralsorcery:hand_telescope"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "5FB78BFB55BF2166"
+				type: "item"
+				item: "minecraft:lapis_ore"
+				count: 8
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			description: [
+				"The Telescope can be placed down and rotated around to see the entire night sky. In its interface, try to find large flashing stars and try to connect them in the shapes of the Constellations that you have discovered with your Constellation Papers!"
+				""
+				"{image:m1ap:textures/astral_constellation.png width:150 height:150 align:1}"
+				""
+				"{image:m1ap:textures/astral_constellation2.png width:150 height:150 align:1}"
+			]
+			dependencies: [
+				"78CD43B713DD090D"
+				"18598F8A4258AD82"
+			]
+			id: "14AEA4593D393513"
+			tasks: [{
+				id: "4ED9495280A38019"
+				type: "item"
+				item: "astralsorcery:telescope"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "7406FB95F89A9B7B"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 1s
+							id: "astralsorcery:night_vision"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			icon: "astralsorcery:attunement_altar"
+			x: 2.5d
+			y: -2.5d
+			description: [
+				"Build the Attunement Altar! The first layer will require 225 (=15x15) pieces of Sooty Marble, and 80 pieces of Marble Arch, arranged in this pattern:"
+				""
+				"{image:m1ap:textures/astral_attunement_bot.png width:200 height:150 align:1}"
+				""
+				"Then build 4 pillars, each made out of a Runed Marble on the bottom, 3 pieces of Marble Pillar, then a Chiseled Marble on top. (Make sure NOT to fill in the hole below.)"
+				""
+				"{image:m1ap:textures/astral_attunement_top.png width:200 height:200 align:1}"
+				""
+				"This Altar lets you attune Rock Crystals... and yourself! To attune anything, hold a piece of Constellation Paper in your off-hand. Then at night, if the given Constellation is out, you will see some glowing particles on the ground. Place some Astral Relays in those locations. If you've done it right, the Constellation will appear on the Attunement Altar's surface."
+				""
+				"{image:m1ap:textures/astral_attunement_relays.png width:200 height:200 align:1}"
+				""
+				"Now you can throw a Rock Crystal in the middle, or jump in yourself, to attune yourself. Attuning yourself only works for the 5 Bright Constellations: Armara, Aevitas, Discidia, Evorsio \\& Vicio."
+				""
+				"When attuned, you will have access to a PoE style talent tree in your Astral Tome:"
+				""
+				"{image:m1ap:textures/astral_attuned.png width:200 height:135 align:1}"
+				""
+				"To obtain levels, you will need to do certain activities related to your attunement constellation:"
+				"- Aevitas: Work with animals and plants"
+				"- Armara: Take damage"
+				"- Discidia: Deal damage"
+				"- Evorsio: Mine and collect"
+				"- Vicio: Move around"
+				""
+				"You will be able to retalent with either a Shifting Star (losing all your perk points), or an Irradiant Star (keeping all your perk points)."
+			]
+			dependencies: ["7D409E5A721F5BF3"]
+			id: "77995A47DBC6C87A"
+			tasks: [
+				{
+					id: "202767519DD9E36B"
+					type: "advancement"
+					title: "Advancement: Attunment Altar"
+					advancement: "astralsorcery:attune_self"
+					criterion: ""
+				}
+				{
+					id: "6932B9DD8D824E51"
+					type: "item"
+					item: "astralsorcery:spectral_relay"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "3A1D44FD42B531DE"
+				type: "item"
+				item: "astralsorcery:spectral_relay"
+				count: 4
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			description: [
+				"The Fosic Resonator can show high-starlight-concentration areas at night. It's best to build your Crafting Altar structure here!"
+				""
+				"{image:m1ap:textures/fosic.png width:200 height:150 align:1}"
+			]
+			dependencies: ["53D323C4733FF949"]
+			id: "755AD2F0B0DF5E08"
+			tasks: [{
+				id: "791FD3782D496006"
+				type: "item"
+				item: {
+					id: "astralsorcery:resonator"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							upgrades: [0]
+						}
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "447E344F394055EA"
+				type: "item"
+				item: "minecraft:gold_ore"
+				count: 6
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			description: [
+				"Craft a Linking Tool! This can link a source of Starlight (an existing or a crafted Collector Crystal) to a block position, to infuse the block with Starlight."
+				""
+				"To start linking, Shift Right Click on the Collector Crystal. To link a block, Right Click on the block. To stop linking, Shift Right Click on the Collector Crystal again."
+			]
+			dependencies: ["6470C4A3A1AE3A5B"]
+			id: "1B54981985DDD6BC"
+			tasks: [{
+				id: "4004A14CCF4D0C21"
+				type: "item"
+				item: "astralsorcery:linking_tool"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "22514477388F4002"
+				type: "item"
+				item: "astralsorcery:liquid_starlight_bucket"
+				count: 3
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			description: [
+				"Crystal Lenses can be used to redirect or extend the beam from a Collector Crystal."
+				""
+				"To link a Crystal Lens to a block, first make sure the block you're linking to is not in the original Collector Crystal's line of sight! Then, scroll off of you Linking tool to stop linking from the Collector Crystal, and scroll back on it again. Finally, Shift Right Click the Crystal Lens and Right Click on the target block."
+			]
+			dependencies: ["1B54981985DDD6BC"]
+			id: "3AF83E0FCB0D414E"
+			tasks: [{
+				id: "6352FDE7A51EB670"
+				type: "item"
+				item: {
+					id: "astralsorcery:lens"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 3
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+				match_nbt: false
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			description: [
+				"Create some Starmetal Ore by infusing Starlight into Iron Ore!"
+				""
+				"{image:m1ap:textures/astral_starmetal.png width:200 height:350 align:1}"
+				""
+				"Make sure the Collector Crystal has access to the sky! If you're using a Collector Crystal found in Astral Sorcery temple structures, you will need to break the roof and stop the waterflow!"
+			]
+			dependencies: ["1B54981985DDD6BC"]
+			dependency_requirement: "one_completed"
+			id: "7D409E5A721F5BF3"
+			tasks: [{
+				id: "6E484839A3AD32E1"
+				type: "item"
+				item: "astralsorcery:starmetal_ore"
+				count: 4L
+			}]
+			rewards: [{
+				id: "3C510B634CB6020D"
+				type: "item"
+				item: "minecraft:iron_ore"
+				count: 16
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			description: [
+				"Upgrade your Luminous Crafting Table into a Starlight Crafting Altar, allowing you to perform more complex recipes!"
+				""
+				"In order for the Altar to function, you will also need to build the following structure around it. First start by building this platform made out of 24 Marble Bricks, 4 Chiseled Marble, 28 Marble Arch, and 21 Sooty Marble:"
+				""
+				"{image:m1ap:textures/astral_altar1_bot.png width:200 height:160 align:1}"
+				""
+				"Next, build four pillars on it, each made out of 2 Marble Pillars and 1 Chiseled Marble. Then place your newly upgraded Starlight Crafting Altar in the middle:"
+				""
+				"{image:m1ap:textures/astral_altar1_top.png width:200 height:200 align:1}"
+			]
+			dependencies: ["78CD43B713DD090D"]
+			id: "6470C4A3A1AE3A5B"
+			tasks: [{
+				id: "7A4EBAA97FB84345"
+				type: "advancement"
+				title: "Advancement: Starlight Crafting Altar"
+				advancement: "astralsorcery:craft_t2_altar"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1D4DB6AD82CF4675"
+				type: "item"
+				item: "minecraft:coal_ore"
+				count: 40
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			description: [
+				"Attune a Rock Crystal into any Constellation using your Attunement Atlar!"
+				""
+				"These Attuned Crystals or Attuned Celestial Crystals will be required later in some Iridescent Altar recipes."
+			]
+			dependencies: ["77995A47DBC6C87A"]
+			id: "08EE91ECAE0958CD"
+			tasks: [{
+				id: "42638705E4390F78"
+				type: "item"
+				title: "Attuned Rock Crystal"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:armara"
+						}
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "4B1139C25D2F7812"
+				type: "item"
+				item: "astralsorcery:starmetal_ingot"
+				count: 4
+			}]
+		}
+		{
+			title: "Advancement: Celestial Altar"
+			x: 4.0d
+			y: -1.5d
+			description: [
+				"The third tier of the Crafting Altar is the Celestial Altar. Its structure is slightly different. This time, the base will require a 7x7 platform of Sooty Marble, surrounded by a total of 40 Marble Bricks and 12 regular Marble:"
+				""
+				"{image:m1ap:textures/astral_altar3_bot.png width:200 height:150 align:1}"
+				""
+				"Then build 4 pillars, each with a Runed Marble on the bottom, then 2 pieces of Marble Pillars, and a Chiseled Marble on top:"
+				""
+				"{image:m1ap:textures/astral_altar2_top.png width:200 height:170 align:1}"
+			]
+			dependencies: ["7D409E5A721F5BF3"]
+			id: "073989E6D8BE1D43"
+			tasks: [{
+				id: "25A939A181072F18"
+				type: "advancement"
+				advancement: "astralsorcery:craft_t3_altar"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "665DAD7C9F9DF059"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 1s
+							id: "astralsorcery:scorching_heat"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.5d
+			description: [
+				"The Traversal Wand has 2 modes: Dash and Blink modes. Shift Right Clicking will toggle between these modes."
+				""
+				"In Dash mode, after holding Right Click, the user will be dashes forward a long distance."
+				""
+				"In Blink Mode, this is instead replaced by a blink."
+				""
+				"Watch out though, this Wand does NOT prevent fall damage."
+			]
+			dependencies: ["1E2EB16044C6E48A"]
+			id: "1E4D1024D54CABA1"
+			tasks: [{
+				id: "6100D608F45649E6"
+				type: "item"
+				item: {
+					id: "astralsorcery:blink_wand"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "3D28ED97AF949F60"
+				type: "item"
+				item: "xreliquary:nebulous_heart"
+				count: 4
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.5d
+			description: ["The Impulsion Wand act as a Grappling Hook. Right Click towards a wall, ceiling, or even the floor, and you'll be quickly pulled towards that location. Watch out though, the Wand does NOT prevent fall damage."]
+			dependencies: ["1E2EB16044C6E48A"]
+			id: "645E91FE3522E9C7"
+			tasks: [{
+				id: "10A6461E1C73E87B"
+				type: "item"
+				item: "astralsorcery:grapple_wand"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "4D22E5EFF498388E"
+				type: "item"
+				item: "xreliquary:bat_wing"
+				count: 4
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			description: [
+				"Build a Starlight Infuser! This machine fuses buckets of Starlight into certain items, empowering them."
+				""
+				"To use it, you will need the following structure. The first layer is simply a ring of 16 pieces of regular Marble:"
+				""
+				"{image:m1ap:textures/astral_si1.png width:150 height:150 align:1}"
+				""
+				"The second layer adds 4 pieces of Chiseled Marble in the corner, 8 pieces of Runed Marble in a ring in the center, and a Lapis Block in the very center:"
+				""
+				"{image:m1ap:textures/astral_si2.png width:150 height:150 align:1}"
+				""
+				"On top of this layer, add 4 pillars, each made out of 2 Marble Pillars and a Chiseled Marble on top; and add the Starlight Infuser in the center, on top of the Lapis Block."
+				""
+				"{image:m1ap:textures/astral_si3.png width:150 height:150 align:1}"
+				""
+				"The holes is where the Starlight will go. Make sure to add some block around so the Starlight won't flow out!"
+				""
+				"{image:m1ap:textures/astral_si4.png width:150 height:150 align:1}"
+				""
+				"Each craft will use up a Bucket of Starlight randomly, so make sure to find it and refill it! Soon you will be able to craft a Containment Chalice that can not only hold Starlight, but automatically refill the used Starlight Buckets of the Starlight Infuser multiblock!"
+			]
+			dependencies: ["073989E6D8BE1D43"]
+			id: "2FB060C060C4297F"
+			tasks: [{
+				id: "41DA94E4B727443B"
+				type: "item"
+				item: "astralsorcery:infuser"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "16B0362DAE7CDD85"
+				type: "item"
+				item: "astralsorcery:aquamarine"
+				count: 16
+			}]
+		}
+		{
+			x: 5.5d
+			y: -0.5d
+			description: ["Create some Resonating Gems with your Starlight Infuser!"]
+			dependencies: ["2FB060C060C4297F"]
+			id: "3500243141D8ECD0"
+			tasks: [{
+				id: "040ED4CCB23C34B0"
+				type: "item"
+				item: "astralsorcery:resonating_gem"
+				count: 6L
+			}]
+			rewards: [{
+				id: "6D010AA820C85D67"
+				type: "item"
+				item: "minecraft:diamond_ore"
+				count: 6
+			}]
+		}
+		{
+			title: "Celestial Crystal"
+			icon: {
+				id: "astralsorcery:celestial_crystal"
+				Count: 1b
+				tag: {
+					astralsorcery: { }
+				}
+			}
+			x: 4.5d
+			y: 1.5d
+			description: [
+				"Celestial Crystals are enhanced versions of the regular Rock Crystals. They are created by throwing Stardust and a Rock Crystal into a pool of liquid Starlight, where a Celestial Crystal cluster will form. After a while the Celestial Crystal cluster will become fully grown and can be harvested by simply mining it with a pickaxe. Don't be hasty though because breaking a cluster before it is ready will either give you a low quality Celestial Crystal or nothing at all!"
+				""
+				"The growth process of the Celestial Crystal can be accelerated by creating it on top of a Starmetal Ore. It will absorb the starlight infusion that transformed the Iron Ore into Starmetal in the first place, thus returning the starmetal back to its original Iron Ore form."
+			]
+			dependencies: ["1E2EB16044C6E48A"]
+			id: "1DC6226555403AEA"
+			tasks: [
+				{
+					id: "7099F3FEB53D0DD9"
+					type: "item"
+					item: "astralsorcery:stardust"
+				}
+				{
+					id: "35375AF6A36A85CE"
+					type: "item"
+					item: {
+						id: "astralsorcery:celestial_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "0295BBA89594FDEA"
+				type: "item"
+				item: "minecraft:ghast_tear"
+				count: 3
+			}]
+		}
+		{
+			icon: "astralsorcery:refraction_table"
+			x: 4.5d
+			y: -0.5d
+			description: [
+				"Make a Starlight Infusion Table and a piece of Infused Glass to place into it!"
+				""
+				"The block allows you to create more powerful than vanilla Enchanted Books."
+				""
+				"First, make sure it's night time. You will be able to use the Constellations currently out in the sky."
+				""
+				"Then place the Infused Glass into the machine, and also place a single Parchment inside."
+				""
+				"Then it's time for the minigame! Drag Constellations from the side onto the Parchment in the middle, such that their stars overlap as much as possible! The more overlap, the better Etched Infused Glass you'll get."
+				""
+				"Then you can place individual Books inside the machine, and wait for them to be enchanted. You can pull them out with a SHift Right Click. Note that each Infused Glass can only be used up to 5 times."
+			]
+			dependencies: [
+				"3500243141D8ECD0"
+				"7D409E5A721F5BF3"
+			]
+			id: "63BCF5A5B787E845"
+			tasks: [
+				{
+					id: "7D002D307F966572"
+					type: "item"
+					item: "astralsorcery:refraction_table"
+					match_nbt: false
+				}
+				{
+					id: "3DFEB9952C0D75F3"
+					type: "item"
+					item: {
+						id: "astralsorcery:infused_glass"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+							Damage: 0
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "45CEDD34F9194A21"
+					type: "item"
+					item: "astralsorcery:parchment"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "088DBFA43BD216D4"
+				type: "item"
+				item: {
+					id: "astralsorcery:infused_glass"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.5d
+			description: [
+				""
+				"Build the final Altar tier, the Iridescent Altar! Its layout is a direct upgrade of the Celestial Altar's layout. You will use the same base:"
+				""
+				"{image:m1ap:textures/astral_altar3_bot.png width:200 height:150 align:1}"
+				""
+				"And add some arches on top:"
+				""
+				"{image:m1ap:textures/astral_altar3_top.png width:200 height:190 align:1}"
+				""
+				"Each pillar will require 7 more blcks of Marble Bricks to be placed, for a total of 28 Marble Brick blocks."
+				""
+				"The Iridescent Altar may require the usage of an Attuned Rock Crystal or an Attuned Celestial Crystal, if the recipe's background image shows a Constellation."
+				""
+				"Additionally, the floating items around the recipe will need to be placed in Astral Relays. Make sure to pre-place some Astral Relays near the Iridescent Altar, otherwise some recipes may fail to start!"
+			]
+			dependencies: [
+				"3500243141D8ECD0"
+				"1DC6226555403AEA"
+			]
+			id: "3175001E7D5464B6"
+			tasks: [{
+				id: "347E21A9CB03632F"
+				type: "advancement"
+				title: "Advancement: Iridescent Altar"
+				advancement: "astralsorcery:craft_t4_altar"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "51EE79B9B29586D9"
+				type: "item"
+				item: "minecraft:emerald_ore"
+				count: 12
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.5d
+			description: [
+				"The Containment Chalice can store a large amount of liquids. It can also provide Starlight to your Starlight Infuser and automatically fill in the missing pools!"
+				""
+				"Additionally, 2 Containment Chalices placed close to each other will start interacting as if the two liquids have been placed next to one other. Water and Lava will create Cobblestone, Stone and Obsidian; and Water and Starlight will create Sand."
+			]
+			dependencies: ["3175001E7D5464B6"]
+			id: "4083567A9C55A924"
+			tasks: [{
+				id: "06204AEEB29D73DC"
+				type: "item"
+				item: "astralsorcery:chalice"
+			}]
+			rewards: [{
+				id: "69DC572EE748D50F"
+				type: "item"
+				item: "minecraft:lava_bucket"
+				count: 3
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			description: ["The Observatory is an upgraded version of the Telescope, letting you discover Faint Constellations."]
+			dependencies: [
+				"3175001E7D5464B6"
+				"221E3A0D26D0817E"
+			]
+			id: "1AA0F122712F8C28"
+			tasks: [{
+				id: "61A9D3167B003441"
+				type: "item"
+				item: "astralsorcery:observatory"
+			}]
+			rewards: [{
+				id: "248ECEB521596B90"
+				type: "item"
+				item: "astralsorcery:resonating_gem"
+				count: 8
+			}]
+		}
+		{
+			x: 8.0d
+			y: 1.5d
+			description: ["Discover all 4 Faint Constellations: Alcara, Gelu, Ulteria \\& Vorux; then attune a Celestial Crystal to each. Finally, combine them with a Vicio Irradiant Star to obtain the Star of Revelation, an item needed in the last chapter."]
+			dependencies: ["1AA0F122712F8C28"]
+			size: 2.0d
+			id: "024D6BE534075D13"
+			tasks: [{
+				id: "043E48D3EFCC0A2F"
+				type: "item"
+				item: "contenttweaker:star_of_revelation"
+			}]
+			rewards: [{
+				id: "22875E2D12989706"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 10s
+							id: "minecraft:feather_falling"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			description: ["The Scroll of Written Expertise is used to transfer Astral Sorcery knowledge from one player to another. Simply Right Click to write your knowledge inside the paper (subsequent Right Clicks by the same player will overwrite this knowledge), then pass it to one of your friends. The friend can then Right Click to obtain the knowledge stored inside!"]
+			dependencies: ["1E2EB16044C6E48A"]
+			id: "66819AE4B059EB89"
+			tasks: [{
+				id: "779C833B66B079DD"
+				type: "item"
+				item: {
+					id: "astralsorcery:knowledge_share"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "76AD2B1EEBCAE9C6"
+				type: "item"
+				item: "minecraft:name_tag"
+			}]
+		}
+		{
+			title: "Enchanter's PhD"
+			x: 8.0d
+			y: -0.5d
+			description: ["With the Stellar Refraction Table (or with the help of the Apotheosis mod) you will be able to create high-level Enchanted Books! Create the ones required in the crafting recipe to receive (the official) Enchanter's PhD! Congratulations! You've graduated!"]
+			dependencies: ["63BCF5A5B787E845"]
+			size: 2.0d
+			id: "002026C94EECCBAC"
+			tasks: [{
+				id: "6080F3EED331324B"
+				type: "item"
+				item: "contenttweaker:enchanters_phd"
+			}]
+			rewards: [{
+				id: "59EF16BF4A136891"
+				type: "item"
+				item: {
+					id: "astralsorcery:infused_glass"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+						Damage: 0
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.5d
+			description: [
+				"Make a Celestial Collector Crystal! This crystal can boost your Starlight amount in the Iridescent Altar, and may even allow you to craft during the day!"
+				""
+				"It needs to be placed in the following structure. The first layer is a simple 3x3 of regular Marble:"
+				""
+				"{image:m1ap:textures/astral_ecc1.png width:100 height:100 align:1}"
+				""
+				"The second layer adds a ring with Chiseled Marble on the corner, Runed Marble on the sides, and a piece of Engraved Marble in the middle:"
+				""
+				"{image:m1ap:textures/astral_ecc2.png width:130 height:130 align:1}"
+				""
+				"Then add 4 Engraved Marble on the corners, and a Marble Pillar with a Chiseled Marble on top in the middle."
+				""
+				"{image:m1ap:textures/astral_ecc3.png width:150 height:150 align:1}"
+				""
+				"Finally, add the Celestial Collector Crystal above the structure, leaving 1 block of space between the Chiseled Marble and the Crystal. Then fill in all 8 slots on the side with Liquid Starlight."
+				""
+				"{image:m1ap:textures/astral_ecc4.png width:150 height:200 align:1}"
+			]
+			dependencies: ["1DC6226555403AEA"]
+			id: "6265066A722D2CE5"
+			tasks: [{
+				id: "6164D8531F642F61"
+				type: "item"
+				item: {
+					id: "astralsorcery:celestial_collector_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "68C0EF1898FE03E0"
+				type: "item"
+				item: "minecraft:totem_of_undying"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.5d
+			description: [
+				"An Attuned Rock Crystal can be turned into your own Collector Crystal that you can place anywhere in the world!"
+				""
+				"No need to go back to the Astral Sorcery temple strctures anymore!"
+			]
+			dependencies: ["08EE91ECAE0958CD"]
+			id: "5479BA19BD4C756E"
+			tasks: [{
+				id: "056DE8F225372958"
+				type: "item"
+				item: {
+					id: "astralsorcery:rock_collector_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "0E5149342AD00638"
+				type: "item"
+				item: "minecraft:dragon_breath"
+				count: 10
+			}]
+		}
+		{
+			icon: {
+				id: "astralsorcery:chisel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: -0.5d
+			description: ["The Starmetal Cutting Tools allows you to create Starmetal Dust by throwing Starmetal Ingots on the ground, and striking them with your Cutting Tool."]
+			dependencies: ["7D409E5A721F5BF3"]
+			id: "1E2EB16044C6E48A"
+			tasks: [
+				{
+					id: "5234D6AF529E72DE"
+					type: "item"
+					item: {
+						id: "astralsorcery:chisel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+				}
+				{
+					id: "24FE36DEF0E74684"
+					type: "item"
+					item: "astralsorcery:stardust"
+					count: 6L
+				}
+			]
+			rewards: [{
+				id: "4C6496EB3FCEAA13"
+				type: "item"
+				item: "astralsorcery:stardust"
+				count: 6
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.5d
+			description: [
+				"The Shifting Star allows you to retalent your current specialization, but you will lose all your perk points."
+				""
+				"The upgraded form, the Irradiant Star, allows you to change your talents, without losing any of your perk points."
+				""
+				"A common strategy is to level in Vicio, because it's easier to get levels; and then retalent into Discidia or Armara for the offensive or defensive benefits."
+			]
+			dependencies: ["77995A47DBC6C87A"]
+			id: "16B88C5BA4E65105"
+			tasks: [{
+				id: "5E35D8C8E887A2B8"
+				type: "item"
+				item: "astralsorcery:shifting_star"
+			}]
+			rewards: [{
+				id: "5FF5358AC1F55667"
+				type: "item"
+				item: "astralsorcery:perk_seal"
+				count: 3
+			}]
+		}
+	]
+}

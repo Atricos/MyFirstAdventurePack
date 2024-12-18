@@ -1,0 +1,44 @@
+{
+	id: "625E092997D8D1D7"
+	order_index: 11
+	title: "Lich Wands"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "twilightforest:shield_scepter"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "twilightforest:zombie_scepter"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "twilightforest:lifedrain_scepter"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "twilightforest:twilight_scepter"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+}

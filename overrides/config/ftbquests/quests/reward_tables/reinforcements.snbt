@@ -1,0 +1,15 @@
+{
+	id: "12FB97308AFBDD9D"
+	order_index: 2
+	title: "Reinforcements"
+	loot_size: 1
+	rewards: [
+		{ item: "tconstruct:iron_reinforcement", count: 24 }
+		{ item: "tconstruct:slimesteel_reinforcement", count: 24 }
+		{ item: "tconstruct:seared_reinforcement", count: 24 }
+		{ item: "tconstruct:gold_reinforcement", count: 24 }
+		{ item: "tconstruct:emerald_reinforcement", count: 24 }
+		{ item: "tconstruct:bronze_reinforcement", count: 24 }
+		{ item: "tconstruct:cobalt_reinforcement", count: 24 }
+	]
+}

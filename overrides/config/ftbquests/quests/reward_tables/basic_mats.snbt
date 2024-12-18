@@ -1,0 +1,21 @@
+{
+	id: "4B68EF3B6EB873E1"
+	order_index: 13
+	title: "Basic materials"
+	icon: { id: "minecraft:feather", Count: 64b }
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:bone", count: 3 }
+		{ item: "minecraft:gunpowder", count: 2 }
+		{ item: "minecraft:string", count: 3 }
+		{ item: "minecraft:egg", count: 3 }
+		{ item: "minecraft:feather", count: 3 }
+		{ item: "minecraft:leather", count: 3 }
+		{ item: "minecraft:sugar_cane", count: 3 }
+		{ item: "minecraft:cactus", count: 3 }
+		{ item: "minecraft:pumpkin_seeds" }
+		{ item: "minecraft:melon_seeds" }
+		{ item: "minecraft:beetroot_seeds" }
+		{ item: "minecraft:cocoa_beans" }
+	]
+}

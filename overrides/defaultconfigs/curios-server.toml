@@ -1,0 +1,24 @@
+#List of curio slot type settings
+[[curiosSettings]]
+  identifier = "back"
+  size = 2
+[[curiosSettings]]
+  identifier = "belt"
+[[curiosSettings]]
+  identifier = "body"
+[[curiosSettings]]
+  identifier = "bracelet"
+  size = 2
+[[curiosSettings]]
+  identifier = "charm"
+  size = 3
+[[curiosSettings]]
+  identifier = "hands"
+  size = 2
+[[curiosSettings]]
+  identifier = "necklace"
+  size = 2
+[[curiosSettings]]
+  identifier = "ring"
+  size = 3
+

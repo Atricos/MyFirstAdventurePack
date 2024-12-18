@@ -1,0 +1,453 @@
+{
+	id: "7F9AE34AD66372E1"
+	group: "433FE63D190F5547"
+	order_index: 1
+	filename: "atum"
+	title: "Atum"
+	icon: "atum:scarab"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Atum Portal"
+			icon: "atum:scarab"
+			x: 0.0d
+			y: -1.0d
+			description: [
+				"To enter Atum, build the following portal. Start with a 5x5 Sandstone platform:"
+				""
+				"{image:m1ap:textures/atum_portal1.png width:100 height:100 align:1}"
+				""
+				"Then add a Sandstone rim:"
+				""
+				"{image:m1ap:textures/atum_portal2.png width:100 height:100 align:1}"
+				""
+				"Add four 2-tall pillars:"
+				""
+				"{image:m1ap:textures/atum_portal3.png width:100 height:100 align:1}"
+				""
+				"Fill up the middle with water (Make sure it's all still water, not flowing water):"
+				""
+				"{image:m1ap:textures/atum_portal4.png width:100 height:100 align:1}"
+				""
+				"And finally, throw a Scarab inside:"
+				""
+				"{image:m1ap:textures/atum_portal5.png width:100 height:100 align:1}"
+			]
+			id: "45AF58F31227A955"
+			tasks: [
+				{
+					id: "3F4B7F5CF8E21B18"
+					type: "item"
+					item: "atum:scarab"
+					match_nbt: false
+				}
+				{
+					id: "639ADF98D11F8717"
+					type: "item"
+					item: "minecraft:sandstone"
+					count: 49L
+					match_nbt: false
+				}
+				{
+					id: "668F2D81AFE60243"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+			]
+			rewards: [{
+				id: "1C0C77664B6F3EE5"
+				type: "item"
+				item: "atum:iron_ore"
+				count: 6
+			}]
+		}
+		{
+			title: "Entering the Sands"
+			icon: "atum:fertile_soil"
+			x: 1.0d
+			y: -1.0d
+			description: [
+				"Enter Atum!"
+				""
+				"Atum mobs have been buffed in this pack. Their health is now 250%, and their damage is now 200% of its base value."
+			]
+			dependencies: ["45AF58F31227A955"]
+			id: "72C369594769D5E6"
+			tasks: [{
+				id: "0773AD8483854B83"
+				type: "dimension"
+				dimension: "atum:atum"
+			}]
+			rewards: [{
+				id: "454C7481BFC619C8"
+				type: "item"
+				item: "atum:diamond_ore"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			description: [
+				"Atum Artifacts can be found rarely in any Atum Chest or Crate, and they are a guaranteed drop from defeating a Pharaoh."
+				""
+				"Pharaohs can be found deep inside Pyramids, after a trap-filled maze section. To disable the traps, you can Right Click on them with a Pickaxe."
+				""
+				"{image:m1ap:textures/atum_pyramid.png width:200 height:200 align:1}"
+				""
+				"Each meelee or ranged weapon artifact can be upgraded to gain Sharpness 100 and other useful enchantments using 4 pieces of Fortifying Augment."
+				""
+				"Alternatively, each Artifact can be melted down in the Godforge for Godshards, which are also a component for crafting the Fortifying Augment."
+			]
+			dependencies: ["4245F911A28EB58C"]
+			id: "615907C55991E0C3"
+			tasks: [{
+				id: "34363EEB5DCAC49E"
+				type: "item"
+				title: "Any #atum:artifact"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "atum:artifact"
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "414E62867470CB32"
+				type: "item"
+				item: "atum:golden_date"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			description: ["Gather up some Nebu Ore from underground! You will use this a lot in the pack."]
+			dependencies: ["72C369594769D5E6"]
+			id: "0A1A8783E7560E06"
+			tasks: [{
+				id: "53E56F3356912B25"
+				type: "item"
+				item: "atum:nebu_ore"
+				count: 10L
+			}]
+			rewards: [{
+				id: "123B5B9E9738230F"
+				type: "item"
+				item: "atum:emerald_ore"
+				count: 6
+			}]
+		}
+		{
+			icon: "atum:marl"
+			x: 2.0d
+			y: -0.5d
+			description: ["Get some Marl and Limestone from underground in Atum!"]
+			dependencies: ["72C369594769D5E6"]
+			id: "54E2FA76E6A9A091"
+			tasks: [
+				{
+					id: "1985CD65396475E8"
+					type: "item"
+					item: "atum:marl"
+					count: 10L
+				}
+				{
+					id: "0F01881914059B30"
+					type: "item"
+					item: "atum:limestone_cracked"
+					count: 10L
+				}
+			]
+			rewards: [{
+				id: "073E5EF3D70C4A6D"
+				type: "item"
+				item: "atum:redstone_ore"
+				count: 8
+			}]
+		}
+		{
+			title: "Kiln"
+			icon: "atum:kiln"
+			x: 3.0d
+			y: 0.0d
+			description: [
+				"To build a Kiln, first place 6 Small Limestone Bricks in this L formation:"
+				""
+				"{image:m1ap:textures/atum_kiln1.png width:100 height:100 align:1}"
+				""
+				"Then place 2 Kiln blocks in the remaining 2 spots to form a cube:"
+				""
+				"{image:m1ap:textures/atum_kiln2.png width:100 height:100 align:1}"
+			]
+			dependencies: ["54E2FA76E6A9A091"]
+			id: "798FB48E26CA4BA5"
+			tasks: [
+				{
+					id: "65A12E47699BED0E"
+					type: "item"
+					item: "atum:kiln"
+					count: 2L
+					match_nbt: false
+				}
+				{
+					id: "73361286F00A29BB"
+					type: "item"
+					item: "atum:limestone_brick_small"
+					count: 6L
+				}
+			]
+			rewards: [{
+				id: "75866F1AC575349F"
+				type: "item"
+				item: "atum:fertile_soil_pile"
+				count: 4
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: ["Smelt Marl into White Ceramic Tiles with your Kiln!"]
+			dependencies: ["798FB48E26CA4BA5"]
+			id: "1B075C0EE2B5FF08"
+			tasks: [{
+				id: "5C41BE8102CA1370"
+				type: "item"
+				item: "atum:ceramic_white"
+				count: 12L
+			}]
+			rewards: [{
+				id: "0549FAA375FE58E9"
+				type: "item"
+				item: "atum:crunchy_scarab"
+				count: 8
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			description: [
+				"Craft a Godforge! You need to have progressed a fair bit in Astral Sorcery in order to unlock its recipe."
+				""
+				"To use, fuel it with a Lava Bucket and place an Atum Artifact on top. It will be converted into 4 pieces of Godshards, which can then be turned into Godforged Blocks - a component for the Fortifying Augment."
+			]
+			dependencies: [
+				"4245F911A28EB58C"
+				"1B075C0EE2B5FF08"
+			]
+			id: "0FD94B5A53873E77"
+			tasks: [{
+				id: "4609BD50DAE1ADD0"
+				type: "item"
+				item: "atum:godforge"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "18F37DADDE1A7B7D"
+				type: "item"
+				item: "atum:date"
+				count: 8
+			}]
+		}
+		{
+			icon: "atum:nebu_drop"
+			x: 3.0d
+			y: -2.0d
+			description: ["Smelt some Nebu Ore and craft 4 Nebu Torches! These will be used to wake up Pharaohs from their millenia-old sleep..."]
+			dependencies: ["0A1A8783E7560E06"]
+			id: "4245F911A28EB58C"
+			tasks: [
+				{
+					id: "3D5732CE05190A06"
+					type: "item"
+					item: "atum:nebu_drop"
+					count: 9L
+				}
+				{
+					id: "2F928D10E382AD3E"
+					type: "item"
+					item: "atum:nebu_torch"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "0C5BDA000C4E1B7E"
+				type: "item"
+				item: "atum:camel_cooked"
+				count: 8
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			description: ["Melt down some Artifacts for some Godshards in the Godforge!"]
+			dependencies: [
+				"615907C55991E0C3"
+				"0FD94B5A53873E77"
+			]
+			id: "1FA5EEAB14CEDB0A"
+			tasks: [{
+				id: "3147F47FCDBCFC9B"
+				type: "item"
+				title: "Any #atum:godshards"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "atum:godshards"
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "12EFD6ADD58E4086"
+				type: "item"
+				item: "atum:osiris_godshard"
+				count: 3
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			description: ["Make a Spinning Wheel! To use it, hold Right Click with Cloth or Flax in your hand while pointing at the top face of the block. Then, when the animation stops, pull out the result from the front face with a single Right Click."]
+			dependencies: ["72C369594769D5E6"]
+			id: "41BF9995296FB16A"
+			tasks: [{
+				id: "4A6D9DC70BC9CC85"
+				type: "item"
+				item: "atum:spinning_wheel"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "6E46F93E4A974452"
+				type: "item"
+				item: "atum:cloth_scrap"
+				count: 18
+			}]
+		}
+		{
+			icon: "atum:linen_cloth"
+			x: 1.0d
+			y: -3.25d
+			description: ["Linen Thread can be used as a Bandage or as a Commander's Flag, boosting nearby allies' strength."]
+			dependencies: ["41BF9995296FB16A"]
+			size: 1.5d
+			id: "08CCC2982CD33E09"
+			tasks: [
+				{
+					id: "4D7608B86E2BC6C9"
+					type: "item"
+					item: "atum:linen_thread"
+					count: 12L
+				}
+				{
+					id: "5D335AF7543761B8"
+					type: "item"
+					item: "atum:linen_cloth"
+					count: 3L
+				}
+			]
+			rewards: [
+				{
+					id: "205F40C284504C95"
+					type: "item"
+					item: "contenttweaker:instant_bandage"
+					count: 5
+				}
+				{
+					id: "468D172094D8F92B"
+					type: "item"
+					item: "contenttweaker:commander_flag"
+					count: 3
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			description: ["Make a Quern! To use it, place an item on top, and hold Right Click until it finishes spinning!"]
+			dependencies: ["72C369594769D5E6"]
+			id: "0710BB8F0B52D2EB"
+			tasks: [{
+				id: "6944667128C98AF9"
+				type: "item"
+				item: "atum:quern"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "6F2E27EA2123CC11"
+				type: "choice"
+				icon: "minecraft:rose_bush"
+				table_id: 1860005949533299779L
+			}]
+		}
+		{
+			icon: "atum:emmer_bread"
+			x: 1.0d
+			y: 1.25d
+			description: [
+				"Obtain some Emmer Seeds from an Oasis!"
+				""
+				"{image:m1ap:textures/atum_oasis.png width:200 height:180 align:1}"
+				""
+				"Grow some Emmer, then turn it into Emmer Flour in the Quern. Right Click with it on Water, to turn it into Emmer Dough, and finally cook it into Emmer Bread."
+				""
+				"Emmer Bread can be combined with either Beef, Pork, or Chicken into a Burger that restores 8 bars of hunger."
+			]
+			dependencies: ["0710BB8F0B52D2EB"]
+			size: 1.5d
+			id: "044AEC91843417EE"
+			tasks: [
+				{
+					id: "63BB04C79DE0A4B7"
+					type: "item"
+					item: "atum:emmer_flour"
+				}
+				{
+					id: "1BFA1913DADD5AA5"
+					type: "item"
+					item: "atum:emmer_dough"
+				}
+				{
+					id: "6ED667CAC6AFEA9A"
+					type: "item"
+					item: "atum:emmer_bread"
+				}
+			]
+			rewards: [{
+				id: "3201C85F6D733C35"
+				type: "choice"
+				icon: "contenttweaker:beef_burger"
+				table_id: 8351033260049641088L
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.0d
+			description: [
+				"Craft some Godforged Blocks! Make sure to craft the regular version (the one requiring 3 Godshards, not 4)!"
+				""
+				"Two pieces of Godforged Blocks can be turned into some Fortifying Augments! (Check the end of the Twilight Forest quests!)"
+				""
+				"Fortifying Augments can give Atum meelee/ranged Artifacts and Infernal Expansion boss weapons Sharpness 100 and other useful enchantments!"
+			]
+			dependencies: ["1FA5EEAB14CEDB0A"]
+			size: 2.0d
+			id: "112D559EA0046C9F"
+			tasks: [{
+				id: "7810120BC1BE46BE"
+				type: "item"
+				item: "atum:godforged_block"
+				count: 2L
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "568E6794DBCB0700"
+				type: "item"
+				item: "atum:tefnut_godshard"
+				count: 3
+			}]
+		}
+	]
+}

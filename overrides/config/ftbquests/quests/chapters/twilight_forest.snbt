@@ -1,0 +1,405 @@
+{
+	id: "64B5CC94BF34BD35"
+	group: "433FE63D190F5547"
+	order_index: 0
+	filename: "twilight_forest"
+	title: "Twilight Forest"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Enter the Twilight Forest!"
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			x: -2.5d
+			y: -1.0d
+			description: [
+				"To build a Twilight Forest Portal, dig a 2x2 hole in a grass field, surround it with flowers, fill it with water, and throw a Diamond into the puddle!"
+				""
+				"{image:m1ap:textures/twilight_portal.png width:100 height:150 align:1}"
+				""
+				"Twilight Forest mobs have been buffed in this pack! Their health is 250% and their damage is 200% of its default value."
+			]
+			id: "0BFBFCC5B184C038"
+			tasks: [{
+				id: "3C0A9228AD775D57"
+				type: "dimension"
+				dimension: "twilightforest:twilightforest"
+			}]
+			rewards: [{
+				id: "42E500D4F1E291E5"
+				type: "item"
+				item: "minecraft:leather"
+				count: 4
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			description: [
+				"Find a Naga Arena and defeat the slithering Naga inside!"
+				""
+				"{image:m1ap:textures/twilight_naga.png width:200 height:200 align:1}"
+			]
+			dependencies: ["07608118DDA6BCEA"]
+			id: "427A67CEE0ADB18D"
+			tasks: [{
+				id: "7B04BD719E15E010"
+				type: "item"
+				item: "twilightforest:naga_trophy"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "7A9FD80CDB36D063"
+				type: "item"
+				item: "twilightforest:naga_scale"
+				count: 6
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			description: [
+				""
+				"Once the Twilight Naga has been defeated, the barriers of the nearby Lich Tower will fall! Climb up and defeat the Twilight Lich!"
+				""
+				"{image:m1ap:textures/twilight_lich.png width:200 height:200 align:1}"
+			]
+			dependencies: ["427A67CEE0ADB18D"]
+			id: "3F34D384CFCB0A11"
+			tasks: [{
+				id: "3F93B422B69DEC40"
+				type: "item"
+				item: "twilightforest:lich_trophy"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "417AF05FB897C1E6"
+				type: "choice"
+				icon: {
+					id: "twilightforest:shield_scepter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				table_id: 7088112937773617623L
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			description: [
+				"The Knight Phantom resides deep inside the Goblin Knight Labyrinth, under the canopy of the Dark Forest..."
+				""
+				"{image:m1ap:textures/twilight_dark_forest.png width:200 height:200 align:1}"
+				""
+				"You will find the Goblin Knight Stronghold entrance...."
+				""
+				"{image:m1ap:textures/twilight_goblin_knight_stronghold_entrance.png width:200 height:160 align:1}"
+				""
+				"... where you'll need to prove your worth by placing a Trophy you've obtained:"
+				""
+				"{image:m1ap:textures/twilight_goblin_knight_stronghold_trophy.png width:200 height:170 align:1}"
+				""
+				"Finally, go through the Stronghold and face off against the Knight Phantom!"
+				""
+				"{image:m1ap:textures/twilight_knight_phantom.png width:200 height:180 align:1}"
+			]
+			dependencies: ["3F34D384CFCB0A11"]
+			id: "2E1919213BDAD572"
+			tasks: [{
+				id: "3E51F03144CA5828"
+				type: "item"
+				item: "twilightforest:knight_phantom_trophy"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "4A9E799B261FECFE"
+				type: "item"
+				item: "twilightforest:armor_shard_cluster"
+				count: 8
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			description: [
+				"The Alpha Yeti can be found inside the Snowy Area in the Twilight Forest, in the Alpha Yeti cave:"
+				""
+				"{image:m1ap:textures/twilight_alpha_yeti.png width:200 height:170 align:1}"
+			]
+			dependencies: ["3F34D384CFCB0A11"]
+			id: "3BA5187F29793EA1"
+			tasks: [{
+				id: "72EF7E061AC2AEDE"
+				type: "item"
+				item: "twilightforest:alpha_fur"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "62F9CE711D02D3D8"
+				type: "item"
+				item: "minecraft:packed_ice"
+				count: 64
+			}]
+		}
+		{
+			icon: "twilightforest:minoshroom_trophy"
+			x: 1.5d
+			y: 0.0d
+			description: [
+				"The Minoshroom boss can be found deep inside the Minotaur Labyrinth. Its entrance is inside the Twilight Swamp biome:"
+				""
+				"{image:m1ap:textures/twilight_minoshroom_entrance.png width:200 height:160 align:1}"
+				""
+				"After having descended several layers, one may find the Minoshroom boss room...:"
+				""
+				"{image:m1ap:textures/twilight_minoshroom.png width:200 height:190 align:1}"
+			]
+			dependencies: ["3F34D384CFCB0A11"]
+			id: "19E7B216E6201371"
+			tasks: [{
+				id: "169A6350DFADEE7B"
+				type: "item"
+				item: "twilightforest:minoshroom_trophy"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "37566DF919E1C6AB"
+				type: "item"
+				item: "twilightforest:meef_stroganoff"
+			}]
+		}
+		{
+			icon: "twilightforest:ur_ghast_trophy"
+			x: 2.5d
+			y: -2.0d
+			description: [
+				"After having defeated the Knight Phantom, the protective barrier around the Ur-ghast tower in the middle on the Dark Forest will disappear."
+				""
+				"{image:m1ap:textures/twilight_ur_ghast_tower.png width:200 height:200 align:1}"
+				""
+				"When climbing up, one can face the Ur-ghast! Make sure to collect quite a bit of Carminite too!"
+				""
+				"{image:m1ap:textures/twilight_ur_ghast.png width:200 height:160 align:1}"
+			]
+			dependencies: ["2E1919213BDAD572"]
+			id: "6249E4DD5B3566B9"
+			tasks: [
+				{
+					id: "374DE7D5A36EAD4D"
+					type: "item"
+					item: "twilightforest:ur_ghast_trophy"
+					match_nbt: false
+				}
+				{
+					id: "34654D2383A3F6F3"
+					type: "item"
+					item: "twilightforest:carminite"
+					count: 3L
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "07A5B4B296F3D5C5"
+				type: "item"
+				item: "twilightforest:carminite"
+				count: 6
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			description: [
+				"Once the Alpha Yeti has been defeated, the protective barrier around the Aurora Palace will disappear!"
+				""
+				"{image:m1ap:textures/twilight_aurora_palace.png width:200 height:200 align:1}"
+				""
+				"Climb up to defeat the Snow Queen! ...but has she done anything wrong?"
+				""
+				"{image:m1ap:textures/twilight_snow_queen.png width:200 height:160 align:1}"
+			]
+			dependencies: ["3BA5187F29793EA1"]
+			id: "06BB81173E721E00"
+			tasks: [{
+				id: "510C0874D459086C"
+				type: "item"
+				item: "twilightforest:snow_queen_trophy"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "3829B8709056CE76"
+				type: "item"
+				item: {
+					id: "twilightforest:ice_bomb"
+					Count: 1b
+					tag: {
+						shader_name: "twilightforest:snow_queen"
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			description: [
+				"When one consumes the Meef Stroganoff, dropped by the Minoshroom; one will resist the acidic rain of the Fire Swamp. And in the middle, the Hydra awaits..."
+				""
+				"{image:m1ap:textures/twilight_hydra.png width:200 height:180 align:1}"
+				""
+				"The previous quest reward gives back the Meef Stroganoff for a friend to consume!"
+			]
+			dependencies: ["19E7B216E6201371"]
+			id: "6F2A81C482A24268"
+			tasks: [{
+				id: "50621D4E001F3BBD"
+				type: "item"
+				item: "twilightforest:hydra_trophy"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "265FEC67CEFCB653"
+				type: "item"
+				item: "twilightforest:fiery_blood"
+				count: 4
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			description: [
+				"Alright! With the Ur-ghast, Snow Queen and Hydra defeated, we can finally enter the Highlands. It's time to figure out who rules this place..."
+				""
+				"Up above the Highlands, a giant cloud roams. Climb up to find some similar chromosomes..."
+				""
+				"{image:m1ap:textures/twilight_giants_island.png width:200 height:200 align:1}"
+				""
+			]
+			dependencies: [
+				"6249E4DD5B3566B9"
+				"06BB81173E721E00"
+				"6F2A81C482A24268"
+			]
+			id: "6356C3DC96B8D0D0"
+			tasks: [{
+				id: "0F95B0F51277DACE"
+				type: "item"
+				item: {
+					id: "twilightforest:giant_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "1C050114E6A474FE"
+				type: "item"
+				item: "twilightforest:charm_of_life_1"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.0d
+			description: [
+				"A Giant Pickaxe is obtained, time to disengage. Then to dig down under for the giant obsidian cage."
+				""
+				"{image:m1ap:textures/twilight_giant_obsidian_cube.png width:200 height:190 align:1}"
+				""
+				"The Lamp of Cinders may burn all the thorns. So one can progress and see what the castle holds."
+			]
+			dependencies: ["6356C3DC96B8D0D0"]
+			size: 2.0d
+			id: "12613252C8B1C8BF"
+			tasks: [{
+				id: "50E4939BCCE53112"
+				type: "item"
+				item: {
+					id: "twilightforest:lamp_of_cinders"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "4017A79C132903D1"
+				type: "item"
+				item: "twilightforest:charm_of_keeping_2"
+			}]
+		}
+		{
+			title: "Harbinger Cube"
+			x: 7.0d
+			y: -1.0d
+			description: [
+				"Adventures end with a final boss fight; to the castle we go in terrible fright. Surrounded by strange creatures, and well-noted developer features."
+				""
+				"Wait a second, how could this be? There is no boss found in thee. The creatures of the forest were slain, unnecessarily by us in distain."
+				""
+				"Afterall maybe we are the villians, slaying knightly/frozen civillians. We should have done this a while ago, slaying Harbinger Cubes and just go."
+				""
+				"{image:m1ap:textures/twilight_castle.png width:200 height:180 align:1}"
+			]
+			dependencies: ["12613252C8B1C8BF"]
+			size: 2.0d
+			id: "5D9A4C42D578C379"
+			tasks: [{
+				id: "6A1BAFAA6BFA0EB5"
+				type: "item"
+				item: "contenttweaker:harbinger_cube"
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "3B6D16E2B717A50A"
+				type: "item"
+				item: "twilightforest:charm_of_life_2"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.0d
+			description: ["A terrifying power awaits..."]
+			dependencies: ["5D9A4C42D578C379"]
+			id: "3F5EF941E8889B30"
+			tasks: [{
+				id: "5E10CA5A5EA628B5"
+				type: "item"
+				item: "contenttweaker:fortifying_augment"
+				count: 8L
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "7410CC16867A3140"
+				type: "item"
+				item: "twilightforest:charm_of_keeping_3"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			description: [
+				"Craft a Blank Magic Map! All of its crafting ingredients are available close to spawn in the Twilight Forest."
+				""
+				"Right Click the map to reveal the nearby bosses in the Twilight Forest! Keep exploring to fill out your map!"
+			]
+			dependencies: ["0BFBFCC5B184C038"]
+			id: "07608118DDA6BCEA"
+			tasks: [{
+				id: "47A7AFEF8BA2CEDA"
+				type: "item"
+				item: "twilightforest:magic_map_empty"
+			}]
+			rewards: [{
+				id: "66B22054348AF63C"
+				type: "item"
+				item: "twilightforest:ironwood_ingot"
+				count: 10
+			}]
+		}
+	]
+}

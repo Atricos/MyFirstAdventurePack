@@ -1,0 +1,11 @@
+{
+	id: "75113809E5963B5F"
+	order_index: 8
+	title: "Other Tomes"
+	icon: "apotheosis:null_book"
+	loot_size: 1
+	rewards: [
+		{ item: "apotheosis:null_book" }
+		{ item: "apotheosis:scrap_tome" }
+	]
+}

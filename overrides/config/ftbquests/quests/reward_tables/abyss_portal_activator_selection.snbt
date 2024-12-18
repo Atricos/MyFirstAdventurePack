@@ -1,0 +1,18 @@
+{
+	id: "2958E2699E256036"
+	order_index: 14
+	title: "Abyss Portal Activator selection"
+	icon: {
+		id: "theabyss:the_abyss"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	loot_size: 1
+	rewards: [
+		{ item: "astralsorcery:resonating_gem", count: 2 }
+		{ item: "atum:nebu_ingot", count: 2 }
+		{ item: "twilightforest:knightmetal_ingot", count: 2 }
+	]
+}
