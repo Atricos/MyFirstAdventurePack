@@ -20,7 +20,7 @@ body:
     attributes:
       label: Reasons why this should be added
       description: Sensible points on why the modpack would be "better" if this was added.
-      placeholder: "Example: The automation setup comes too late ... / There is nothing to do in the meantime ..."
+      placeholder: "Example: The unlock of ... comes too late / There is nothing to do in the meantime ..."
     validations:
       required: true
   - type: textarea
@@ -28,7 +28,7 @@ body:
     attributes:
       label: Describe alternatives you've considered
       description: A clear and concise description of any alternative solutions you've considered.
-      placeholder: "Example: If the proposed recipe isn't added, then ... / Setting up automation differently would be ..."
+      placeholder: "Example: If the proposed recipe isn't added, then ... / I could go for the enchantment of ... instead"
     validations:
       required: false
   - type: textarea

@@ -18,7 +18,7 @@ body:
     attributes:
       label: Where is the typo located?
       description: eg Quests / Title Screen / Tooltips / Advancements. If possible, link the location in the DJ2 code it occurs.
-      placeholder: "Example: In the 19th Chapter in the description of the Quest called ... "
+      placeholder: "Example: In the Abyss Chapter in the description of the Quest called ... "
     validations:
       required: true
   - type: textarea
