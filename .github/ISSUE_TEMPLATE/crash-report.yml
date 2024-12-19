@@ -27,7 +27,7 @@ body:
     id: memory-amount
     attributes:
       label: RAM Allocated
-      description: How much RAM did you dedicate to your client and how much RAM does your PC have? Note that 6 GB dedicated and 8 GB total is the bare minimum to run DJ2 - if you have less, that might be the cause of the crash.
+      description: How much RAM did you dedicate to your client and how much RAM does your PC have? Note that 4 GB dedicated and 6 GB total is the bare minimum to run the pack - if you have less, that might be the cause of the crash.
       placeholder: "Example: I dedicated 6 GBs and my PC has 8 GBs of RAM."
     validations:
       required: true
