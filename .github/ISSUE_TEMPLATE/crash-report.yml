@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        First, check if your request has been submitted before or is a [Known Issue](https://github.com/Divine-Journey-2/main/issues?q=label%253A%22Known+Issue%22). If it is, please don't submit a duplicate.
+        First, check if your request has been submitted before or is a [Known Issue](https://github.com/Atricos/MyFirstAdventurePack/labels/Known%20Issue). If it is, please don't submit a duplicate.
         Then, if you have Optifine installed and the crash is related to a visual issue, remove Optifine and confirm that it happens without Optifine.
   - type: input
     id: modpack-version
