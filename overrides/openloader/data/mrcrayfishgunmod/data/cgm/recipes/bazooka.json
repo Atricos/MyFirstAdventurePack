@@ -1,0 +1,28 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:storage_blocks/iron",
+      "count": 8
+    },
+    {
+      "tag": "forge:ingots/iron",
+      "count": 44
+    },
+    {
+      "item": "minecraft:redstone",
+      "count": 64
+    },
+    {
+      "item": "minecraft:tnt",
+      "count": 8
+    },
+    {
+      "item": "minecraft:diamond",
+      "count": 6
+    }
+  ],
+  "result": {
+    "item": "cgm:bazooka"
+  }
+}

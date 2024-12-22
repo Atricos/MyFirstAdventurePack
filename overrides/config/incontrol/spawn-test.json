@@ -1,8 +1,0 @@
-[
-	{
-		"mob": "twilightforest:adherent",
-		"healthmultiply": 2.5,
-		"damagemultiply": 2.0,
-		"onjoin": true
-	}
-]

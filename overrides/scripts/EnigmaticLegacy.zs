@@ -14,7 +14,7 @@ craftingTable.addShaped("el_dislocation_ring", <item:enigmaticlegacy:super_magne
 	[<item:minecraft:ender_pearl>,<item:minecraft:gold_ingot>,<item:minecraft:ender_pearl>]
 ]);
 
-# Extrapolcated Megasponge
+# Extrapolated Megasponge
 craftingTable.removeRecipe(<item:enigmaticlegacy:mega_sponge>);
 craftingTable.addShaped("el_extrapolated_megasponge", <item:enigmaticlegacy:mega_sponge>, [
 	[<item:minecraft:sponge>,<item:minecraft:ghast_tear>,<item:minecraft:sponge>],
@@ -37,8 +37,5 @@ craftingTable.addShaped("el_extradimensional_eye", <item:enigmaticlegacy:extradi
 	[<item:minecraft:gold_ingot>,<item:minecraft:ender_pearl>,<item:minecraft:gold_ingot>],
 	[<item:minecraft:gold_nugget>,<item:minecraft:blaze_powder>,<item:minecraft:gold_nugget>]
 ]);
-
-
-
 
 print("ENDING EnigmaticLegacy.zs");

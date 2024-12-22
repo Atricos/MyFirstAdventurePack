@@ -156,7 +156,7 @@
 		{
 			x: 3.5d
 			y: 2.0d
-			description: ["The Return Scroll is a one-time use item that can be bound to a Waystone with a Right Click, and can be used to teleport to the bound Waystone if Right Click is helf for a couple seconds."]
+			description: ["The Bound Scroll is a one-time use item that can be bound to a Waystone with a Right Click, and can be used to teleport to the bound Waystone if Right Click is held for a couple seconds."]
 			id: "10220ED4ABA80EEF"
 			tasks: [{
 				id: "58DCDE16E74BA963"
@@ -191,7 +191,7 @@
 			x: 3.5d
 			y: 0.0d
 			description: [
-				"Colossal Chests can be build out of a hollow cube of Colossal Chest Walls, with the Colossal Chest Core placed anywhere in the walls."
+				"Colossal Chests can be built out of a hollow cube of Colossal Chest Walls, with the Colossal Chest Core placed anywhere in the walls."
 				""
 				"{image:m1ap:textures/colossal_chest.png width:210 height:100 align:1 fit:true}"
 				""
@@ -251,7 +251,7 @@
 		{
 			x: 2.0d
 			y: 1.0d
-			description: ["If you have this book in your inventory, Hoglins will be passive around you. However in return, you won't be able to damage friendly creatures."]
+			description: ["If you have this book in your inventory, Hoglins will be passive around you. However, in return, you won't be able to damage friendly creatures."]
 			id: "7F1EEC7E8875DEAD"
 			tasks: [{
 				id: "41B63D2C12867E3F"
@@ -290,6 +290,105 @@
 						}]
 					}
 				}
+			}]
+		}
+		{
+			title: "Gun Workbench"
+			x: 3.0d
+			y: -1.0d
+			description: [
+				"Craft a Workbench for creating guns! They are powerful enchantable ranged weapons that use ammo. Everything is created in this Workbench."
+				""
+				"To load a gun, use R while holding it. To uload it, use U."
+				""
+				"Infused Wood is created by throwing any log into Starlight. You'll need to progress a tiny bit in Astral Sorcery for it."
+			]
+			id: "18F4E3B511BD283A"
+			tasks: [{
+				id: "28D16DFBA17BA864"
+				type: "item"
+				item: "cgm:workbench"
+			}]
+			rewards: [{
+				id: "62B416E9203C0F65"
+				type: "item"
+				item: "netheroresplus:nether_iron_ore"
+				count: 16
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			description: ["Press R to reload. This gun uses Basic Bullets."]
+			dependencies: ["18F4E3B511BD283A"]
+			id: "4EFAE228B4D6F81C"
+			tasks: [{
+				id: "232A0D0BF7B5F118"
+				type: "item"
+				item: {
+					id: "cgm:assault_rifle"
+					Count: 1b
+					tag: {
+						AmmoCount: 20
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "4D45606D497230FF"
+				type: "item"
+				item: "cgm:basic_bullet"
+				count: 32
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.0d
+			description: ["Press R to reload. This gun uses Shells as ammo."]
+			dependencies: ["18F4E3B511BD283A"]
+			id: "4F0FFE14DDEA44F1"
+			tasks: [{
+				id: "534F13E39E5FBEBC"
+				type: "item"
+				item: {
+					id: "cgm:shotgun"
+					Count: 1b
+					tag: {
+						AmmoCount: 8
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "6624F5AE7148CB0F"
+				type: "item"
+				item: "cgm:shell"
+				count: 32
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.5d
+			description: ["Press R to reload. This gun uses Advanced Bullets."]
+			dependencies: ["18F4E3B511BD283A"]
+			id: "76BE0D220847D7E2"
+			tasks: [{
+				id: "06A14D4AAD2FC9A0"
+				type: "item"
+				item: {
+					id: "cgm:rifle"
+					Count: 1b
+					tag: {
+						AmmoCount: 6
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "005048F8FA42B311"
+				type: "item"
+				item: "cgm:advanced_bullet"
+				count: 32
 			}]
 		}
 	]

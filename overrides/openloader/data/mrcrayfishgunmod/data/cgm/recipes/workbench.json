@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SWS",
+    "N N",
+    "N N"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "S": {
+      "item": "minecraft:mossy_stone_bricks"
+    },
+    "W": {
+      "item": "astralsorcery:infused_wood"
+    }
+  },
+  "result": {
+    "item": "cgm:workbench"
+  }
+}

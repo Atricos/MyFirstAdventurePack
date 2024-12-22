@@ -3,5 +3,9 @@
 	order_index: 12
 	title: "Tall Flowers"
 	loot_size: 1
-	rewards: [ ]
+	rewards: [
+		{ item: "minecraft:rose_bush", count: 3 }
+		{ item: "minecraft:peony", count: 3 }
+		{ item: "minecraft:sunflower", count: 3 }
+	]
 }

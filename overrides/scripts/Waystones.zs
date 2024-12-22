@@ -4,7 +4,7 @@ import crafttweaker.api.item.IItemStack;
 
 print("STARTING Waystones.zs");
 
-# XP Tome
+# Warp Stone
 craftingTable.removeRecipe(<item:waystones:warp_stone>);
 craftingTable.addShapeless("warp_stone_tinkers", <item:waystones:warp_stone>,
 	[<item:tconstruct:manyullyn_ingot>,<item:tconstruct:ender_slime_ball>]);

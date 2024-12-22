@@ -1,0 +1,20 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:storage_blocks/iron",
+      "count": 2
+    },
+    {
+      "tag": "forge:ingots/iron",
+      "count": 20
+    },
+    {
+      "item": "minecraft:redstone",
+      "count": 16
+    }
+  ],
+  "result": {
+    "item": "cgm:machine_pistol"
+  }
+}

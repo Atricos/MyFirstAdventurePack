@@ -1,0 +1,44 @@
+{
+  "oreConfig": [
+    {
+      "ore": "netheroresplus:nether_gold_ore",
+      "filler": "minecraft:netherrack",
+      "minY": 1,
+      "maxY": 118,
+      "maxVeinSize": 8,
+      "spawnRate": 6.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": ["NETHER"]
+    },
+    {
+      "ore": "netheroresplus:basalt_gold_ore",
+      "filler": "minecraft:basalt",
+      "minY": 1,
+      "maxY": 118,
+      "maxVeinSize": 8,
+      "spawnRate": 6.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "netheroresplus:blackstone_gold_ore",
+      "filler": "minecraft:blackstone",
+      "minY": 1,
+      "maxY": 118,
+      "maxVeinSize": 8,
+      "spawnRate": 6.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "netheroresplus:golden_nether_bricks",
+      "filler": "minecraft:nether_bricks",
+      "minY": 1,
+      "maxY": 118,
+      "maxVeinSize": 6,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

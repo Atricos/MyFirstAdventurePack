@@ -158,7 +158,7 @@
 		{
 			x: -1.0d
 			y: -6.0d
-			description: ["Craft an Anvil! This block works just like in vanilla, but an additional feature has been added to it. When dropped onto a book with multiple enchantments on it, it has a chance to split the book into several books, splitting the enchantments too of course."]
+			description: ["Craft an Anvil! This block works just like in vanilla, but an additional feature has been added to it. When dropped onto a book with multiple enchantments on it, it has a chance to split the book into several books, splitting the enchantments as well."]
 			id: "1D0AEF8EAE92871C"
 			tasks: [{
 				id: "7B7D27827A219D74"
@@ -601,7 +601,7 @@
 			description: [
 				"The Melonshelf is a purely negative effect bookshelf, reducing your Eterna by 1 point, and your Quanta by 10%."
 				""
-				"Why would you want this...? Well, there are several items in Apotheosis which require your Eterna, Quanta and Arcana to be in a very specific interval. This shelf can help you get to that internal."
+				"Why would you want this...? Well, there are several items in Apotheosis which require your Eterna, Quanta and Arcana to be in a very specific interval. This shelf can help you get to that interval."
 			]
 			hide_dependency_lines: true
 			dependencies: ["1AF3E474CF6B7F77"]
@@ -657,7 +657,7 @@
 			description: [
 				"The Charm of Regeneration II is an item crafted by combining Regeneration II Potions. It can be activated and deactived by right clicking. However, while it is active, it constantly drains its durability."
 				""
-				"This quest asks for the Unbreakable version of this item, which is crafted with a very specific Eterna/Quanta/Arcana enchantment, and gives you Regeneration II forever, while its in your inventory."
+				"This quest asks for the Unbreakable version of this item, which is crafted with a very specific Eterna/Quanta/Arcana enchantment, and gives you Regeneration II forever, while it's in your inventory."
 			]
 			dependencies: ["18815C225F4B085E"]
 			id: "14EC92EE46B53DE1"
@@ -695,7 +695,7 @@
 			description: [
 				"The Charm of Strength II is an item crafted by combining Strength II Potions. It can be activated and deactived by right clicking. However, while it is active, it constantly drains its durability."
 				""
-				"This quest asks for the Unbreakable version of this item, which is crafted with a very specific Eterna/Quanta/Arcana enchantment, and gives you Strength II forever, while its in your inventory."
+				"This quest asks for the Unbreakable version of this item, which is crafted with a very specific Eterna/Quanta/Arcana enchantment, and gives you Strength II forever, while it's in your inventory."
 			]
 			dependencies: ["18815C225F4B085E"]
 			id: "5E58B01FA2B79E51"
@@ -733,7 +733,7 @@
 			description: [
 				"The Charm of Fire Resistance is an item crafted by combining Fire Resistance Potions. It can be activated and deactived by right clicking. However, while it is active, it constantly drains its durability."
 				""
-				"This quest asks for the Unbreakable version of this item, which is crafted with a very specific Eterna/Quanta/Arcana enchantment, and gives you Fire Resistance forever, while its in your inventory."
+				"This quest asks for the Unbreakable version of this item, which is crafted with a very specific Eterna/Quanta/Arcana enchantment, and gives you Fire Resistance forever, while it's in your inventory."
 			]
 			dependencies: ["18815C225F4B085E"]
 			id: "697D7ABD0FA6F3B1"

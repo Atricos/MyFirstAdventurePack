@@ -39,7 +39,13 @@ craftingTable.addShaped("minecraft_end_crystal", <item:minecraft:end_crystal>, [
 	[<tag:items:forge:glass>,<item:minecraft:ghast_tear>,<tag:items:forge:glass>]
 ]);
 
+# Saddle into Leather
+craftingTable.addShapeless("saddle_to_leather", <item:minecraft:leather> * 3, [<item:minecraft:saddle>]);
 
-
+# Max Stack Size changes
+<item:minecraft:snowball>.setMaxStackSize(64);
+<item:minecraft:egg>.setMaxStackSize(64);
+<item:minecraft:ender_pearl>.setMaxStackSize(64);
+<item:minecraft:saddle>.setMaxStackSize(16);
 
 print("ENDING Minecraft.zs");

@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "atum:nebu_ore",
+      "filler": "atum:limestone",
+      "minY": 1,
+      "maxY": 32,
+      "maxVeinSize": 8,
+      "spawnRate": 8.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

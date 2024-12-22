@@ -32,7 +32,7 @@
 			x: -6.5d
 			y: 0.0d
 			description: [
-				"The Ender Dragon's haelth has been buffed to 10 times, and its damage has been buffed to 8 times its original value. Good luck!"
+				"The Ender Dragon's health has been buffed to 10 times, and its damage has been buffed to 8 times its original value. Good luck!"
 				""
 				"There are some unique loot the Ender Dragon drops. Make sure to collect it all!"
 			]
@@ -105,7 +105,7 @@
 		{
 			x: -6.0d
 			y: -1.0d
-			description: ["Welcome to perhaps one of the most overpowered Minecraft mod out there: Draconic Evolution."]
+			description: ["Welcome to perhaps one of the most overpowered Minecraft mods out there: Draconic Evolution."]
 			dependencies: ["2FCC556AD8E52752"]
 			id: "5912AB7AEDD9D0E4"
 			tasks: [{
@@ -710,7 +710,7 @@
 			x: -0.5d
 			y: -2.0d
 			description: [
-				"The Draconic Staff of Power is an extremely powerful omnitool, that lets you mine anything ridicolously fast, and deal an insane amount of damage. Just perfect for an adventurer like you!"
+				"The Draconic Staff of Power is an extremely powerful omnitool, that lets you mine anything ridiculously fast, and deal an insane amount of damage. Just perfect for an adventurer like you!"
 				""
 				"Also, don't forget about adding Modules to it."
 			]
@@ -826,7 +826,7 @@
 				""
 				"Fight the Chaos Guardian and obtain its Chaos Shards after the fight from the center of the island!"
 				""
-				"The quickly bail out as the whole island will explode violently!"
+				"Then quickly bail out as the whole island will explode violently!"
 				""
 				"The Chaos Guardian has several mechanics, like a true end-game bossfight. Buuuut I don't wanna spoil them for you."
 				""

@@ -112,7 +112,7 @@
 		{
 			x: 10.0d
 			y: -3.0d
-			description: ["The Crafting Station is an upgrade over the Crafting Table! It can store the items placed into it; and it can interact with other Tinkers' Tables by letting you easily tab between nearby ones!"]
+			description: ["The Crafting Station is an upgrade over the Crafting Table! It can store the items placed into it, and it can interact with other Tinkers' Tables by letting you easily tab between nearby ones!"]
 			dependencies: ["7CE871BC5F17C09A"]
 			id: "0659552836079916"
 			tasks: [{
@@ -517,7 +517,11 @@
 			title: "Tool Parts"
 			x: 10.0d
 			y: 0.0d
-			description: ["This quest requires you to make specific Tinkers' tools parts. Along with the quest reward, you'll be able to forge a Veiin Hammer in the Tinkers' Anvil. But of course, feel free to use the materials for anything else of your liking!"]
+			description: [
+				"This quest requires you to make specific Tinkers' tools parts. Along with the quest reward, you'll be able to forge a Vein Hammer in the Tinkers' Anvil. But of course, feel free to use the materials for anything else of your liking!"
+				""
+				"Tinkers' Construct also allows you to swap out old parts for new ones in the Tinker Station or Tinker's Anvil. So feel free to upgrade your tools with these! But be aware that this destroys the old part."
+			]
 			hide_dependency_lines: true
 			dependencies: [
 				"719B6E879F7ED2ED"
@@ -537,6 +541,7 @@
 							Material: "tconstruct:cobalt"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "235EEEDA0907C25F"
@@ -548,6 +553,7 @@
 							Material: "tconstruct:manyullyn"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "691B71F7CB849B06"
@@ -559,6 +565,7 @@
 							Material: "tconstruct:pig_iron"
 						}
 					}
+					match_nbt: true
 				}
 			]
 			rewards: [{
@@ -789,7 +796,7 @@
 		{
 			x: 4.0d
 			y: 1.0d
-			description: ["Use a Seared Furnace to fuel your Seared Metler! You will need to fill it up with lava."]
+			description: ["Use a Seared Furnace to fuel your Seared Melter! You will need to fill it up with lava."]
 			hide_dependency_lines: true
 			dependencies: ["0CAA28D36882E834"]
 			id: "322D2E6E74B1CA40"
@@ -820,6 +827,204 @@
 				id: "78BC8BD06745FAF8"
 				type: "item"
 				item: "tconstruct:seared_faucet"
+			}]
+		}
+		{
+			icon: "minecraft:crafting_table"
+			x: -1.0d
+			y: -3.0d
+			description: [
+				"Just Enough Items (JEI) is the most downloaded mod of all time."
+				""
+				"It adds an ingame wiki in your inventory to show all the modded crafting recipes and what each item can be used for."
+				""
+				"If an item is unfamilar to you, press R or Left Click to show its recipe; or press U and Right Click to show its usages!"
+				""
+				"Make sure to check all tabs above! Some items may have multiple recipes."
+				""
+				"If the recipe still contains unfamiliar items, keep pressing R or Left Click! To go back, you can press Backspace."
+				""
+				"Additionally, items you frequently visit can be pinned to the left side of your inventory with A (by default). This is particularly useful alongside the quest book: Click on a quest, click on the item it requires, and pin the item to JEI so you'll be able to check what you need for its recipe."
+				""
+				"{image:m1ap:textures/leather_uses.png width:200 height:350 align:1}"
+				""
+				"The above picture is an example of the uses of Leather. Searching \"Leather\" in the text box in your inventory and Right Clicking (or using U) on Leather brings up this window."
+				""
+				"There are also seveal advanced search functionalities in JEI:"
+				""
+				"- Use @ to search for items in a mod. For example, @twilight will show items added by the Twilight Forest mod."
+				""
+				"- Use # to search by tooltip. For example, searching for #stats will show all items that have additional stats."
+				""
+				"- Using $ will search for Ore Dictionaries, which are items that can replace common materials in crafting. For example, searching for #wool shows all items that can replace Wool in crafting. Note that it also reveals Atum Linen."
+			]
+			id: "4D9F1C27E5ADD679"
+			tasks: [{
+				id: "378434120B998011"
+				type: "checkmark"
+				title: "Just Enough Items"
+			}]
+		}
+		{
+			icon: "minecraft:oak_log"
+			x: -1.0d
+			y: -2.0d
+			description: [
+				"It's quite troublesome to gather logs sometimes, especially for some modded trees... you gotta pillar up and try to reach all the branches..."
+				""
+				"But that stops now! In this pack, you can gather entire trees with an Axe by holding Shift+Left Click on the trunk!"
+			]
+			id: "19D39845CBBBF639"
+			tasks: [{
+				id: "2064565BB0315158"
+				type: "checkmark"
+				title: "Tree Felling"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			description: [
+				"Journey Map is the most downloaded map mod of all time. Press J to show the map!"
+				""
+				"As you explore, this map will start to fill out. On both the fullscreen and the minimap, you're able to see the nearby monsters (red) and passive mobs (white)."
+				""
+				"While outside of the fullscreen map, pressing N will create a New Waypoint at your location. This is particularly useful to be able to get back to your base or your portal in various dimensions."
+				""
+				"{image:m1ap:textures/waypoint.png width:200 height:110 align:1}"
+			]
+			id: "39510247C9B18977"
+			tasks: [{
+				id: "257092496FCA9D4A"
+				type: "checkmark"
+				title: "Journey Map"
+				icon: "twilightforest:magic_map"
+			}]
+		}
+		{
+			icon: "minecraft:grass_block"
+			x: -0.5d
+			y: -4.25d
+			description: [
+				"Welcome to your first Adventure Pack!"
+				""
+				"This quest book will guide you through the journey to defeating the Chaos Guardian!"
+				""
+				"The quest book is broken up into 9 chapters, each with a line of quests that unlock when their prerequisites are complete."
+				""
+				"It is WORTH going through the quest book! It will not only guide you through the main included content mods, giving you useful tips along the way - but it will also generously reward your efforts!"
+				""
+				"You can drag and zoom the quest book. You can also pin the chapters that the big gray arrow in this chapter is pointing to."
+				""
+				"The modpack is structured in a way where you can start almost any quest line, really only the Abyss and the Draconic Evolution quest lines are locked, requiring the Twilight Forest, Atum and Astral Sorcery to be completed before."
+				""
+				"This quest line is about Tinkers' Construct, which is an early-game mod that allows you to double your Ore outputs in the Smeltery, melt down materials, mold them into shapes, and craft various tools and weapons that can be stronger than vanilla tools!"
+			]
+			size: 1.5d
+			id: "223835A147211B8B"
+			tasks: [{
+				id: "0FD1EFCC9C309CD4"
+				type: "checkmark"
+				title: "WELCOME"
+			}]
+		}
+		{
+			icon: "atum:deadwood_sign"
+			x: 0.0d
+			y: -2.0d
+			description: [
+				"Inventory Sorter allows you to sort your inventory, hotbar, or chests with a Middle Click (by default)."
+				""
+				"You can also use Scroll Wheel Down and Scrool Wheel Up to get items in/out of Chests."
+			]
+			id: "79F6E63ACBD0DD26"
+			tasks: [{
+				id: "28F7FE67B0B77FC2"
+				type: "checkmark"
+				title: "Inventory Sorter"
+			}]
+		}
+		{
+			title: "Tinkers' tool creation"
+			icon: {
+				id: "tconstruct:pickaxe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:mining_speed": 6.0f
+						"tconstruct:attack_damage": 2.0f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 287.5f
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 2s
+						}
+						{
+							name: "tconstruct:piercing"
+							level: 1s
+						}
+						{
+							name: "tconstruct:sturdy"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:wood"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 2.0d
+			y: -2.5d
+			description: [
+				"To create a Tinkers' Tool, you can make basic tool parts in the Part Builder using Patterns and a material."
+				""
+				"To create parts out of more advanced materials, first make the same part out of a cheap material like Stone:"
+				""
+				"{image:m1ap:textures/tinkers_1_partbuilder.png width:200 height:130 align:1}"
+				""
+				"Then place it on your Smeltery's Casting Table:"
+				""
+				"{image:m1ap:textures/tinkers_2_casting.png width:200 height:200 align:1}"
+				""
+				"Next, melt 1 ingot of Gold (remember 1 Ore doubles into 2 Ingots); and pour it around the tool part, creating a Cast."
+				""
+				"{image:m1ap:textures/tinkers_3_molding.png width:200 height:200 align:1}"
+				""
+				"Next, melt some material that you wish to make your tool out of. You can click on a liquid inside the Smeltery Controller's UI to bring that liquid to the bottom - that's what you're going to pour next:"
+				""
+				"{image:m1ap:textures/tinkers_4_swap_order.png width:200 height:130 align:1}"
+				""
+				"Then pour some of that material into your Cast:"
+				""
+				"{image:m1ap:textures/tinkers_5_casted_tool.png width:200 height:200 align:1}"
+				""
+				"Finally, combine the obtained tool parts. You can mix and match tool parts that you can create in the Part Builder and ones that you can only create in the Smeltery."
+				""
+				"In the example below, an Iron Pickaxe Head is combined with 2 simple parts that can be made directly in the Part Builder, to form a Pickaxe:"
+				""
+				"{image:m1ap:textures/tinkers_6_tool_creation.png width:200 height:100 align:1}"
+				""
+				"Tinkers' Tools are never final. They can be upgraded with various resources (consult your Tinkers' books for this); and their parts can be replaced in the Tinker Station or the Tinkers' Anvil. But be aware that this destroys the old part!"
+			]
+			size: 1.5d
+			id: "774DD1DBB4EF77D6"
+			tasks: [{
+				id: "7A582B3D3CA6B000"
+				type: "checkmark"
+				title: "tool"
 			}]
 		}
 	]

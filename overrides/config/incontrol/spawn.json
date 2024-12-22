@@ -452,7 +452,7 @@
 	{
 		"mob": "atum:sergeant",
 		"onjoin": true,
-		"healthmultiply": 2.5,
+		"healthmultiply": 1.75,
 		"damagemultiply": 2.0
 	},
 	{

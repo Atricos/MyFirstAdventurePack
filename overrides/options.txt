@@ -126,9 +126,13 @@ key_key.theabyss.friendley_fire_b:key.keyboard.left
 key_pi.key.open_pi:key.keyboard.unknown
 key_pi.key.et_gui:key.keyboard.unknown
 key_pi.key.et_world:key.keyboard.unknown
+key_key.inventorysorter.itemin:key.mouse.100
+key_key.inventorysorter.itemout:key.mouse.102
+key_key.inventorysorter.sort:key.mouse.middle
 key_neat.keybind.toggle:key.keyboard.unknown
 key_placebo.toggleWings:key.keyboard.unknown
 key_placebo.toggleTrails:key.keyboard.unknown
+key_key.astralsorcery.disable_perk_abilities:key.keyboard.unknown
 key_key.waila.config:key.keyboard.unknown
 key_key.waila.show_overlay:key.keyboard.unknown
 key_key.waila.toggle_liquid:key.keyboard.unknown
@@ -136,7 +140,9 @@ key_key.toastcontrol.clear:key.keyboard.unknown
 key_key.simplybackpacks.backpackpickup.desc:key.keyboard.unknown
 key_key.simplybackpacks.backpackopen.desc:key.keyboard.b
 key_key.curios.open.desc:key.keyboard.g
-key_key.astralsorcery.disable_perk_abilities:key.keyboard.unknown
+key_key.cgm.reload:key.keyboard.r
+key_key.cgm.unload:key.keyboard.u
+key_key.cgm.attachments:key.keyboard.z
 key_key.tconstruct.helmet_interact:key.keyboard.unknown
 key_key.tconstruct.leggings_interact:key.keyboard.unknown
 key_key.enderRing:key.keyboard.unknown

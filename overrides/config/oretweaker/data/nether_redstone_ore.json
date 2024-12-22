@@ -1,0 +1,34 @@
+{
+  "oreConfig": [
+    {
+      "ore": "netheroresplus:nether_redstone_ore",
+      "filler": "minecraft:netherrack",
+      "minY": 1,
+      "maxY": 64,
+      "maxVeinSize": 7,
+      "spawnRate": 8.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": ["NETHER"]
+    },
+    {
+      "ore": "netheroresplus:basalt_redstone_ore",
+      "filler": "minecraft:basalt",
+      "minY": 1,
+      "maxY": 64,
+      "maxVeinSize": 7,
+      "spawnRate": 8.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "netheroresplus:blackstone_redstone_ore",
+      "filler": "minecraft:blackstone",
+      "minY": 1,
+      "maxY": 64,
+      "maxVeinSize": 7,
+      "spawnRate": 8.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

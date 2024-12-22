@@ -1,0 +1,20 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:storage_blocks/iron",
+      "count": 6
+    },
+    {
+      "tag": "forge:ingots/iron",
+      "count": 32
+    },
+    {
+      "item": "minecraft:redstone",
+      "count": 24
+    }
+  ],
+  "result": {
+    "item": "cgm:grenade_launcher"
+  }
+}

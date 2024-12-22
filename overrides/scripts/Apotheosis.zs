@@ -15,5 +15,4 @@ craftingTable.addShaped("apo_shelf_of_sight", <item:apotheosis:sightshelf>, [
 	[<item:minecraft:gold_block>,infusedHellshelf,<item:minecraft:gold_block>]
 ]);
 
-
 print("ENDING Apotheosis.zs");

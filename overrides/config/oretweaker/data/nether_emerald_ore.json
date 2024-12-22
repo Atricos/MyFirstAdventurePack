@@ -1,0 +1,34 @@
+{
+  "oreConfig": [
+    {
+      "ore": "netheroresplus:nether_emerald_ore",
+      "filler": "minecraft:netherrack",
+      "minY": 1,
+      "maxY": 48,
+      "maxVeinSize": 4,
+      "spawnRate": 3.5,
+      "biomeBlacklist": [],
+      "biomeWhitelist": ["NETHER"]
+    },
+    {
+      "ore": "netheroresplus:basalt_emerald_ore",
+      "filler": "minecraft:basalt",
+      "minY": 1,
+      "maxY": 48,
+      "maxVeinSize": 4,
+      "spawnRate": 3.5,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "netheroresplus:blackstone_emerald_ore",
+      "filler": "minecraft:blackstone",
+      "minY": 1,
+      "maxY": 48,
+      "maxVeinSize": 4,
+      "spawnRate": 3.5,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

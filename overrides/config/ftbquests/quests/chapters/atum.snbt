@@ -86,16 +86,17 @@
 			}]
 		}
 		{
+			title: "Artifacts"
 			x: 4.0d
 			y: -2.0d
 			description: [
 				"Atum Artifacts can be found rarely in any Atum Chest or Crate, and they are a guaranteed drop from defeating a Pharaoh."
 				""
-				"Pharaohs can be found deep inside Pyramids, after a trap-filled maze section. To disable the traps, you can Right Click on them with a Pickaxe."
+				"Pharaohs can be found deep inside Pyramids. To enter, you will need to place two Nebu Torches at the entrance. Then you'll encounter a trap-filled maze section. To disable the traps, you can Right Click on them with a Pickaxe. Finally, you'll reach a Pharaoh. To awaken it, relight the 4 surrounding Nebu Torches."
 				""
 				"{image:m1ap:textures/atum_pyramid.png width:200 height:200 align:1}"
 				""
-				"Each meelee or ranged weapon artifact can be upgraded to gain Sharpness 100 and other useful enchantments using 4 pieces of Fortifying Augment."
+				"Each melee or ranged weapon artifact can be upgraded to gain Sharpness 100 and other useful enchantments using 4 pieces of Fortifying Augment."
 				""
 				"Alternatively, each Artifact can be melted down in the Godforge for Godshards, which are also a component for crafting the Fortifying Augment."
 			]
@@ -279,6 +280,7 @@
 			}]
 		}
 		{
+			title: "Godshards"
 			x: 4.5d
 			y: -1.0d
 			description: ["Melt down some Artifacts for some Godshards in the Godforge!"]
@@ -430,7 +432,7 @@
 				""
 				"Two pieces of Godforged Blocks can be turned into some Fortifying Augments! (Check the end of the Twilight Forest quests!)"
 				""
-				"Fortifying Augments can give Atum meelee/ranged Artifacts and Infernal Expansion boss weapons Sharpness 100 and other useful enchantments!"
+				"Fortifying Augments can give Atum melee/ranged Artifacts and Infernal Expansion boss weapons Sharpness 100 and other useful enchantments!"
 			]
 			dependencies: ["1FA5EEAB14CEDB0A"]
 			size: 2.0d

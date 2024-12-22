@@ -3,5 +3,66 @@
 		"mob": "twilightforest:harbinger_cube",
 		"item": "contenttweaker:harbinger_cube",
 		"itemcount": "1"
+	},
+	{
+		"mob": "minecraft:cow",
+		"item": "minecraft:leather",
+		"itemcount": "1"
+	},
+	{
+		"mob": "minecraft:horse",
+		"item": "minecraft:leather",
+		"itemcount": "1"
+	},
+	{
+		"mob": "minecraft:donkey",
+		"item": "minecraft:leather",
+		"itemcount": "1"
+	},
+	{
+		"mob": "minecraft:mule",
+		"item": "minecraft:leather",
+		"itemcount": "1"
+	},
+	{
+		"mob": "atum:camel",
+		"item": "minecraft:leather",
+		"itemcount": "1"
+	},
+	{
+		"mob": "minecraft:hoglin",
+		"item": "minecraft:leather",
+		"itemcount": "1"
+	},
+	{
+		"mob": "minecraft:llama",
+		"item": "minecraft:leather",
+		"itemcount": "1"
+	},
+	{
+		"mob": "minecraft:trader_llama",
+		"item": "minecraft:leather",
+		"itemcount": "1"
+	},
+	{
+		"mob": "minecraft:mooshroom",
+		"item": "minecraft:leather",
+		"itemcount": "1"
+	},
+	{
+		"mob": "twilightforest:deer",
+		"item": "minecraft:leather",
+		"itemcount": "1"
+	},
+	{
+		"mob": "twilightforest:tiny_bird",
+		"item": "twilightforest:raven_feather",
+		"itemcount": "1",
+		"random": 0.25
+	},
+	{
+		"mob": "twilightforest:raven",
+		"item": "twilightforest:raven_feather",
+		"itemcount": "1"
 	}
 ]

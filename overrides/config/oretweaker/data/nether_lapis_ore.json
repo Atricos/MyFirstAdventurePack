@@ -1,0 +1,34 @@
+{
+  "oreConfig": [
+    {
+      "ore": "netheroresplus:nether_lapis_lazuli_ore",
+      "filler": "minecraft:netherrack",
+      "minY": 1,
+      "maxY": 48,
+      "maxVeinSize": 6,
+      "spawnRate": 3.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": ["NETHER"]
+    },
+    {
+      "ore": "netheroresplus:basalt_lapis_lazuli_ore",
+      "filler": "minecraft:basalt",
+      "minY": 1,
+      "maxY": 48,
+      "maxVeinSize": 6,
+      "spawnRate": 3.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "netheroresplus:blackstone_lapis_lazuli_ore",
+      "filler": "minecraft:blackstone",
+      "minY": 1,
+      "maxY": 48,
+      "maxVeinSize": 6,
+      "spawnRate": 3.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

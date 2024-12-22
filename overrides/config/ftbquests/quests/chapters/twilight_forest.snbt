@@ -64,6 +64,8 @@
 				"Once the Twilight Naga has been defeated, the barriers of the nearby Lich Tower will fall! Climb up and defeat the Twilight Lich!"
 				""
 				"{image:m1ap:textures/twilight_lich.png width:200 height:200 align:1}"
+				""
+				"In order to remove the Twilight Lich's shield, knock back projectiles it shoots at you!"
 			]
 			dependencies: ["427A67CEE0ADB18D"]
 			id: "3F34D384CFCB0A11"
@@ -153,7 +155,7 @@
 				""
 				"{image:m1ap:textures/twilight_minoshroom_entrance.png width:200 height:160 align:1}"
 				""
-				"After having descended several layers, one may find the Minoshroom boss room...:"
+				"After having descended several layers, one may find the Minoshroom boss room... :"
 				""
 				"{image:m1ap:textures/twilight_minoshroom.png width:200 height:190 align:1}"
 			]
@@ -245,7 +247,7 @@
 			x: 2.5d
 			y: 0.0d
 			description: [
-				"When one consumes the Meef Stroganoff, dropped by the Minoshroom; one will resist the acidic rain of the Fire Swamp. And in the middle, the Hydra awaits..."
+				"When one consumes the Meef Stroganoff, dropped by the Minoshroom, one will resist the acidic rain of the Fire Swamp. And in the middle, the Hydra awaits..."
 				""
 				"{image:m1ap:textures/twilight_hydra.png width:200 height:180 align:1}"
 				""
@@ -383,7 +385,7 @@
 			x: -1.5d
 			y: -1.0d
 			description: [
-				"Craft a Blank Magic Map! All of its crafting ingredients are available close to spawn in the Twilight Forest."
+				"Craft a Blank Magic Map! All of its crafting ingredients are available close to spawn in the Twilight Forest. Raven Feathers can be obtained from Ravens or Tiny Birds; and Torchberries can be found underground in caves."
 				""
 				"Right Click the map to reveal the nearby bosses in the Twilight Forest! Keep exploring to fill out your map!"
 			]

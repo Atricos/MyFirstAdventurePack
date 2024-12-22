@@ -172,7 +172,7 @@ craftingTable.addShaped("chicken_burger", <item:contenttweaker:chicken_burger> *
 ]);
 
 # Instant Bandage
-craftingTable.addShapeless("instant_bandage", <item:contenttweaker:instant_bandage>, [
+craftingTable.addShapeless("instant_bandage", <item:contenttweaker:instant_bandage> * 3, [
 	<item:atum:linen_cloth>,<item:tconstruct:blood_slime_ball>
 ]);
 <item:contenttweaker:instant_bandage>.addTooltip(MCTextComponent.createStringTextComponent("Restores 2 hearts instantly."));

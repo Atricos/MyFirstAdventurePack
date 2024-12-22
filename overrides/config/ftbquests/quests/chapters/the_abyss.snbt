@@ -57,7 +57,7 @@
 				""
 				"{image:m1ap:textures/theabyss_radio.png width:200 height:130 align:1}"
 				""
-				"You will be transported to your third nightmare. Make sure to collect as much Loran from Loran Flower as you can!"
+				"You will be transported to your third nightmare. Make sure to collect as much Loran from Loran Flowers as you can!"
 			]
 			dependencies: ["27B0DA3B4112310C"]
 			id: "259D4ED80CFF5183"
@@ -159,7 +159,7 @@
 				""
 				"This is the second to last dimension before being able to enter the End; therefore expect mobs to be a LOT tougher. Every mob has been buffed in this dimension, increasing their health by 5 times, and their damage by 4 times of their original value."
 				""
-				"Beware! Spening time in the Abyss will corrupt your mind! Eventually, you will start taking damage. To prevent this, leave the Abyss, or make an Anti Infection Essence (bottom right of this chapter)."
+				"Beware! Spending time in the Abyss will corrupt your mind! Eventually, you will start taking damage. To prevent this, leave the Abyss, or make an Anti Infection Essence (bottom right of this chapter)."
 			]
 			dependencies: ["414F2D769FC80FDA"]
 			id: "194C54AD8AF1E938"
@@ -244,7 +244,7 @@
 			icon: "theabyss:phantom_essence"
 			x: -1.0d
 			y: -3.0d
-			description: ["Combine some Broken Titan Bones into Titan Bones, then combine it further withsome Phantom Souls for a a Phantom Essence."]
+			description: ["Combine some Broken Titan Bones into Titan Bones, then combine it further with some Phantom Souls for a Phantom Essence."]
 			dependencies: ["67895A8CA9C1F2CE"]
 			id: "69CC9F7503850443"
 			tasks: [
@@ -430,7 +430,7 @@
 		{
 			x: 3.0d
 			y: -1.0d
-			description: ["Craft a Somnium Extractor! This machine allows for the creation of Somnium a material for spellcasting. Simply place some Loran in the left slot and a Loran Energy in the top slot, and let the machine combine them!"]
+			description: ["Craft a Somnium Extractor! This machine allows for the creation of Somnium, a material for spellcasting. Simply place some Loran in the left slot and a Loran Energy in the top slot, and let the machine combine them!"]
 			dependencies: ["457A83EB49097D80"]
 			id: "63C98B54C992F694"
 			tasks: [{

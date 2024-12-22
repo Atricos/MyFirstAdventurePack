@@ -1,0 +1,20 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:storage_blocks/iron",
+      "count": 6
+    },
+    {
+      "tag": "forge:ingots/iron",
+      "count": 36
+    },
+    {
+      "item": "minecraft:redstone",
+      "count": 36
+    }
+  ],
+  "result": {
+    "item": "cgm:heavy_rifle"
+  }
+}

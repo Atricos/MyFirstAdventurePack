@@ -1,0 +1,20 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 2
+    },
+    {
+      "tag": "forge:gunpowder",
+      "count": 4
+    },
+    {
+      "item": "minecraft:tnt",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "cgm:missile"
+  }
+}

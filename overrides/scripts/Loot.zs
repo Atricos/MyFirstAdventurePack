@@ -208,7 +208,7 @@ for dac in dungeons_arise_chests {
 
 removeLoot("abyss_icora_stone", <resource:theabyss:chests/underground_dungeon>, <item:theabyss:icora_stone>);
 
-removeLoot("abyss_apple_of_immoortality", <resource:theabyss:chests/underground_dungeon_room>, <item:theabyss:apple_of_immortality>);
+removeLoot("abyss_apple_of_immortality", <resource:theabyss:chests/underground_dungeon_room>, <item:theabyss:apple_of_immortality>);
 
 val twilight_forest_chests as MCResourceLocation[] = [
     <resource:twilightforest:structures/aurora_cache>,

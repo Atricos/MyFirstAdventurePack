@@ -12,7 +12,11 @@
 			x: -2.0d
 			y: -1.5d
 			description: [
-				"Make a Luminous Crafting Table! This is the central crafting mechanic of Astral Sorcery. You will be able to upgrade this Table as you move further into the mod."
+				"Make a Luminous Crafting Table! You will need to find a large Astral Sorcery Temple structure, spawning commonly in the overworld, and place a Crafting Table directly under the Collector Crystal! And make sure to give it a direct view to the sky! You will need to dig up, all the way through the top roof, and stop some waterflow."
+				""
+				"{image:m1ap:textures/astral_craftingtable.png width:200 height:180 align:1}"
+				""
+				"This is the central crafting mechanic of Astral Sorcery. You will be able to upgrade this Table as you move further into the mod."
 				""
 				"The Luminous Crafting Table (later: Altar) uses Starlight as its energy source. Its power will be greater during the night, or in high-starlight-consentration areas (found by a Fosic Resonator)."
 				""
@@ -63,8 +67,11 @@
 		{
 			x: -1.0d
 			y: -1.5d
-			description: ["Make a Resonating Wand! Right Clicking with this tool on the Luminous Crafting Table attempts to start a crafting process."]
-			dependencies: ["249A01C21CD754D1"]
+			description: [
+				"Make a Resonating Wand! Right Clicking with this tool on the Luminous Crafting Table attempts to start a crafting process."
+				""
+				"Additionally, holding a Resonating Wand while caving"
+			]
 			id: "173404DEEF6BAC71"
 			tasks: [{
 				id: "6D8BB3810CCB7658"
@@ -572,9 +579,9 @@
 			x: 4.0d
 			y: 0.5d
 			description: [
-				"The Traversal Wand has 2 modes: Dash and Blink modes. Shift Right Clicking will toggle between these modes."
+				"The Traversal Wand has 2 modes: Dash mode and Blink mode. Shift Right Clicking will toggle between these modes."
 				""
-				"In Dash mode, after holding Right Click, the user will be dashes forward a long distance."
+				"In Dash mode, after holding Right Click, the user will be launched forward a long distance."
 				""
 				"In Blink Mode, this is instead replaced by a blink."
 				""
@@ -604,7 +611,7 @@
 		{
 			x: 3.0d
 			y: 0.5d
-			description: ["The Impulsion Wand act as a Grappling Hook. Right Click towards a wall, ceiling, or even the floor, and you'll be quickly pulled towards that location. Watch out though, the Wand does NOT prevent fall damage."]
+			description: ["The Impulsion Wand acts as a Grappling Hook. Right Click towards a wall, ceiling, or even the floor, and you'll be quickly pulled towards that location. Watch out though, the Wand does NOT prevent fall damage."]
 			dependencies: ["1E2EB16044C6E48A"]
 			id: "645E91FE3522E9C7"
 			tasks: [{
@@ -638,7 +645,7 @@
 				""
 				"{image:m1ap:textures/astral_si3.png width:150 height:150 align:1}"
 				""
-				"The holes is where the Starlight will go. Make sure to add some block around so the Starlight won't flow out!"
+				"The holes are where the Starlight will go. Make sure to add some block around so the Starlight won't flow out!"
 				""
 				"{image:m1ap:textures/astral_si4.png width:150 height:150 align:1}"
 				""
@@ -729,7 +736,7 @@
 			description: [
 				"Make a Starlight Infusion Table and a piece of Infused Glass to place into it!"
 				""
-				"The block allows you to create more powerful than vanilla Enchanted Books."
+				"The block allows you to create more powerful Enchanted Books than vanilla."
 				""
 				"First, make sure it's night time. You will be able to use the Constellations currently out in the sky."
 				""
@@ -737,7 +744,7 @@
 				""
 				"Then it's time for the minigame! Drag Constellations from the side onto the Parchment in the middle, such that their stars overlap as much as possible! The more overlap, the better Etched Infused Glass you'll get."
 				""
-				"Then you can place individual Books inside the machine, and wait for them to be enchanted. You can pull them out with a SHift Right Click. Note that each Infused Glass can only be used up to 5 times."
+				"Then you can place individual Books inside the machine, and wait for them to be enchanted. You can pull them out with a Shift Right Click. Note that each Infused Glass can only be used up to 5 times."
 			]
 			dependencies: [
 				"3500243141D8ECD0"
@@ -797,7 +804,7 @@
 				""
 				"{image:m1ap:textures/astral_altar3_top.png width:200 height:190 align:1}"
 				""
-				"Each pillar will require 7 more blcks of Marble Bricks to be placed, for a total of 28 Marble Brick blocks."
+				"Each pillar will require 7 more blocks of Marble Bricks to be placed, for a total of 28 Marble Brick blocks."
 				""
 				"The Iridescent Altar may require the usage of an Attuned Rock Crystal or an Attuned Celestial Crystal, if the recipe's background image shows a Constellation."
 				""
@@ -1076,6 +1083,31 @@
 				type: "item"
 				item: "astralsorcery:perk_seal"
 				count: 3
+			}]
+		}
+		{
+			icon: "astralsorcery:shifting_star_vicio"
+			x: -2.25d
+			y: 0.75d
+			description: [
+				"Astral Sorcery is the mod that gives you a taste at magic mods in this pack."
+				""
+				"It allows you to harness the power of the stars, transforming and infusing items into something different or something stronger."
+				""
+				"You will be able to observe the stars, unlock and draw Constellations, generate Starlight, and soon enough... attune yourself!"
+				""
+				"Attuning yourself to a Constellation will unlock the talent system of the mod, which is similar to what Path of Exile has to offer. You can get a total of 100 levels with various actions, and spend those point on talents that make you more powerful."
+				""
+				"Additionally, you'll unlock some fun tools like a grappling hook made of stars, or a way to obtain extremely powerful Enchanted Books from \"stellar refratctions\"."
+				""
+				"So why don't your jump into the mod by taking a look at some of the first quests!"
+			]
+			size: 1.5d
+			id: "5A22558068974E05"
+			tasks: [{
+				id: "2ECD8185FEE9E261"
+				type: "checkmark"
+				title: "About Astral Sorcery"
 			}]
 		}
 	]

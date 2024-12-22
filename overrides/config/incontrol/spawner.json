@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "mob": "minecraft:rabbit",
+    "persecond": 0.5,
+    "attempts": 1,
+    "amount": {
+      "minimum": 1,
+      "maximum": 5
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "mindist": 32,
+      "maxdist": 128,
+      "minheight": 45,
+      "maxheight": 175,
+      "maxthis": 10,
+      "maxpeaceful": 120,
+      "maxtotal": 240
+    }
+  }
+]

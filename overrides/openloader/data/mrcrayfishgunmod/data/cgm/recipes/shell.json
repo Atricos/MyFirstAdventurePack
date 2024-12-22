@@ -1,0 +1,21 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 4
+    },
+    {
+      "tag": "forge:ingots/gold",
+      "count": 1
+    },
+    {
+      "tag": "forge:gunpowder",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "cgm:shell",
+    "count": 16
+  }
+}
