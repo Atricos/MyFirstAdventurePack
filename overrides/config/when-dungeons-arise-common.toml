@@ -288,12 +288,12 @@
 			#Range: 0 ~ 1000000
 			heavenlyConquerorSpawnpointSeparation = 100
 			#Whether cartographer villagers generate maps for Heavenly Conquerors or not.
-			heavenlyConquerorMapTrades = true
+			heavenlyConquerorMapTrades = false
 			#Maximum separation between Heavenly Conquerors (in chunks).
 			#Range: 0 ~ 1000000
 			heavenlyConquerorSpacing = 57
 			#Whether Heavenly Conquerors generate on your worlds or not.
-			heavenlyConquerorGenerates = true
+			heavenlyConquerorGenerates = false
 			#Minimum spacing between Heavenly Conquerors (in chunks).
 			#Range: 0 ~ 1000000
 			heavenlyConquerorSeparation = 10
@@ -612,7 +612,7 @@
 
 		["When Configurations Arise"."Fortified Structures"."Monastery Spawning Settings"]
 			#Whether cartographer villagers generate maps for Monasteries or not.
-			monasteryMapTrades = true
+			monasteryMapTrades = false
 			#Maximum separation between Monasteries (in chunks).
 			#Range: 0 ~ 1000000
 			monasterySpacing = 37

@@ -252,6 +252,10 @@
 				"{image:m1ap:textures/twilight_hydra.png width:200 height:180 align:1}"
 				""
 				"The previous quest reward gives back the Meef Stroganoff for a friend to consume!"
+				""
+				"In order to defeat the Hydra, one must stand close by to it, as the Hydra is immune to any attack from afar."
+				""
+				"Moreover, the Hydra can only be damaged when it opens its mouth and shoots at the player - at that moment, if an arrow is fired into its mouth, then it will take some damage."
 			]
 			dependencies: ["19E7B216E6201371"]
 			id: "6F2A81C482A24268"

@@ -24,4 +24,6 @@ craftingTable.addShapedMirrored("resonating_wand", <item:astralsorcery:wand>, [
 "drerd",
 "_d_d_"], {g: <item:minecraft:gold_ingot> as IIngredient, s: <tag:items:forge:string>, d: <item:astralsorcery:stardust> as IIngredient, e: <item:minecraft:ender_pearl> as IIngredient, a: <item:astralsorcery:shifting_star> as IIngredient, r: <item:astralsorcery:resonating_gem> as IIngredient}, 60, 100);
 
+<item:astralsorcery:infused_wood>.addTooltip("Drop any wooden log into Liquid Starlight to create this!");
+
 print("ENDING AstralSorcery.zs");

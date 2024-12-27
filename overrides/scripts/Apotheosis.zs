@@ -4,8 +4,12 @@ import crafttweaker.api.item.IItemStack;
 
 print("STARTING Apotheosis.zs");
 
+# Chronicle of Shadows (Guide Book)
+craftingTable.addShapeless("apotheosis_guide_book", <item:patchouli:guide_book>.withTag({"patchouli:book": "apotheosis:apoth_chronicle" as string}),
+[<item:minecraft:book>,<item:minecraft:purple_dye>]);
+
 val air = <item:minecraft:air>;
-val infusedHellshelf = <item:apotheosis:hellshelf>.withTag({Enchantments: [{lvl: 3 as short, id: "apotheosis:hell_infusion" as string}], display: {Lore: ["{\"translate\":\"ingredient.apotheosis.ench\",\"with\":[{\"italic\":true,\"color\":\"dark_purple\",\"extra\":[{\"text\":\" \"},{\"translate\":\"enchantment.level.3\"}],\"translate\":\"enchantment.apotheosis.hell_infusion\"}]}" as string]}});
+val infusedHellshelf = <item:apotheosis:hellshelf>.withTag({Enchantments: [{lvl: 3, id: "apotheosis:hell_infusion" as string}]});
 
 # Shelf of Sight
 craftingTable.removeRecipe(<item:apotheosis:sightshelf>);

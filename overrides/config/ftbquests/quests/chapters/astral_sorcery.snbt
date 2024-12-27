@@ -645,11 +645,11 @@
 				""
 				"{image:m1ap:textures/astral_si3.png width:150 height:150 align:1}"
 				""
-				"The holes are where the Starlight will go. Make sure to add some block around so the Starlight won't flow out!"
+				"The holes are where the Starlight will go. The final step is to add a total of 12 Runed Marble around the structure, and fill in the holes with 12 Buckets of Liquid Starlight!"
 				""
 				"{image:m1ap:textures/astral_si4.png width:150 height:150 align:1}"
 				""
-				"Each craft will use up a Bucket of Starlight randomly, so make sure to find it and refill it! Soon you will be able to craft a Containment Chalice that can not only hold Starlight, but automatically refill the used Starlight Buckets of the Starlight Infuser multiblock!"
+				"Each craft is activated with a Resonating Wand, and may use up a Bucket of Starlight randomly, so if it does, then make sure to find it and refill it! Soon you will be able to craft a Containment Chalice that can not only hold Starlight, but automatically refill the used Starlight Buckets of the Starlight Infuser multiblock!"
 			]
 			dependencies: ["073989E6D8BE1D43"]
 			id: "2FB060C060C4297F"
@@ -1090,13 +1090,13 @@
 			x: -2.25d
 			y: 0.75d
 			description: [
-				"Astral Sorcery is the mod that gives you a taste at magic mods in this pack."
+				"Astral Sorcery is the mod that gives you a taste of magic mods in this pack."
 				""
 				"It allows you to harness the power of the stars, transforming and infusing items into something different or something stronger."
 				""
 				"You will be able to observe the stars, unlock and draw Constellations, generate Starlight, and soon enough... attune yourself!"
 				""
-				"Attuning yourself to a Constellation will unlock the talent system of the mod, which is similar to what Path of Exile has to offer. You can get a total of 100 levels with various actions, and spend those point on talents that make you more powerful."
+				"Attuning yourself to a Constellation will unlock the talent system of the mod, which is similar to what Path of Exile has to offer. You can get a total of 100 levels with various actions, and spend those points on talents that make you more powerful."
 				""
 				"Additionally, you'll unlock some fun tools like a grappling hook made of stars, or a way to obtain extremely powerful Enchanted Books from \"stellar refratctions\"."
 				""

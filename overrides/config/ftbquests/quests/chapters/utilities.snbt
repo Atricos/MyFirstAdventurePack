@@ -299,7 +299,7 @@
 			description: [
 				"Craft a Workbench for creating guns! They are powerful enchantable ranged weapons that use ammo. Everything is created in this Workbench."
 				""
-				"To load a gun, use R while holding it. To uload it, use U."
+				"To load a gun, use R while holding it. To unload it, use U."
 				""
 				"Infused Wood is created by throwing any log into Starlight. You'll need to progress a tiny bit in Astral Sorcery for it."
 			]

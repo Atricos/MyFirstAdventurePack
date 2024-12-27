@@ -64,5 +64,25 @@
 		"mob": "twilightforest:raven",
 		"item": "twilightforest:raven_feather",
 		"itemcount": "1"
+	},
+	{
+		"mob": "twilightforest:blockchain_goblin",
+		"item": "twilightforest:armor_shard",
+		"itemcount": "3"
+	},
+	{
+		"mob": "twilightforest:helmet_crab",
+		"item": "twilightforest:armor_shard",
+		"itemcount": "3"
+	},
+	{
+		"mob": "twilightforest:goblin_knight_lower",
+		"item": "twilightforest:armor_shard",
+		"itemcount": "3"
+	},
+	{
+		"mob": "twilightforest:goblin_knight_upper",
+		"item": "twilightforest:armor_shard",
+		"itemcount": "3"
 	}
 ]

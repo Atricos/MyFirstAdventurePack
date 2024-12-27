@@ -47,5 +47,6 @@ craftingTable.addShapeless("saddle_to_leather", <item:minecraft:leather> * 3, [<
 <item:minecraft:egg>.setMaxStackSize(64);
 <item:minecraft:ender_pearl>.setMaxStackSize(64);
 <item:minecraft:saddle>.setMaxStackSize(16);
+<item:minecraft:mushroom_stew>.setMaxStackSize(64);
 
 print("ENDING Minecraft.zs");
